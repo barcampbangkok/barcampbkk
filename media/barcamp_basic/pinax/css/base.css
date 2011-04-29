@@ -98,8 +98,9 @@ h1 {
     padding-top: 0;
 }
 #tabhead .logo img {
-    width: 190px;
-    height: 79px;
+    margin-top: 5px;
+    width: 312px;
+    height: 73px;
 }
 #tabhead .login {
     position: absolute;
