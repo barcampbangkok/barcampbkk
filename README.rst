@@ -44,7 +44,7 @@ Once you're working with virtualenvs you don't need to (and shouldn't) use
 Ubuntu Lucid
 ~~~~~~~~~~~~
 
-Just run ``sudo aptitude-install python-virtualenv`` -- this will take take of
+Just run ``sudo aptitude install python-virtualenv`` -- this will take take of
 installing Python, setuptools and pip for you as needed. You'll need to
 `enable the Universe package repository`_ if you haven't already.
 
@@ -122,4 +122,5 @@ successfully, it will create ``dev.db`` in your source code folder.
     python manage.py runserver
 
 4. Check if that works by going to http://localhost:8000/
+5. Start hackin'
 
