@@ -101,10 +101,20 @@ MIDDLEWARE_CLASSES = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django_openid.consumer.SessionConsumer",
     "django.contrib.messages.middleware.MessageMiddleware",
+
+    #cms
+    'cms.middleware.page.CurrentPageMiddleware',
+    'cms.middleware.user.CurrentUserMiddleware',
+    'cms.middleware.toolbar.ToolbarMiddleware',
+    'cms.middleware.media.PlaceholderMediaMiddleware',
+
     "pinax.apps.account.middleware.LocaleMiddleware",
     "pagination.middleware.PaginationMiddleware",
-    "pinax.middleware.security.HideSensistiveFieldsMiddleware",
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
+#    "pinax.middleware.security.HideSensistiveFieldsMiddleware",
+    #"debug_toolbar.middleware.DebugToolbarMiddleware",
+
+
+
 ]
 
 ROOT_URLCONF = "urls"
@@ -131,6 +141,10 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     
     "notification.context_processors.notification",
     "announcements.context_processors.site_wide_announcements",
+
+    #cms
+    'cms.context_processors.media',
+    
 ]
 
 INSTALLED_APPS = [
@@ -167,6 +181,20 @@ INSTALLED_APPS = [
     # project
     "about",
     "profiles",
+
+    #Django-CMS
+    'cms',
+    'menus',
+    'mptt',
+    'appmedia',
+    'south',
+    'cms.plugins.text',
+    'cms.plugins.picture',
+    'cms.plugins.link',
+    'cms.plugins.file',
+    'cms.plugins.snippet',
+    'cms.plugins.googlemap',
+
 ]
 
 FIXTURE_DIRS = [
@@ -199,10 +227,20 @@ EMAIL_CONFIRMATION_DAYS = 2
 EMAIL_DEBUG = DEBUG
 
 # URCHIN_ID = "ua-..."
+FORCE_LOWERCASE_TAGS = True
 
 DEBUG_TOOLBAR_CONFIG = {
     "INTERCEPT_REDIRECTS": False,
 }
+
+#CMS_SETTINGS
+CMS_TEMPLATES= (
+    ('cms/cms_base.html', "Base" ),
+)
+LANGUAGES = [
+    ('en', 'English'),
+    ('th', 'Thai'),
+]
 
 # local_settings.py can be used to override environment-specific settings
 # like database and email that differ between development and production.

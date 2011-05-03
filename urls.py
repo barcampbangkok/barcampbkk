@@ -23,9 +23,14 @@ urlpatterns = patterns("",
     url(r"^profiles/", include("idios.urls")),
     url(r"^notices/", include("notification.urls")),
     url(r"^announcements/", include("announcements.urls")),
+
+    url(r'^', include('cms.urls')),
 )
 
-
+if settings.DEBUG:
+    urlpatterns = patterns('',
+        (r'^' + settings.MEDIA_URL.lstrip('/'), include('appmedia.urls')),
+    ) + urlpatterns
 if settings.SERVE_MEDIA:
     urlpatterns += patterns("",
         url(r"", include("staticfiles.urls")),
