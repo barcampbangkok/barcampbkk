@@ -12,9 +12,9 @@ handler500 = "pinax.views.server_error"
 
 
 urlpatterns = patterns("",
-    url(r"^$", direct_to_template, {
-        "template": "homepage.html",
-    }, name="home"),
+#    url(r"^$", direct_to_template, {
+#        "template": "homepage.html",
+#    }, name="home"),
     url(r"^admin/invite_user/$", "pinax.apps.signup_codes.views.admin_invite_user", name="admin_invite_user"),
     url(r"^admin/", include(admin.site.urls)),
     url(r"^about/", include("about.urls")),
@@ -23,10 +23,20 @@ urlpatterns = patterns("",
     url(r"^profiles/", include("idios.urls")),
     url(r"^notices/", include("notification.urls")),
     url(r"^announcements/", include("announcements.urls")),
+
+
 )
 
+if settings.DEBUG:
+    urlpatterns = patterns('',
+        (r'^' + settings.MEDIA_URL.lstrip('/'), include('appmedia.urls')),
+    ) + urlpatterns
 
 if settings.SERVE_MEDIA:
     urlpatterns += patterns("",
         url(r"", include("staticfiles.urls")),
     )
+
+urlpatterns += patterns("",
+    url(r'^', include('cms.urls')),
+)
