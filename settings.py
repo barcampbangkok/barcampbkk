@@ -105,12 +105,12 @@ MIDDLEWARE_CLASSES = [
     #cms
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
-    'cms.middleware.toolbar.ToolbarMiddleware',
+#    'cms.middleware.toolbar.ToolbarMiddleware',
     'cms.middleware.media.PlaceholderMediaMiddleware',
 
     "pinax.apps.account.middleware.LocaleMiddleware",
     "pagination.middleware.PaginationMiddleware",
-#    "pinax.middleware.security.HideSensistiveFieldsMiddleware",
+    "pinax.middleware.security.HideSensistiveFieldsMiddleware",
     #"debug_toolbar.middleware.DebugToolbarMiddleware",
 
 
@@ -134,11 +134,11 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.contrib.messages.context_processors.messages",
     
     "staticfiles.context_processors.static_url",
-    
+
     "pinax.core.context_processors.pinax_settings",
-    
+
     "pinax.apps.account.context_processors.account",
-    
+
     "notification.context_processors.notification",
     "announcements.context_processors.site_wide_announcements",
 
@@ -236,6 +236,7 @@ DEBUG_TOOLBAR_CONFIG = {
 #CMS_SETTINGS
 CMS_TEMPLATES= (
     ('cms/cms_base.html', "Base" ),
+    ('homepage.html', "HOME" ),
 )
 LANGUAGES = [
     ('en', 'English'),
