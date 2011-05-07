@@ -239,7 +239,7 @@ CMS_PERMISSION = False
 CMS_TEMPLATE_INHERITANCE = True
 CMS_PLACEHOLDER_CONF = {}
 CMS_LANGUAGES =(
-    ('en-us', 'English',),
+    ('en', 'English',),
     ('th', 'Thai',),
 )
 LANGUAGES= CMS_LANGUAGES
