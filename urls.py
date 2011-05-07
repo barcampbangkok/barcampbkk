@@ -9,6 +9,7 @@ from pinax.apps.account.openid_consumer import PinaxConsumer
 
 
 handler500 = "pinax.views.server_error"
+handler404 = "django.views.defaults.page_not_found"
 
 
 urlpatterns = patterns("",
