@@ -48,7 +48,7 @@ TIME_ZONE = "US/Eastern"
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "en"
 
 SITE_ID = 1
 
@@ -107,7 +107,9 @@ MIDDLEWARE_CLASSES = [
     'cms.middleware.user.CurrentUserMiddleware',
 #    'cms.middleware.toolbar.ToolbarMiddleware',
     'cms.middleware.media.PlaceholderMediaMiddleware',
-    
+    'cms.middleware.multilingual.MultilingualURLMiddleware',
+
+
     "pinax.apps.account.middleware.LocaleMiddleware",
     "pagination.middleware.PaginationMiddleware",
     "pinax.middleware.security.HideSensistiveFieldsMiddleware",
@@ -237,9 +239,10 @@ CMS_PERMISSION = False
 CMS_TEMPLATE_INHERITANCE = True
 CMS_PLACEHOLDER_CONF = {}
 CMS_LANGUAGES =(
-    ('en', 'English',),
+    ('en-us', 'English',),
     ('th', 'Thai',),
 )
+LANGUAGES= CMS_LANGUAGES
 
 # local_settings.py can be used to override environment-specific settings
 # like database and email that differ between development and production.
