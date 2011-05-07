@@ -170,15 +170,22 @@ INSTALLED_APPS = [
     "announcements",
     "pagination",
     "idios",
+
+    #for pinax.apps.profiles
+    "avatar",
+    "microblogging",
+    "friends",
     
     # Pinax
     "pinax.apps.account",
     "pinax.apps.signup_codes",
     "pinax.apps.analytics",
+    "pinax.apps.profiles",
     
     # project
     "about",
-    "profiles",
+#    "profiles",
+
 
     # Django Cms
     'cms',
