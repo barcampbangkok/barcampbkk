@@ -32,3 +32,4 @@ django-cms
 south
 django-appmedia
 django-classy-tags
+django-mptt

@@ -101,6 +101,13 @@ MIDDLEWARE_CLASSES = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django_openid.consumer.SessionConsumer",
     "django.contrib.messages.middleware.MessageMiddleware",
+
+    #cms
+    'cms.middleware.page.CurrentPageMiddleware',
+    'cms.middleware.user.CurrentUserMiddleware',
+#    'cms.middleware.toolbar.ToolbarMiddleware',
+    'cms.middleware.media.PlaceholderMediaMiddleware',
+    
     "pinax.apps.account.middleware.LocaleMiddleware",
     "pagination.middleware.PaginationMiddleware",
     "pinax.middleware.security.HideSensistiveFieldsMiddleware",
@@ -131,6 +138,9 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     
     "notification.context_processors.notification",
     "announcements.context_processors.site_wide_announcements",
+
+    #cms
+    'cms.context_processors.media',
 ]
 
 INSTALLED_APPS = [
@@ -167,6 +177,20 @@ INSTALLED_APPS = [
     # project
     "about",
     "profiles",
+
+    # Django Cms
+    'cms',
+    'menus',
+    'mptt',
+    'appmedia',
+    'south',
+    'cms.plugins.text',
+    'cms.plugins.picture',
+    'cms.plugins.link',
+    'cms.plugins.file',
+    'cms.plugins.snippet',
+    'cms.plugins.googlemap',
+    
 ]
 
 FIXTURE_DIRS = [
@@ -203,6 +227,19 @@ EMAIL_DEBUG = DEBUG
 DEBUG_TOOLBAR_CONFIG = {
     "INTERCEPT_REDIRECTS": False,
 }
+
+CMS_TEMPLATES= (
+    ('cms/cms_base.html', "Base" ),
+    ('homepage.html', "HOME" ),
+)
+CMS_MODERATOR=False
+CMS_PERMISSION = False
+CMS_TEMPLATE_INHERITANCE = True
+CMS_PLACEHOLDER_CONF = {}
+CMS_LANGUAGES =(
+    ('en', 'English',),
+    ('th', 'Thai',),
+)
 
 # local_settings.py can be used to override environment-specific settings
 # like database and email that differ between development and production.
