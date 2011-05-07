@@ -26,6 +26,7 @@ django-notification==0.1.4
 idios==0.1.dev6
 
 
+
 #CMS
 pil
 django-cms
