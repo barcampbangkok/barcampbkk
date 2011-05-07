@@ -1,22 +1,23 @@
+
 {% extends "profiles/base.html" %}
 
 {% load i18n %}
 {% load account_tags %}
 {% load avatar_tags %}
 {% load uni_form_tags %}
-{% load group_tags %}
+{#{% load group_tags %}#}
 {% load microblogging_tags %}
-{% load blog_tags %}
-{% load tagging_tags %}
-{% load photo_tags %}
-{% load threadedcommentstags %}
+{#{% load blog_tags %}#}
+{#{% load tagging_tags %}#}
+{#{% load photo_tags %}#}
+{#{% load threadedcommentstags %}#}
 
 {% block head_title %}{% user_display other_user as other_user_display %}{% blocktrans %}Profile for {{ other_user_display }}{% endblocktrans %}{% endblock %}
 
 {% block body %}
     {% user_display other_user as other_user_display %}
     <div class="right_panel">
-        {% include "profiles/profile_right_panel.html" %}
+{#        {% include "profiles/profile_right_panel.html" %}#}
     </div>
     
     <div class="left_panel">
@@ -47,8 +48,8 @@
             
             {% if user.is_authenticated %}
                 <p>
-                    <a href="{% url tweet_followers other_user %}">{% trans "Followers" %}</a>: {% follower_count other_user %}
-                    <a href="{% url tweet_following other_user %}">{% trans "Following" %}</a>: {% following_count other_user %}
+{#                    <a href="{% url tweet_followers other_user %}">{% trans "Followers" %}</a>: {% follower_count other_user %}#}
+{#                    <a href="{% url tweet_following other_user %}">{% trans "Following" %}</a>: {% following_count other_user %}#}
                 </p>
                 
                 {% if is_me %}
@@ -65,54 +66,7 @@
                         </form>
                     </div>
                     
-                    {# @@@ this should be an inclusion tag #}
-                    {% if is_friend %}
-                        <p>{% blocktrans %}You are friends with {{ other_user_display }}.{% endblocktrans %} <a href="{% url messages_compose %}{{ other_user }}/">{% trans "Send a message" %}</a>.</p>
-                        <div>
-                            <form method="POST" action="">
-                                {% csrf_token %}
-                                <input type="hidden" name="action" value="remove" /><input type="submit" value="{% trans "remove from friends" %}"/>
-                            </form>
-                        </div>
-                    {% else %}
-                        {% if previous_invitations_from %}
-                            <p>{% blocktrans %}{{ other_user_display }} has requested friendship.{% endblocktrans %}</p>
-                            {% for invitation in previous_invitations_from %}
-                                <div class="friendship_request">
-                                    <p>From <a href="{% url profile_detail invitation.from_user.username %}">{% user_display invitation.from_user %}</a> ({{ invitation.sent }}):</p>
-                                    <p class="invitation_message">{{ invitation.message }}</p>
-                                    <form method="post" action="">
-                                        <input type="hidden" name="invitation" value="{{ invitation.id }}"/>
-                                        <input type="hidden" name="action" value="accept"/>
-                                        <input type="submit" value="{% trans 'accept' %}" />
-                                    </form>
-                                    <form method="post" action="">
-                                        {% csrf_token %}
-                                        <input type="hidden" name="invitation" value="{{ invitation.id }}"/>
-                                        <input type="hidden" name="action" value="decline"/>
-                                        <input type="submit" value="{% trans 'decline' %}" />
-                                    </form>
-                                </div>
-                            {% endfor %}
-                        {% else %}
-                            {% if previous_invitations_to %}
-                                <p>{% trans "Friendship request sent." %}</p>
-                            {% else %}
-                                <h2>{% trans "Add As Friend" %}</h2>
-                                <form class="uniForm" method="POST" action="">
-                                    {% csrf_token %}
-                                    <fieldset class="inlineLabels">
-                                        {{ invite_form|as_uni_form }}
-                                        <div class="form_block">
-                                            <input type="hidden" name="action" value="invite" />
-                                            <input type="submit" value="{% trans "invite" %}"/>
-                                            {% blocktrans %}{{ other_user_display }} to be a friend.{%  endblocktrans %}
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            {% endif %} {# previous_invitations_to #}
-                        {% endif %} {# previous_invitations_from #}
-                    {% endif %} {# is_friend #}
+                    
                     
                 {% endif %} {# is me #}
                 
@@ -126,7 +80,7 @@
                                 {{ article.created_at|date }}
                             </td>
                             <td>
-                                <h2><a href="{% groupurl wiki_article article.group title=article.title %}">{{ article.title }}</a></h2>
+{#                                <h2><a href="{% groupurl wiki_article article.group title=article.title %}">{{ article.title }}</a></h2>#}
                                 <div class="body">{{ article.content|truncatewords:25 }}</div>
                             </td>
                         </tr>
@@ -136,66 +90,9 @@
                     <p>{% trans "No wiki articles yet." %}</p>
                 {% endif %}
                 
-                <h2>{% trans "Bookmarks" %}</h2>
                 
-                {% if other_user.saved_bookmarks.all %}
-                    <table class="bookmarks narrow">
-                        {% for bookmark_instance in other_user.saved_bookmarks.all.select_related %}
-                            <tr class="{% cycle odd,even %} xfolkentry">
-                                <td class="meta">
-                                    {{ bookmark_instance.saved|date }}
-                                    {# add who originally added it and when #}
-                                </td>
-                                <td>
-                                    <h2><a class="taggedlink" href="{{ bookmark_instance.bookmark.url }}">{{ bookmark_instance.description }}</a></h2>
-                                    <div class="url">{% if bookmark_instance.bookmark.get_favicon_url %}<img src="{{ bookmark_instance.bookmark.get_favicon_url }}" height="16" width="16"/> {% endif %}{{ bookmark_instance.bookmark.url }}</div>
-                                    <div class="body description">{{ bookmark_instance.note|linebreaks }}</div>
-                                </td>
-                            </tr>
-                        {% endfor %}
-                    </table>
-                {% else %}
-                    {% url add_bookmark as add_bookmark_url %}
-                    <p>{% blocktrans %}You haven't added any <a href="{{ add_bookmark_url }}">bookmarks</a> yet.{% endblocktrans %}</p>
-                {% endif %}
-                
-                
-                <h2>{% trans "Blog Posts" %}</h2>
-                
-                {% if other_user.added_posts.all %}
-                    {% for blog_post in other_user.added_posts.all %}
-                        {% show_blog_post blog_post %}
-                    {% endfor %}
-                {% else %}
-                    {% trans "No blog posts yet." %}
-                {% endif %}
-                
-                
-                <h2>{% trans "Tweets" %}</h2>
-                
-                {% if user.is_authenticated and is_me %}
-                    {% sent_tweet_listing user 0 is_me %}
-                {% else %}
-                    {% sent_tweet_listing other_user 0 is_me %}
-                {% endif %}
-                
-                
-                <h2>{% trans "Photos" %}</h2>
-                
-                {% public_photos for other_user as photos %}
-                
-                {% if photos %}
-                    <div class="clearfix">
-                    {% for photo in photos %}
-                        <div class="gallery-photo-thumb">
-                            <a href="/photos/details/{{ photo.id }}/"><img src="{{ photo.get_thumbnail_url }}" alt="{{ photo.title }}"/></a>
-                        </div>
-                    {% endfor %}
-                    </div>
-                {% else %}
-                   {% trans "No photos uploaded yet." %}
-                {% endif %}
-                
+              
+
             {% else %} {# not user.is_authenticated #}
                 {% url acct_signup as signup_url %}
                 {% url acct_login as login_url %}

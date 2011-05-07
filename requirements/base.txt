@@ -25,6 +25,11 @@ django-pagination==1.0.7
 django-notification==0.1.4
 idios==0.1.dev6
 
+#for pinax.apps.profiles
+django_avatar
+django_friends
+django_microblogging
+
 
 
 #CMS
@@ -33,4 +38,3 @@ django-cms
 south
 django-appmedia
 django-classy-tags
-django-mptt
