@@ -231,6 +231,12 @@ LOGIN_REDIRECT_URLNAME = "what_next"
 EMAIL_CONFIRMATION_DAYS = 2
 EMAIL_DEBUG = DEBUG
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'proteus.tech.com@gmail.com'
+EMAIL_HOST_PASSWORD = 'radio#h1n1'
+EMAIL_USE_TLS = True
+
 # URCHIN_ID = "ua-..."
 
 DEBUG_TOOLBAR_CONFIG = {
