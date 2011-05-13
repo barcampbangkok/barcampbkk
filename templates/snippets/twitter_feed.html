@@ -64,9 +64,13 @@
         var list = $("<div/>");
         $.each( feed, function( index, item ) {
             var profile = $("<img/>").attr("src", item.profile_image);
-            var str = item.from_user + ":" + item.text + "(" + item.created_at + ")";
-            var element = $("<p/>").text(str);
+            var str = item.from_user + " : " + item.text;
+            var msg = $("<p/>").text(str);
+            var created_at = $("<p/>").text(item.created_at.toString());
+            var element = $("<div/>")
             profile.appendTo(element);
+            msg.appendTo(element);
+            created_at.appendTo(element);
             element.appendTo(list);
         });
         return list;
