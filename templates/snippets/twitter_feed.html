@@ -45,7 +45,8 @@
     function hashtag_to_feed_item(search_result) {
         var feed_item = { "text": search_result.text,
                           "created_at": string_to_date(search_result.created_at),
-                          "from_user": search_result.from_user
+                          "from_user": search_result.from_user,
+                          "profile_image": search_result.profile_image_url 
                         };
         return feed_item;
     }
@@ -53,17 +54,20 @@
     function timeline_to_feed_item(timeline) {
         var feed_item = { "text": timeline.text,
                           "created_at": string_to_date(timeline.created_at),
-                          "from_user": twitter_username
+                          "from_user": twitter_username,
+                          "profile_image": timeline.user.profile_image_url 
                         };
         return feed_item; 
     }
 
     function feed_to_html() {
-        var list = $( "<ul />" );
+        var list = $("<div/>");
         $.each( feed, function( index, item ) {
+            var profile = $("<img/>").attr("src", item.profile_image);
             var str = item.from_user + ":" + item.text + "(" + item.created_at + ")";
-            var element = $( "<li />").text(str);
-            element.appendTo( list );
+            var element = $("<p/>").text(str);
+            profile.appendTo(element);
+            element.appendTo(list);
         });
         return list;
     }
