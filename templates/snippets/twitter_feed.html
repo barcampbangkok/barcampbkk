@@ -5,14 +5,13 @@
     //    alert(data.results[0].from_user);
     //});
     //var twitterUsername = 'nattyait';
-    /*var url = "http://twitter.com/status/user_timeline/" +
-        twitterUsername +
-        ".json?count=5&callback=?"; */
-    var url = "http://search.twitter.com/search.json?q=thestar7"
+    //var url = "http://twitter.com/status/user_timeline/" +
+    //    twitterUsername +
+    //    ".json?count=5&callback=?";
+    var url = "http://search.twitter.com/search.json?q=thestar7&callback=?"
     $.getJSON( url, function( data ) {
-        alert(data);
         var twitterList = $( "<ul />" );
-        $.each( data, function( index, item ) {
+        $.each( data.results, function( index, item ) {
             $( "<li />").text(item.text).appendTo( twitterList );
         });
         $( "#output" ).append( twitterList );
