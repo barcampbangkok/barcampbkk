@@ -3,8 +3,8 @@
     var feed = []
     var twitterUsername = 'barcampbangkok';
     var hashtag = 'thestar7';
-    fetch_tweets_from_hash_tags();
     fetch_tweets_user_timeline();
+    fetch_tweets_from_hash_tags();
 
     function fetch_tweets_user_timeline() {
         var url = "http://twitter.com/status/user_timeline/" +
@@ -15,8 +15,9 @@
 
     function user_timeline_call_back( results ) {
         add_to_feed( results, timeline_to_feed_item )
+        feed.sort(sort_by_date)
         var list = feed_to_html();
-        $( "#output" ).append( list );
+        $( "#output" ).html( list );
     }
 
     function fetch_tweets_from_hash_tags() {
@@ -26,9 +27,13 @@
 
     function hash_tags_call_back ( data ) {
         add_to_feed( data.results, search_result_to_feed_item )
-        // sort by time
+        feed.sort(sort_by_date)
         var list = feed_to_html();
-        $( "#output" ).append( list );
+        $( "#output" ).html( list );
+    }
+
+    function sort_by_date(a, b) {
+        return a.created_at < b.created_at
     }
 
     function add_to_feed( results, to_feed_item_fn ) {
@@ -65,7 +70,7 @@
     }
 
     function string_to_date(string) {
-        return Date(Date.parse(string));
+        return new Date(Date.parse(string));
     }
 </script>
 
