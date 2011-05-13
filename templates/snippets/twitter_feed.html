@@ -27,11 +27,12 @@
     }
 
     function append_to_twitter_list( results ) {
-        var twitterList = $( "<ul />" );
+        var list = $( "<ul />" );
         $.each( results, function( index, item ) {
-            $( "<li />").text(item.text).appendTo( twitterList );
+            var element = $( "<li />").text(item.text);
+            element.appendTo( list );
         });
-        return twitterList;
+        return list;
     }
 
 </script>
