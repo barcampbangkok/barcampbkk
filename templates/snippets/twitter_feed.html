@@ -2,14 +2,15 @@
 <script language="javascript">
     var feed = []
     var twitterUsername = 'barcampbangkok';
+    var max_timeline = 5;
     var hashtag = 'thestar7';
-    fetch_tweets_user_timeline();
     fetch_tweets_from_hash_tags();
+    fetch_tweets_user_timeline();
 
     function fetch_tweets_user_timeline() {
         var url = "http://twitter.com/status/user_timeline/" +
             twitterUsername +
-            ".json?count=5&callback=?";
+            ".json?count=" + max_timeline + "&callback=?";
         $.getJSON( url, user_timeline_call_back );
     }
 
