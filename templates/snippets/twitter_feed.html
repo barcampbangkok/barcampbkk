@@ -1,22 +1,37 @@
 <script src="/site_media/static/pinax/js/jquery-1.3.2.min.js" type="text/javascript"></script>
 <script language="javascript">
-    //var url = "http://search.twitter.com/search.json?callback=?&q=thestar7";
-    //$.getJSON(url, function(data) {
-    //    alert(data.results[0].from_user);
-    //});
-    //var twitterUsername = 'nattyait';
-    //var url = "http://twitter.com/status/user_timeline/" +
-    //    twitterUsername +
-    //    ".json?count=5&callback=?";
-    var url = "http://search.twitter.com/search.json?q=thestar7&callback=?"
-    $.getJSON( url, function( data ) {
-        var twitterList = $( "<ul />" );
-        $.each( data.results, function( index, item ) {
+    var twitterList = $( "<ul />" );
+    fetch_tweets_user_timeline( twitterList );
+    fetch_tweets_from_hash_tags( twitterList );
+
+    function fetch_tweets_user_timeline( twitterList ) {
+        var twitterUsername = 'barcampbangkok';
+        var url = "http://twitter.com/status/user_timeline/" +
+            twitterUsername +
+            ".json?count=5&callback=?";
+        $.getJSON( url, user_timeline_call_back );
+    }
+
+    function user_timeline_call_back( data ) {
+        append_to_twitter_list(data);
+        $( "#output" ).append( twitterList );
+    }
+
+    function fetch_tweets_from_hash_tags( twitterList ) {
+        var url = "http://search.twitter.com/search.json?q=thestar7&callback=?"
+        $.getJSON( url, hash_tags_call_back );
+    }
+
+    function hash_tags_call_back ( data ) {
+        append_to_twitter_list(data.results);
+        $( "#output" ).append( twitterList );
+    }
+
+    function append_to_twitter_list( results ) {
+        $.each( results, function( index, item ) {
             $( "<li />").text(item.text).appendTo( twitterList );
         });
-        $( "#output" ).append( twitterList );
-        //alert(twitterList.html());
-    });
+    }
 
 </script>
 
