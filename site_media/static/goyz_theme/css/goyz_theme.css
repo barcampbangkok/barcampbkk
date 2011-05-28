@@ -57,12 +57,20 @@ A.s-menu:active 	{font-family: Trebuchet MS;	font-size: 9pt;COLOR:#555;	TEXT-DEC
 
 h1{
     color: #e30000;
+    /*color: #2518B4;*/
+    /*color: #DF4371;*/
+    color: #645BCD;
 }
 
-
+h2{
+    color:#9790DF;
+}
 #content_wrapper{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
     padding-top: 15px;
+}
+#content_wrapper a:link{
+    color: #9acd32;
 }
