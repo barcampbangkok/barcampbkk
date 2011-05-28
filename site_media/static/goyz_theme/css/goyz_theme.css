@@ -46,3 +46,23 @@ A.s-menu:link 		{font-family: Trebuchet MS;	font-size: 9pt;COLOR:#555;	TEXT-DECO
 A.s-menu:visited 	{font-family: Trebuchet MS;	font-size: 9pt;COLOR:#555;	TEXT-DECORATION: none}
 A.s-menu:hover 		{font-family: Trebuchet MS;	font-size: 9pt;COLOR:#333333;	TEXT-DECORATION: none}
 A.s-menu:active 	{font-family: Trebuchet MS;	font-size: 9pt;COLOR:#555;	TEXT-DECORATION: none}
+
+
+/* chanita */
+
+#inner_body{
+    background-color: #e6e6e6;
+
+}
+
+h1{
+    color: #e30000;
+}
+
+
+#content_wrapper{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}

@@ -31,15 +31,17 @@
         <div id="cms_menu" style="">
             <div id="cms_menu_left" style=""></div>
             <div id="cms_menu_content" style="">
-                <a href="#">Home</a>&nbsp;&nbsp;<a href="#">Registration</a>&nbsp;&nbsp;<a href="#">What is Barcamp?</a>&nbsp;&nbsp;<a href="#">Where &amp; When</a>&nbsp;&nbsp;<a href="#">Who's Coming?</a>&nbsp;&nbsp;<a href="#">Schedules</a>&nbsp;&nbsp;<a href="#">Overnight</a>&nbsp;&nbsp;<a href="#">Events</a>&nbsp;&nbsp;<a href="#">Sponsors</a>&nbsp;&nbsp;<a href="#">Contact</a>
+                <a href="#">Home</a>&nbsp;&nbsp;<a href="#">Registration</a>&nbsp;&nbsp;<a href="#">What is Barcamp?</a>&nbsp;&nbsp;<a href="#">Where &amp; When</a>&nbsp;&nbsp;<a href="#">Who's Coming?</a>&nbsp;&nbsp;<a href="#">Schedules</a>&nbsp;&nbsp;<a href="#">Overnight Events</a>&nbsp;&nbsp;<a href="#">Sponsors</a>&nbsp;&nbsp;<a href="#">Contact</a>
             </div><!--id="cms_menu_content"-->
             <div id="cms_menu_content_shadow" style=""></div>
         </div><!--id="cms_menu"-->
-        {% placeholder top_illustration %}
-            
-        {% placeholder base_content %}
 
-        {% block base_content%}{% endblock %}
+        <div id="content_wrapper">
+        
+            {% placeholder base_content %}
+
+            {% block base_content%}{% endblock %}
+        </div><!--id="content_wrapper"-->
     </div><!--id="inner_body"-->
 
     
