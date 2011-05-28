@@ -7,6 +7,19 @@
 
 {% block body_class %}home{% endblock %}
 
+{% block right_tabs %}
+    <div id="socical_media" style="float:right;height:40px;">
+        <a href="#"><img width="28" height="27" border="0" alt="" src="{{ STATIC_URL }}goyz_theme/images/face.jpg"></a> <a href="#"><img width="28" height="27" border="0" alt="" src="{{ STATIC_URL }}goyz_theme/images/tw.jpg"></a> <a href="#"><img width="28" height="27" border="0" alt="" src="{{ STATIC_URL }}goyz_theme/images/fk.jpg"></a>
+    </div>
+    <div style="clear:both;"></div>
+    {#  If you don't want  logged in user menu comment line below out #}
+    {#    {{ block.super }}#}
+    {#    <div style="clear:both;"></div>#}
+{% endblock right_tabs %}
+
+{#  If you don't want  logged in user menu comment line below out #}
+{% block subnav_super %}{% endblock %}
+
 {% block body %}
 
     
