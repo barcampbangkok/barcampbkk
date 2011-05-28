@@ -69,8 +69,8 @@ h2{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
-    padding-top: 15px;
+    padding-top: 5px;
 }
-#content_wrapper a:link{
+#content_wrapper a:link,#content_wrapper a:visited{
     color: #9acd32;
 }
