@@ -1,14 +1,18 @@
-{% extends "goyz_theme/site_base.html" %}
+{% extends "site_base.html" %}
 {% load cms_tags %}
 {% load i18n %}
 {% load ifsetting_tag %}
 
 {% block head_title %}{% trans "Welcome" %}{% endblock %}
 
+{% block extra_head_base %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{{ STATIC_URL }}goyz_theme/css/cms_menu.css" />
+{% endblock extra_head_base%}
 {% block body_class %}home{% endblock %}
 
 {% block right_tabs %}
-    <div id="socical_media" style="float:right;height:40px;">
+    <div id="socical_media" style="float:right;height:28px;">
         <a href="#"><img width="28" height="27" border="0" alt="" src="{{ STATIC_URL }}goyz_theme/images/face.jpg"></a> <a href="#"><img width="28" height="27" border="0" alt="" src="{{ STATIC_URL }}goyz_theme/images/tw.jpg"></a> <a href="#"><img width="28" height="27" border="0" alt="" src="{{ STATIC_URL }}goyz_theme/images/fk.jpg"></a>
     </div>
     <div style="clear:both;"></div>
@@ -21,9 +25,24 @@
 {% block subnav_super %}{% endblock %}
 
 {% block body %}
+{#    style="background-color:#e6e6e6;"#}
+    <div id="inner_body" >
+
+        <div id="cms_menu" style="">
+            <div id="cms_menu_left" style=""></div>
+            <div id="cms_menu_content" style="">
+                <a href="#">Home</a>&nbsp;&nbsp;<a href="#">Registration</a>&nbsp;&nbsp;<a href="#">What is Barcamp?</a>&nbsp;&nbsp;<a href="#">Where &amp; When</a>&nbsp;&nbsp;<a href="#">Who's Coming?</a>&nbsp;&nbsp;<a href="#">Schedules</a>&nbsp;&nbsp;<a href="#">Overnight</a>&nbsp;&nbsp;<a href="#">Events</a>&nbsp;&nbsp;<a href="#">Sponsors</a>&nbsp;&nbsp;<a href="#">Contact</a>
+            </div><!--id="cms_menu_content"-->
+            <div id="cms_menu_content_shadow" style=""></div>
+        </div><!--id="cms_menu"-->
+        {% placeholder top_illustration %}
+            
+        {% placeholder base_content %}
+
+        {% block base_content%}{% endblock %}
+    </div><!--id="inner_body"-->
 
     
-    {% placeholder base_content %}
-    {% block base_content%}{% endblock %}
+
 
 {% endblock %}
