@@ -7,6 +7,7 @@ import pinax
 
 PINAX_ROOT = os.path.abspath(os.path.dirname(pinax.__file__))
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+PROJECT_DIR = PROJECT_ROOT
 
 # tells Pinax to use the default theme
 #PINAX_THEME = "default"
@@ -171,7 +172,7 @@ INSTALLED_APPS = [
     "emailconfirmation",
     "announcements",
     "pagination",
-    "idios",
+#    "idios",
 
     #for pinax.apps.profiles
     "avatar",
