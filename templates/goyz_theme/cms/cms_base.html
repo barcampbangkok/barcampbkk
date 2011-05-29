@@ -9,7 +9,7 @@
     {{ block.super }}
     <link rel="stylesheet" href="{{ STATIC_URL }}goyz_theme/css/cms_menu.css" />
     <link rel="stylesheet" href="{{ STATIC_URL }}goyz_theme/css/illustration.css" />
-    <link rel="stylesheet" href="{{ STATIC_URL }}nathan_sliders/nathan_slides.css" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}nathan_slides/nathan_slides.css" />
 {% endblock extra_head_base%}
 {% block body_class %}home{% endblock %}
 
@@ -65,11 +65,11 @@
 		$(function(){
 			$('#slides').slides({
 				preload: true,
-				preloadImage: '{{ STATIC_URL }}nathan_sliders/img/loading.gif',
+				preloadImage: '{{ STATIC_URL }}nathan_slides/img/loading.gif',
 				play: 5000,
 				pause: 1500,
 				hoverPause: true,
-                autoHeight:true,
+                autoHeight:false,
                 effect: "fade, slide",
                 slideEasing: "easeInQuad",
                 slideSpeed: 1500,
