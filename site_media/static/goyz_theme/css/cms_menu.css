@@ -26,6 +26,9 @@
 #cms_menu_content li a, #cms_menu_content a{
     line-height: 50px;
 }
+#cms_menu_content li.selected a{
+    color: #9ACD32;
+}
 #cms_menu_content_shadow{
     background-image:url(../images/index-ok_04.jpg);
     background-position:30px 0;background-color: #e6e6e6;height:17px;background-repeat:no-repeat;
