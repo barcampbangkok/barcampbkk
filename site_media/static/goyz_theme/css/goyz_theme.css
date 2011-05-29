@@ -1,0 +1,76 @@
+.txt-9 {
+	font-family: "Microsoft Sans Serif";	font-size: 9pt;	color: #888;}
+.bg-barcamp{
+	font-family: tahoma;
+	font-size: 12pt;
+	color: #000;
+	background-repeat: no-repeat;
+	background-position: 5px 70px;
+	background-color: #E3E3E3;
+	background-image: url(images/info.jpg);
+}
+.input {
+	font-family: "Microsoft Sans Serif";
+	font-size: 11pt;
+	color: #888;
+	background-image: url(images/input-search.jpg);
+	height: 32px;
+	width: 154px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-left: 10px;
+
+}
+.subscribe {
+	font-family: "Microsoft Sans Serif";
+	font-size: 12pt;
+	color: #000;
+	background-image: url(images/index-ok_46.jpg);
+	height: 28px;
+	width: 165px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-left: 10px;
+	padding-top: 1px;
+}
+
+a:link{font-family: tahoma;	font-size: 10pt; text-decoration : none; color : #eee;}
+a:visited {font-family: tahoma;	font-size:	font-size: 10pt;text-decoration : none; color : #eee;}
+a:hover {font-family: tahoma;	font-size:font-size: 10pt;text-decoration : none; color : #65a3d8;}
+
+A.s-menu:link 		{font-family: Trebuchet MS;	font-size: 9pt;COLOR:#555;	TEXT-DECORATION: none}
+A.s-menu:visited 	{font-family: Trebuchet MS;	font-size: 9pt;COLOR:#555;	TEXT-DECORATION: none}
+A.s-menu:hover 		{font-family: Trebuchet MS;	font-size: 9pt;COLOR:#333333;	TEXT-DECORATION: none}
+A.s-menu:active 	{font-family: Trebuchet MS;	font-size: 9pt;COLOR:#555;	TEXT-DECORATION: none}
+
+
+/* chanita */
+
+#inner_body{
+    background-color: #e6e6e6;
+
+}
+
+h1{
+    color: #e30000;
+    /*color: #2518B4;*/
+    /*color: #DF4371;*/
+    color: #645BCD;
+}
+
+h2{
+    color:#9790DF;
+}
+#content_wrapper{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+#content_wrapper a:link,#content_wrapper a:visited{
+    color: #9acd32;
+}

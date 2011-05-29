@@ -7,10 +7,12 @@ import pinax
 
 PINAX_ROOT = os.path.abspath(os.path.dirname(pinax.__file__))
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+PROJECT_DIR = PROJECT_ROOT
 
 # tells Pinax to use the default theme
 #PINAX_THEME = "default"
 PINAX_THEME = "barcamp_basic"
+GOYZ_THEME = "goyz_theme"
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -78,6 +80,7 @@ STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, "media"),
     os.path.join(PINAX_ROOT, "media", PINAX_THEME),
     os.path.join(PROJECT_ROOT, "media", PINAX_THEME),
+    os.path.join(PROJECT_ROOT, "site_media", "static"),
 ]
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
@@ -169,7 +172,7 @@ INSTALLED_APPS = [
     "emailconfirmation",
     "announcements",
     "pagination",
-    "idios",
+#    "idios",
 
     #for pinax.apps.profiles
     "avatar",
@@ -246,6 +249,7 @@ DEBUG_TOOLBAR_CONFIG = {
 CMS_TEMPLATES= (
     ('cms/cms_base.html', "Base" ),
     ('homepage.html', "HOME" ),
+    ('goyz_theme/cms/cms_base.html', "Goyz Base"),
 )
 CMS_MODERATOR=False
 CMS_PERMISSION = False
