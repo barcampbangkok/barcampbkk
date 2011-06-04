@@ -160,6 +160,9 @@ INSTALLED_APPS = [
     
     "pinax.templatetags",
     
+    #nose
+    "django_nose",
+    
     # external
     "notification", # must be first
     "staticfiles",
@@ -227,6 +230,8 @@ ACCOUNT_UNIQUE_EMAIL = EMAIL_CONFIRMATION_UNIQUE_EMAIL = False
 AUTHENTICATION_BACKENDS = [
     "pinax.apps.account.auth_backends.AuthenticationBackend",
 ]
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 LOGIN_URL = "/account/login/" # @@@ any way this can be a url name?
 LOGIN_REDIRECT_URLNAME = "what_next"

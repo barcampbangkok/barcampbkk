@@ -37,3 +37,9 @@ django-cms
 south
 django-appmedia
 django-classy-tags
+
+#test
+django-nose
+
+#util
+yolk
