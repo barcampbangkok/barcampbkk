@@ -39,7 +39,7 @@ django-appmedia
 django-classy-tags
 
 #test
-django-nose
+django-nose==0.1.3
 
 #util
 yolk
