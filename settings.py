@@ -266,6 +266,18 @@ CMS_LANGUAGES =(
 )
 LANGUAGES= CMS_LANGUAGES
 
+#logger
+import os
+import logging
+from django_logger import LoggerClass
+
+logging.setLoggerClass(LoggerClass(
+    file_suffix = '.log',
+    stream_enabled = True,
+    default_level = logging.DEBUG,
+    files_path = os.path.abspath(os.path.join(PROJECT_PATH,'logs')),
+))
+
 # local_settings.py can be used to override environment-specific settings
 # like database and email that differ between development and production.
 try:
