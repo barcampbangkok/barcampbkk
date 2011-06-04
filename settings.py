@@ -275,7 +275,7 @@ logging.setLoggerClass(LoggerClass(
     file_suffix = '.log',
     stream_enabled = True,
     default_level = logging.DEBUG,
-    files_path = os.path.abspath(os.path.join(PROJECT_PATH,'logs')),
+    files_path = os.path.abspath(os.path.join(PROJECT_DIR,'logs')),
 ))
 
 # local_settings.py can be used to override environment-specific settings
