@@ -22,9 +22,11 @@ platforms.
 - Python `setuptools`_
 - Python pip (after install setuptools, you should be able to do ``easy_install pip``)
 - Python virtualenv (after install pip, you should be able to do ``pip install virtualenv``)
+- `Python Imaging Library`_ (PIL)
 
 .. _Python: http://python.org/download/
 .. _setuptools: http://pypi.python.org/pypi/setuptools
+.. _Python Imaging Library: http://www.pythonware.com/products/pil/
 
 We assume recent Ubuntu (Lucid) or OS X Snow Leopard here. Hopefully you can
 work things out on your own if you're not on these versions :-)
@@ -41,12 +43,23 @@ setuptools is also pre-installed, so you can jump right to::
 Once you're working with virtualenvs you don't need to (and shouldn't) use
 ``sudo`` any longer for installing libraries with pip.
 
+In order for PIL to build when installing the rest of the app's Python package
+dependencies below, you should install ``libjpeg``. If you're using Homebrew,
+for instance::
+
+    $ brew install jpeg
+
 Ubuntu Lucid
 ~~~~~~~~~~~~
 
 Just run ``sudo aptitude install python-virtualenv`` -- this will take take of
 installing Python, setuptools and pip for you as needed. You'll need to
 `enable the Universe package repository`_ if you haven't already.
+
+In order for PIL to build when installing the rest of the app's Python package
+dependencies below, you should install a couple of prerequisite packages::
+
+    $ sudo aptitude install libjpeg-dev zlib1g-dev libfreetype6-dev
 
 .. _enable the Universe package repository:
    https://help.ubuntu.com/community/Repositories/Ubuntu
