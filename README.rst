@@ -127,9 +127,11 @@ Install App Dependencies
 
     python manage.py syncdb --all
     python manage.py migrate --fake
+    python manage.py loaddata fixtures/dev/*
 
 When it asks you to create an admin user, please create one. When it runs
-successfully, it will create ``dev.db`` in your source code folder.
+successfully, it will create ``dev.db`` in your source code folder and load
+some stub content from fixtures.
 
 3. Make sure tests are passing with your setup::
 

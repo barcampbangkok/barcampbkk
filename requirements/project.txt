@@ -5,3 +5,7 @@
 
 # Put project-specific requirements here.
 # See http://pip-installer.org/requirement-format.html for more information.
+
+# Because editing fixtures sucks, but editing JSON fixtures sucks worse
+PyYAML==3.10
+
