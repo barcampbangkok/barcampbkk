@@ -130,7 +130,11 @@ Install App Dependencies
 When it asks you to create an admin user, please create one. When it runs
 successfully, it will create ``dev.db`` in your source code folder.
 
-3. Run the server::
+3. Make sure tests are passing with your setup::
+
+    python manage.py test
+
+4. Run the server::
 
     python manage.py runserver
 

@@ -17,6 +17,9 @@ GOYZ_THEME = "goyz_theme"
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+TEST_RUNNER = "testing.exclusion.AdvancedTestSuiteRunner"
+TEST_APP_EXCLUSIONS = ('django', 'pinax')
+
 # tells Pinax to serve media through the staticfiles app.
 SERVE_MEDIA = DEBUG
 
