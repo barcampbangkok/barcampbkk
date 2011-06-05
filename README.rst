@@ -160,3 +160,35 @@ after you make changes to models. You should also be conscious of running the
 .. _South: http://south.aeracode.org/
 .. _South tutorial: http://south.aeracode.org/docs/tutorial/index.html
 
+
+Internationalization & Localization
+===================================
+
+Django CMS allows entering content in multiple languages -- in the CMS Pages
+section of the administrative backend, you'll find that each created page has
+'English' and 'Thai' tabs at the top.
+
+For developers and tech-savvy translation volunteers, become familiar with
+`Django's localization support`_ to translate text strings within the
+application (not in the site CMS content). In summary, you generate updated
+messages strings to be translated using::
+
+    python manage.py makemessages -l th
+
+if you're going to add/update Thai translations, for instance. Then edit
+``locale/th/LC_MESSAGES/django.po`` to change the values (``msgstr``) for each
+identifier (``msgid``) found from the application code or templates containing
+the string you want to translate. When you've finished, run::
+
+    python manage.py compilemessages
+
+and then commit the changed files into version control.
+
+.. note::
+   You'll need to install `GNU gettext`_ in the preferred manner for your
+   platform in order to use the ``messages manage.py`` commands.
+
+.. _Django's localization support:
+   https://docs.djangoproject.com/en/dev/topics/i18n/localization/
+.. _GNU gettext: http://www.gnu.org/software/gettext/
+
