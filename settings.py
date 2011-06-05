@@ -10,7 +10,6 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 PROJECT_DIR = PROJECT_ROOT
 
 # tells Pinax to use the default theme
-#PINAX_THEME = "default"
 PINAX_THEME = "barcamp_basic"
 GOYZ_THEME = "goyz_theme"
 
@@ -256,7 +255,6 @@ DEBUG_TOOLBAR_CONFIG = {
 
 CMS_TEMPLATES= (
     ('cms/cms_base.html', "Base" ),
-    ('homepage.html', "HOME" ),
     ('goyz_theme/cms/cms_base.html', "Goyz Base"),
 )
 CMS_MODERATOR=False
