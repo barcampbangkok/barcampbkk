@@ -123,9 +123,10 @@ Install App Dependencies
       the end), if not, you may want to open project.txt and install
       one-by-one for your machine).
 
-2. Create the database file for development. From inside the source code folder::
+2. Create the database for development. From inside the source code folder::
 
-    python manage.py syncdb
+    python manage.py syncdb --all
+    python manage.py migrate --fake
 
 When it asks you to create an admin user, please create one. When it runs
 successfully, it will create ``dev.db`` in your source code folder.
@@ -138,6 +139,22 @@ successfully, it will create ``dev.db`` in your source code folder.
 
     python manage.py runserver
 
-4. Check if that works by going to http://localhost:8000/
-5. Start hackin'
+5. Check if that works by going to http://localhost:8000/
+6. Start hackin'
+
+Note that the Barcamp app builds on `django CMS`_, which uses the `South`_
+project for database migration support, as any good modern Django project
+probably should. You're advised to browse the `South tutorial`_ if you're
+unfamiliar with it -- you should at least be prepared to run::
+
+    python manage.py schemamigration appname --auto
+    python manage.py migrate appname
+
+after you make changes to models. You should also be conscious of running the
+``migrate`` command when pulling in updates from SCM that contain migrations.
+
+.. _known false failures in Pinax: https://github.com/pinax/pinax/pull/12/files
+.. _django CMS: https://www.django-cms.org/
+.. _South: http://south.aeracode.org/
+.. _South tutorial: http://south.aeracode.org/docs/tutorial/index.html
 
