@@ -282,6 +282,8 @@ logging.setLoggerClass(LoggerClass(
 ### Socialauth #####
 TWITTER_CONSUMER_KEY = '838bFpYe8sk4eHLCGCqkYQ'
 TWITTER_CONSUMER_SECRET = 'AwfRsy3AuSzpxyoXeXvtIumjQDQ0damIlzmNs1Iiak'
+TWITTER_ACCESS_TOKEN = '12223502-r2LFtPSMNGYpiF2GeGNVb4JPcmyvpMa79fKh2PH03'
+TWITTER_ACCESS_TOKEN_SECRET = '72A5pjsELAqrIYf7ockXa8lJmCEEh1UhLVgicOTN16E'
 ####################
 
 # local_settings.py can be used to override environment-specific settings
