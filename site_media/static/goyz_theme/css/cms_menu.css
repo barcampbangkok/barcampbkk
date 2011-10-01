@@ -25,6 +25,7 @@
 }
 #cms_menu_content li a, #cms_menu_content a{
     line-height: 50px;
+     color: #EEE;
 }
 #cms_menu_content li.selected a{
     color: #9ACD32;

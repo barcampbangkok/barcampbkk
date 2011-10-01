@@ -33,7 +33,8 @@ django_microblogging
 
 #CMS
 pil
-django-cms
+django-mptt==0.4.2
+django-cms==2.2
 south
 django-appmedia
 django-classy-tags

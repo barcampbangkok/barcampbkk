@@ -62,6 +62,7 @@ USE_I18N = True
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, "site_media", "media")
+print 'media_root = ', MEDIA_ROOT
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -103,16 +104,16 @@ MIDDLEWARE_CLASSES = [
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
-    "django_openid.consumer.SessionConsumer",
     "django.contrib.messages.middleware.MessageMiddleware",
 
     #cms
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
 #    'cms.middleware.toolbar.ToolbarMiddleware',
-    'cms.middleware.media.PlaceholderMediaMiddleware',
+#    'cms.middleware.media.PlaceholderMediaMiddleware',
     'cms.middleware.multilingual.MultilingualURLMiddleware',
 
+    "django_openid.consumer.SessionConsumer",
 
     "pinax.apps.account.middleware.LocaleMiddleware",
     "pagination.middleware.PaginationMiddleware",
@@ -147,6 +148,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
 
     #cms
     'cms.context_processors.media',
+    'sekizai.context_processors.sekizai',
 ]
 
 INSTALLED_APPS = [
@@ -200,6 +202,7 @@ INSTALLED_APPS = [
     'mptt',
     'appmedia',
     'south',
+    'sekizai',
     'cms.plugins.text',
     'cms.plugins.picture',
     'cms.plugins.link',

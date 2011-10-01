@@ -1,4 +1,4 @@
-{% load i18n %}
+{% load i18n sekizai_tags%}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}" xml:lang="{{ LANGUAGE_CODE }}" lang="{{ LANGUAGE_CODE }}">
     <head>
@@ -22,9 +22,11 @@
             }
         </style>
         {% endif %}
+
         {% block extra_head_base %}
             {% block extra_head %}{% endblock %}
         {% endblock %}
+        {% render_block "css" %}
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
@@ -82,5 +84,6 @@
 
         {% block script_defer %}
         {% endblock %}
+        {% render_block "js" %}
     </body>
 </html>
