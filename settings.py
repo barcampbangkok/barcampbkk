@@ -101,9 +101,7 @@ TEMPLATE_LOADERS = [
 MIDDLEWARE_CLASSES = [
     "django.middleware.common.CommonMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
-    "django_openid.consumer.SessionConsumer",
     "django.contrib.messages.middleware.MessageMiddleware",
 
     #cms
@@ -118,6 +116,8 @@ MIDDLEWARE_CLASSES = [
     "pagination.middleware.PaginationMiddleware",
     "pinax.middleware.security.HideSensistiveFieldsMiddleware",
     #"debug_toolbar.middleware.DebugToolbarMiddleware",
+
+    'csrf_tools.middleware.CsrfDisabledMiddleware',
 ]
 
 ROOT_URLCONF = "urls"
@@ -170,7 +170,6 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "mailer",
     "uni_form",
-    "django_openid",
     "ajax_validation",
     "timezones",
     "emailconfirmation",
@@ -207,6 +206,8 @@ INSTALLED_APPS = [
     'cms.plugins.snippet',
     'cms.plugins.googlemap',
 
+    'socialauth',
+
 ]
 
 FIXTURE_DIRS = [
@@ -230,6 +231,7 @@ ACCOUNT_UNIQUE_EMAIL = EMAIL_CONFIRMATION_UNIQUE_EMAIL = False
 
 AUTHENTICATION_BACKENDS = [
     "pinax.apps.account.auth_backends.AuthenticationBackend",
+    'socialauth.auth_backends.TwitterBackend',
 ]
 
 LOGIN_URL = "/account/login/" # @@@ any way this can be a url name?
@@ -265,16 +267,22 @@ CMS_LANGUAGES =(
 LANGUAGES= CMS_LANGUAGES
 
 #logger
-import os
 import logging
 from django_logger import LoggerClass
 
+logging.getLogger('django.db.backends').setLevel(logging.ERROR)
+logging.getLogger('PYREADLINE').setLevel(logging.ERROR)
+
 logging.setLoggerClass(LoggerClass(
     file_suffix = '.log',
-    stream_enabled = True,
-    default_level = logging.DEBUG,
-    files_path = os.path.abspath(os.path.join(PROJECT_DIR,'logs')),
+    default_level = logging.INFO,
+    files_path = os.path.abspath(os.path.join(PROJECT_DIR, 'logs')),
 ))
+
+### Socialauth #####
+TWITTER_CONSUMER_KEY = '838bFpYe8sk4eHLCGCqkYQ'
+TWITTER_CONSUMER_SECRET = 'AwfRsy3AuSzpxyoXeXvtIumjQDQ0damIlzmNs1Iiak'
+####################
 
 # local_settings.py can be used to override environment-specific settings
 # like database and email that differ between development and production.
