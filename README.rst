@@ -192,3 +192,9 @@ and then commit the changed files into version control.
    https://docs.djangoproject.com/en/dev/topics/i18n/localization/
 .. _GNU gettext: http://www.gnu.org/software/gettext/
 
+Social Network Authentication
+==============================
+
+For development, you'll need to update site domain in the Sites table to the domain you're running at e.g. 127.0.0.1:8000
+This will be sent to Twitter for callback.
+
