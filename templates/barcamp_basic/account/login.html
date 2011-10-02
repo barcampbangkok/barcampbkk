@@ -42,10 +42,6 @@
     </form>
     
     <p>{% trans "Or sign in with your social network accounts" %}:</p>
-    <form action="{% url socialauth_openid_login %}" method="get" id="openid_form">
-        <input type="hidden" name="action" value="verify" />
-
-        <fieldset>
             <div id="openid_choice">
             <div id="openid_btns">
             {% if FACEBOOK_APP_ID %}
@@ -55,7 +51,8 @@
             {% endif %}
 
             <div id="twitter">
-                <a href="{% url socialauth_twitter_login %}?next={{ next }}" id="twitter_login_link" class="openid_large_btn twitter"></a>
+                {% load twitter_tags %}
+                {% twitter_button %}
             </div>
 
           <input type="hidden" name="openid_next" value="{{ next }}">
@@ -70,9 +67,6 @@
             </p>
         </noscript>
 
-      </fieldset>
-
-    </form>
     <p>{% blocktrans %}If you have any trouble logging in to your account, contact us at <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>.{% endblocktrans %}</p>
 {% endblock %}
 

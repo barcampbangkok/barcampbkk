@@ -206,8 +206,9 @@ INSTALLED_APPS = [
     'cms.plugins.snippet',
     'cms.plugins.googlemap',
 
-    'django_openid',
-    'socialauth',
+#    'django_openid',
+#    'socialauth',
+    'socialregistration',
 ]
 
 FIXTURE_DIRS = [
@@ -230,8 +231,9 @@ ACCOUNT_EMAIL_AUTHENTICATION = False
 ACCOUNT_UNIQUE_EMAIL = EMAIL_CONFIRMATION_UNIQUE_EMAIL = False
 
 AUTHENTICATION_BACKENDS = [
-    'socialauth.auth_backends.TwitterBackend',
-    "pinax.apps.account.auth_backends.AuthenticationBackend",
+#    'socialauth.auth_backends.TwitterBackend',
+    'socialregistration.auth.TwitterAuth',
+    'auth.backends.AccountAuthenticationBackend',
 ]
 
 LOGIN_URL = "/account/login/" # @@@ any way this can be a url name?
@@ -282,9 +284,13 @@ logging.setLoggerClass(LoggerClass(
 
 ### Socialauth #####
 TWITTER_CONSUMER_KEY = '838bFpYe8sk4eHLCGCqkYQ'
-TWITTER_CONSUMER_SECRET = 'AwfRsy3AuSzpxyoXeXvtIumjQDQ0damIlzmNs1Iiak'
+#TWITTER_CONSUMER_SECRET = 'AwfRsy3AuSzpxyoXeXvtIumjQDQ0damIlzmNs1Iiak'
+TWITTER_CONSUMER_SECRET_KEY = 'AwfRsy3AuSzpxyoXeXvtIumjQDQ0damIlzmNs1Iiak'
 TWITTER_ACCESS_TOKEN = '12223502-r2LFtPSMNGYpiF2GeGNVb4JPcmyvpMa79fKh2PH03'
 TWITTER_ACCESS_TOKEN_SECRET = '72A5pjsELAqrIYf7ockXa8lJmCEEh1UhLVgicOTN16E'
+TWITTER_REQUEST_TOKEN_URL = 'https://api.twitter.com/oauth/request_token'
+TWITTER_ACCESS_TOKEN_URL = 'https://api.twitter.com/oauth/access_token'
+TWITTER_AUTHORIZATION_URL = 'https://api.twitter.com/oauth/authorize'
 ####################
 
 # local_settings.py can be used to override environment-specific settings

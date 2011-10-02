@@ -22,7 +22,8 @@ urlpatterns = patterns("",
     url(r"^notices/", include("notification.urls")),
     url(r"^announcements/", include("announcements.urls")),
 
-    url(r'^socialauth/', include('socialauth.urls')),
+#    url(r'^socialauth/', include('socialauth.urls')),
+    url(r'^social/', include('socialregistration.urls')),
 )
 
 if settings.DEBUG:
