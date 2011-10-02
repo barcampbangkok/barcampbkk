@@ -54,6 +54,9 @@
         </div><!--id="cms_menu"-->
 
         <div id="content_wrapper">
+            {% block subnav_super %}
+            <div id="subnav" class="clearfix">{% block subnav_base %}<div class="clearfix">{% block subnav %}&nbsp;{% endblock %}</div>{% endblock %}</div>
+            {% endblock subnav_super %}
             {% block content %}
             {% endblock content %}
         </div><!--id="content_wrapper"-->
