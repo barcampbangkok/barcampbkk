@@ -206,8 +206,8 @@ INSTALLED_APPS = [
     'cms.plugins.snippet',
     'cms.plugins.googlemap',
 
+    'django_openid',
     'socialauth',
-
 ]
 
 FIXTURE_DIRS = [
@@ -230,12 +230,13 @@ ACCOUNT_EMAIL_AUTHENTICATION = False
 ACCOUNT_UNIQUE_EMAIL = EMAIL_CONFIRMATION_UNIQUE_EMAIL = False
 
 AUTHENTICATION_BACKENDS = [
-    "pinax.apps.account.auth_backends.AuthenticationBackend",
     'socialauth.auth_backends.TwitterBackend',
+    "pinax.apps.account.auth_backends.AuthenticationBackend",
 ]
 
 LOGIN_URL = "/account/login/" # @@@ any way this can be a url name?
 LOGIN_REDIRECT_URLNAME = "what_next"
+LOGIN_REDIRECT_URL = '/'
 
 EMAIL_CONFIRMATION_DAYS = 2
 EMAIL_DEBUG = DEBUG
