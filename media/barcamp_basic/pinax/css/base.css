@@ -149,10 +149,12 @@ h1 {
 form th {
     text-align : left;
 }
-form.signup input[type="submit"], form.login input[type="submit"] {
+
+input[type="submit"]{
     margin: 20px 0;
-    font-size: 14pt;
+    padding: 5px 10px;
 }
+
 input[type="text"], input[type="password"], textarea {
     padding: 3px;
     margin: 3px;
