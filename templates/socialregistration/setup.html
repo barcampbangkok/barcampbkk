@@ -1,19 +1,20 @@
 {% extends "site_base.html" %}
+{% load i18n %}
 
 {% block content %}
     {% load socialregistration_tags %}
     <h1>Account Setup</h1>
 
     {% if error %}
-        <p>Your session timed out. Please try again.</p>
+        <p>{% trans "Your session timed out. Please try again." %}</p>
     {% else %}
-        <p>Please select the username and e-mail for your account.</p>
+        <p>{% trans "Please select the username and e-mail for your account." %}</p>
         <form action="." method="post">
             <table>
                 {{ form }}
             </table>
             {% social_csrf_token %}
-            <input type="submit" value="Save" />
+            <input type="submit" value="{% trans "Save" %}" />
         </form>
     {% endif %}
 {% endblock content %}

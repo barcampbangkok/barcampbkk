@@ -32,7 +32,7 @@
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
             {% endif %}
             <div class="form_block">
-                <input type="submit" value="{% trans "Log in &raquo;" %}" />
+                <input type="submit" value="{% trans "Log in" %}" />
             </div>
         </fieldset>
     </form>
@@ -40,12 +40,6 @@
     <p>{% trans "Or sign in with your social network accounts" %}:</p>
         <div id="openid_choice">
             <div id="openid_btns">
-                {% if FACEBOOK_APP_ID %}
-                    <div id="facebook">
-                        <p><fb:login-button perms="{{ login_button_perms }}"></fb:login-button></p>
-                    </div>
-                {% endif %}
-
                 <div id="twitter">
                     {% load twitter_tags %}
                     {% twitter_button %}
