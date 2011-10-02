@@ -38,20 +38,21 @@
     </form>
     
     <p>{% trans "Or sign in with your social network accounts" %}:</p>
-            <div id="openid_choice">
+        <div id="openid_choice">
             <div id="openid_btns">
-            {% if FACEBOOK_APP_ID %}
-                <div id="facebook">
-                    <p><fb:login-button perms="{{ login_button_perms }}"></fb:login-button></p>
+                {% if FACEBOOK_APP_ID %}
+                    <div id="facebook">
+                        <p><fb:login-button perms="{{ login_button_perms }}"></fb:login-button></p>
+                    </div>
+                {% endif %}
+
+                <div id="twitter">
+                    {% load twitter_tags %}
+                    {% twitter_button %}
                 </div>
-            {% endif %}
 
-            <div id="twitter">
-                {% load twitter_tags %}
-                {% twitter_button %}
+                <input type="hidden" name="openid_next" value="{{ next }}">
             </div>
-
-          <input type="hidden" name="openid_next" value="{{ next }}">
 
         </div>
 
@@ -64,10 +65,7 @@
         </noscript>
 
     <p>{% blocktrans %}If you have any trouble logging in to your account, contact us at <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>.{% endblocktrans %}</p>
-{% endblock %}
-
-{% block extra_body %}
-<script>
-    $("#id_username").focus();
-</script>
+    <script>
+        $("#id_username").focus();
+    </script>
 {% endblock %}
