@@ -1,85 +1,16 @@
 {% extends "site_base.html" %}
-{% load cms_tags cache menu_tags %}
 {% load i18n %}
 {% load ifsetting_tag %}
+{% load cms_tags %}
 
 {% block head_title %}{% trans "Welcome" %}{% endblock %}
 
-{% block extra_head_base %}
-    {{ block.super }}
-    <link rel="stylesheet" href="{{ STATIC_URL }}goyz_theme/css/menu.css" />
-    <link rel="stylesheet" href="{{ STATIC_URL }}goyz_theme/css/illustration.css" />
-    <link rel="stylesheet" href="{{ STATIC_URL }}nathan_slides/nathan_slides.css" />
-{% endblock extra_head_base%}
 {% block body_class %}home{% endblock %}
-
-{% block right_tabs %}
-    <div id="socical_media" style="float:right;height:28px;">
-        <a href="http://www.facebook.com/BarcampBangkok"><img width="28" height="27" border="0" alt="" src="{{ STATIC_URL }}goyz_theme/images/face.jpg"></a>
-        <a href="http://twitter.com/barcampbangkok"><img width="28" height="27" border="0" alt="" src="{{ STATIC_URL }}goyz_theme/images/tw.jpg"></a>
-        <a href="http://www.flickr.com/groups/barcampbangkok/pool/"><img width="28" height="27" border="0" alt="" src="{{ STATIC_URL }}goyz_theme/images/fk.jpg"></a>
-    </div>
-    <div style="clear:both;"></div>
-    {#  If you don't want  logged in user menu comment line below out #}
-    {#    {{ block.super }}#}
-    {#    <div style="clear:both;"></div>#}
-{% endblock right_tabs %}
 
 {#  If you don't want  logged in user menu comment line below out #}
 {% block subnav_super %}{% endblock %}
 
-{% block body %}
-{#    style="background-color:#e6e6e6;"#}
-    <div id="inner_body" >
-
-        <div id="cms_menu" style="">
-            <div id="cms_menu_left" style=""></div>
-            <div id="cms_menu_content" style="">
-                {% show_menu 0 100 100 100 %}
-                &nbsp;<a href="#">Registration</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Who's Coming?</a>&nbsp;&nbsp;<a href="#">Schedules</a>&nbsp;&nbsp;<a href="#">Overnight Events</a>&nbsp;&nbsp;<a href="#">Sponsors</a>&nbsp;&nbsp;<a href="#">Contact</a>
-            </div><!--id="cms_menu_content"-->
-            <div id="cms_menu_content_shadow" style=""></div>
-        </div><!--id="cms_menu"-->
-
-        <div id="content_wrapper">
-
-            
-        
-            {% placeholder base_content %}
-
-
-            {% block base_content%}{% endblock %}
-        </div><!--id="content_wrapper"-->
-    </div><!--id="inner_body"-->
-
-    {% include "goyz_theme/cms/_footer.html" %}
-
-
-{% endblock %}
-
-{% block script_defer %}
-    <script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
-	<script src="{{ STATIC_URL }}nathan_slides/slides.min.jquery.js"></script>
-
-    <script type="text/javascript">
-		$(function(){
-			$('#slides').slides({
-				preload: true,
-				preloadImage: '{{ STATIC_URL }}nathan_slides/img/loading.gif',
-				play: 5000,
-				pause: 1500,
-				hoverPause: true,
-                autoHeight:false,
-                effect: "fade, slide",
-                slideEasing: "easeInQuad",
-                slideSpeed: 1500,
-                fadeSpeed: 1000,
-                fadeEasing: "easeOutQuad",
-                randomize: true,
-                pagination: false,
-                generatePagination: false
-			});
-		});
-	</script>
-    
+{% block content %}
+    {% placeholder base_content %}
+    {% block base_content%}{% endblock %}
 {% endblock %}
