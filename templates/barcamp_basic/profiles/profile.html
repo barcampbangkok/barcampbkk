@@ -14,7 +14,7 @@
 
 {% block head_title %}{% user_display other_user as other_user_display %}{% blocktrans %}Profile for {{ other_user_display }}{% endblocktrans %}{% endblock %}
 
-{% block body %}
+{% block content %}
     {% user_display other_user as other_user_display %}
     <div class="right_panel">
 {#        {% include "profiles/profile_right_panel.html" %}#}
@@ -68,30 +68,7 @@
                     
                     
                     
-                {% endif %} {# is me #}
-                
-                <h2>{% trans "Wiki Articles" %}</h2>
-                
-                {% if other_user.article_set.all %}
-                    <table class="bookmarks">
-                        {% for article in other_user.article_set.all %}
-                        <tr class="{% cycle odd,even %}">
-                            <td class="meta">
-                                {{ article.created_at|date }}
-                            </td>
-                            <td>
-{#                                <h2><a href="{% groupurl wiki_article article.group title=article.title %}">{{ article.title }}</a></h2>#}
-                                <div class="body">{{ article.content|truncatewords:25 }}</div>
-                            </td>
-                        </tr>
-                        {% endfor %}
-                    </table>
-                {% else %}
-                    <p>{% trans "No wiki articles yet." %}</p>
-                {% endif %}
-                
-                
-              
+                {% endif %} {# is me #}                
 
             {% else %} {# not user.is_authenticated #}
                 {% url acct_signup as signup_url %}

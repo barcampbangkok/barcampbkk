@@ -22,11 +22,6 @@
 {% endblock %}
 
 {% block right_tabs %}
-    {% if user.is_authenticated %}
-        <ul class="tabs">{% spaceless %}
-            <li id="tab_profile"><a href="{% url profile_detail user.username %}">{% trans "Profile" %}</a></li>
-        {% endspaceless %}</ul>
-    {% endif %}
     <div id="socical_media" style="float:right;height:28px;">
         <a href="http://www.facebook.com/BarcampBangkok" target="_blank"><img width="28" height="27" border="0" alt="" src="{{ STATIC_URL }}goyz_theme/images/face.jpg"></a>
         <a href="http://twitter.com/barcampbangkok" target="_blank"><img width="28" height="27" border="0" alt="" src="{{ STATIC_URL }}goyz_theme/images/tw.jpg"></a>
