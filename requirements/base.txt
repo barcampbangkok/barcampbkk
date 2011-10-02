@@ -46,3 +46,6 @@ yolk
 
 #logger
 git+git://github.com/Proteus-tech/django-logger.git
+
+#social registration
+django-socialregistration==0.4.6

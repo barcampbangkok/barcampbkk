@@ -158,12 +158,9 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.messages",
     "django.contrib.humanize",
-    
+
     "pinax.templatetags",
-    
-    #nose
-    "django_nose",
-    
+
     # external
     "notification", # must be first
     "staticfiles",
@@ -188,11 +185,6 @@ INSTALLED_APPS = [
     "pinax.apps.analytics",
     "pinax.apps.profiles",
 
-    # project
-    "about",
-#    "profiles",
-
-
     # Django Cms
     'cms',
     'menus',
@@ -206,6 +198,12 @@ INSTALLED_APPS = [
     'cms.plugins.snippet',
     'cms.plugins.googlemap',
 
+    #nose
+    "django_nose",
+
+    # project
+    "about",
+#    "profiles",
     'socialregistration',
 ]
 
