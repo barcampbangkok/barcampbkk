@@ -206,8 +206,6 @@ INSTALLED_APPS = [
     'cms.plugins.snippet',
     'cms.plugins.googlemap',
 
-#    'django_openid',
-#    'socialauth',
     'socialregistration',
 ]
 
@@ -231,7 +229,6 @@ ACCOUNT_EMAIL_AUTHENTICATION = False
 ACCOUNT_UNIQUE_EMAIL = EMAIL_CONFIRMATION_UNIQUE_EMAIL = False
 
 AUTHENTICATION_BACKENDS = [
-#    'socialauth.auth_backends.TwitterBackend',
     'socialregistration.auth.TwitterAuth',
     'auth.backends.AccountAuthenticationBackend',
 ]
