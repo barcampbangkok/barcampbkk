@@ -109,13 +109,7 @@ h1 {
     position: absolute;
     top: 6px;
     right: 15px;
-    color: #898989; /* login bar text colour */
-}
-#tabhead .login a, #tabhead .login a:visited {
-    color: #898989; /* login bar link colour */
-}
-#tabhead .login a:hover {
-    color: #65A3D8; /* login bar link hover colour */
+    color: #333; /* login bar text colour */
 }
 
 #locale_switcher {
