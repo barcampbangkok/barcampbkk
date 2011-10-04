@@ -3,11 +3,17 @@
 
 import os.path
 import posixpath
+import sys
+
 import pinax
 
 PINAX_ROOT = os.path.abspath(os.path.dirname(pinax.__file__))
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+SETTINGS_ROOT = os.path.abspath(os.path.dirname(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.dirname(SETTINGS_ROOT))
 PROJECT_DIR = PROJECT_ROOT
+
+# organize local apps in a subdir. kinda dirty, but it's Pinax's doing
+sys.path.insert(0, os.path.join(PROJECT_ROOT, "apps"))
 
 # tells Pinax to use the default theme
 PINAX_THEME = "barcamp_basic"
@@ -248,6 +254,16 @@ EMAIL_HOST_USER = 'proteus.tech.com@gmail.com'
 EMAIL_HOST_PASSWORD = 'wrong#h1n1'
 EMAIL_USE_TLS = True
 
+### Socialauth #####
+TWITTER_CONSUMER_KEY = '838bFpYe8sk4eHLCGCqkYQ'
+TWITTER_CONSUMER_SECRET_KEY = 'AwfRsy3AuSzpxyoXeXvtIumjQDQ0damIlzmNs1Iiak'
+TWITTER_ACCESS_TOKEN = '12223502-r2LFtPSMNGYpiF2GeGNVb4JPcmyvpMa79fKh2PH03'
+TWITTER_ACCESS_TOKEN_SECRET = '72A5pjsELAqrIYf7ockXa8lJmCEEh1UhLVgicOTN16E'
+TWITTER_REQUEST_TOKEN_URL = 'https://api.twitter.com/oauth/request_token'
+TWITTER_ACCESS_TOKEN_URL = 'https://api.twitter.com/oauth/access_token'
+TWITTER_AUTHORIZATION_URL = 'https://api.twitter.com/oauth/authorize'
+####################
+
 # URCHIN_ID = "ua-..."
 
 DEBUG_TOOLBAR_CONFIG = {
@@ -282,19 +298,3 @@ logging.setLoggerClass(LoggerClass(
     files_path = os.path.abspath(os.path.join(PROJECT_DIR, 'logs')),
 ))
 
-### Socialauth #####
-TWITTER_CONSUMER_KEY = '838bFpYe8sk4eHLCGCqkYQ'
-TWITTER_CONSUMER_SECRET_KEY = 'AwfRsy3AuSzpxyoXeXvtIumjQDQ0damIlzmNs1Iiak'
-TWITTER_ACCESS_TOKEN = '12223502-r2LFtPSMNGYpiF2GeGNVb4JPcmyvpMa79fKh2PH03'
-TWITTER_ACCESS_TOKEN_SECRET = '72A5pjsELAqrIYf7ockXa8lJmCEEh1UhLVgicOTN16E'
-TWITTER_REQUEST_TOKEN_URL = 'https://api.twitter.com/oauth/request_token'
-TWITTER_ACCESS_TOKEN_URL = 'https://api.twitter.com/oauth/access_token'
-TWITTER_AUTHORIZATION_URL = 'https://api.twitter.com/oauth/authorize'
-####################
-
-# local_settings.py can be used to override environment-specific settings
-# like database and email that differ between development and production.
-try:
-    from local_settings import *
-except ImportError:
-    pass

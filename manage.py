@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 import sys
 
-from os.path import abspath, dirname, join
-
 try:
     import pinax
 except ImportError:
@@ -20,8 +18,6 @@ except ImportError:
 
 # setup the environment before we start accessing things in the settings.
 setup_environ(settings_mod)
-
-sys.path.insert(0, join(settings.PROJECT_ROOT, "apps"))
 
 if __name__ == "__main__":
     execute_from_command_line()
