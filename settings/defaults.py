@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 # Django settings for basic pinax project.
 
+import logging
 import sys
 from os import path
 
 import pinax
+from django_logger import LoggerClass
 
 PINAX_ROOT = path.abspath(path.dirname(pinax.__file__))
 SETTINGS_ROOT = path.abspath(path.dirname(__file__))
 PROJECT_ROOT = path.abspath(path.dirname(SETTINGS_ROOT))
-PROJECT_DIR = PROJECT_ROOT
 
 # organize local apps in a subdir. kinda dirty, but it's Pinax's doing
 sys.path.insert(0, path.join(PROJECT_ROOT, "apps"))
@@ -18,34 +19,11 @@ sys.path.insert(0, path.join(PROJECT_ROOT, "apps"))
 PINAX_THEME = "barcamp_basic"
 GOYZ_THEME = "goyz_theme"
 
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
-
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
-
-# tells Pinax to serve media through the staticfiles app.
-SERVE_MEDIA = DEBUG
 
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
-
-ADMINS = [
-    # ("Your Name", "your_email@domain.com"),
-]
-
-MANAGERS = ADMINS
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3", # Add "postgresql_psycopg2", "postgresql", "mysql", "sqlite3" or "oracle".
-        "NAME": "dev.db",                       # Or path to database file if using sqlite3.
-        "USER": "",                             # Not used with sqlite3.
-        "PASSWORD": "",                         # Not used with sqlite3.
-        "HOST": "",                             # Set to empty string for localhost. Not used with sqlite3.
-        "PORT": "",                             # Set to empty string for default. Not used with sqlite3.
-    }
-}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -216,9 +194,7 @@ INSTALLED_APPS = [
     'barcamp_registration',
 ]
 
-FIXTURE_DIRS = [
-    path.join(PROJECT_ROOT, "fixtures"),
-]
+FIXTURE_DIRS = [ path.join(PROJECT_ROOT, "fixtures") ]
 
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 
@@ -245,13 +221,6 @@ LOGIN_REDIRECT_URLNAME = "what_next"
 LOGIN_REDIRECT_URL = '/'
 
 EMAIL_CONFIRMATION_DAYS = 2
-EMAIL_DEBUG = DEBUG
-
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'proteus.tech.com@gmail.com'
-EMAIL_HOST_PASSWORD = 'wrong#h1n1'
-EMAIL_USE_TLS = True
 
 ### Socialauth #####
 TWITTER_CONSUMER_KEY = '838bFpYe8sk4eHLCGCqkYQ'
@@ -284,9 +253,6 @@ CMS_LANGUAGES =(
 LANGUAGES= CMS_LANGUAGES
 
 #logger
-import logging
-from django_logger import LoggerClass
-
 logging.getLogger('django.db.backends').setLevel(logging.ERROR)
 logging.getLogger('PYREADLINE').setLevel(logging.ERROR)
 logging.getLogger('south').setLevel(logging.ERROR)
@@ -294,6 +260,6 @@ logging.getLogger('south').setLevel(logging.ERROR)
 logging.setLoggerClass(LoggerClass(
     file_suffix = '.log',
     default_level = logging.INFO,
-    files_path = path.abspath(path.join(PROJECT_DIR, 'logs')),
+    files_path = path.abspath(path.join(PROJECT_ROOT, 'logs')),
 ))
 
