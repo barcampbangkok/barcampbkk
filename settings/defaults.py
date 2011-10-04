@@ -1,19 +1,18 @@
 # -*- coding: utf-8 -*-
 # Django settings for basic pinax project.
 
-import os.path
-import posixpath
 import sys
+from os import path
 
 import pinax
 
-PINAX_ROOT = os.path.abspath(os.path.dirname(pinax.__file__))
-SETTINGS_ROOT = os.path.abspath(os.path.dirname(__file__))
-PROJECT_ROOT = os.path.abspath(os.path.dirname(SETTINGS_ROOT))
+PINAX_ROOT = path.abspath(path.dirname(pinax.__file__))
+SETTINGS_ROOT = path.abspath(path.dirname(__file__))
+PROJECT_ROOT = path.abspath(path.dirname(SETTINGS_ROOT))
 PROJECT_DIR = PROJECT_ROOT
 
 # organize local apps in a subdir. kinda dirty, but it's Pinax's doing
-sys.path.insert(0, os.path.join(PROJECT_ROOT, "apps"))
+sys.path.insert(0, path.join(PROJECT_ROOT, "apps"))
 
 # tells Pinax to use the default theme
 PINAX_THEME = "barcamp_basic"
@@ -67,7 +66,7 @@ USE_I18N = True
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, "site_media", "media")
+MEDIA_ROOT = path.join(PROJECT_ROOT, "site_media", "media")
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -76,7 +75,7 @@ MEDIA_URL = "/site_media/media/"
 
 # Absolute path to the directory that holds static files like app media.
 # Example: "/home/media/media.lawrence.com/apps/"
-STATIC_ROOT = os.path.join(PROJECT_ROOT, "site_media", "static")
+STATIC_ROOT = path.join(PROJECT_ROOT, "site_media", "static")
 
 # URL that handles the static files like app media.
 # Example: "http://media.lawrence.com"
@@ -84,16 +83,16 @@ STATIC_URL = "/site_media/static/"
 
 # Additional directories which hold static files
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, "media"),
-    os.path.join(PINAX_ROOT, "media", PINAX_THEME),
-    os.path.join(PROJECT_ROOT, "media", PINAX_THEME),
-#    os.path.join(PROJECT_ROOT, "site_media", "static"),
+    path.join(PROJECT_ROOT, "media"),
+    path.join(PINAX_ROOT, "media", PINAX_THEME),
+    path.join(PROJECT_ROOT, "media", PINAX_THEME),
+#    path.join(PROJECT_ROOT, "site_media", "static"),
 ]
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = posixpath.join(STATIC_URL, "admin/")
+ADMIN_MEDIA_PREFIX = path.join(STATIC_URL, "admin/")
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = "c$z-3#l4jzku!+*pwby3zf!=n9#q54lv)gg@076)0xnmm8)q(9"
@@ -129,9 +128,9 @@ MIDDLEWARE_CLASSES = [
 ROOT_URLCONF = "urls"
 
 TEMPLATE_DIRS = [
-    os.path.join(PROJECT_ROOT, "templates"),
-    os.path.join(PINAX_ROOT, "templates", PINAX_THEME),
-    os.path.join(PROJECT_ROOT, "templates", PINAX_THEME),
+    path.join(PROJECT_ROOT, "templates"),
+    path.join(PINAX_ROOT, "templates", PINAX_THEME),
+    path.join(PROJECT_ROOT, "templates", PINAX_THEME),
 ]
 
 TEMPLATE_CONTEXT_PROCESSORS = [
@@ -218,7 +217,7 @@ INSTALLED_APPS = [
 ]
 
 FIXTURE_DIRS = [
-    os.path.join(PROJECT_ROOT, "fixtures"),
+    path.join(PROJECT_ROOT, "fixtures"),
 ]
 
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
@@ -295,6 +294,6 @@ logging.getLogger('south').setLevel(logging.ERROR)
 logging.setLoggerClass(LoggerClass(
     file_suffix = '.log',
     default_level = logging.INFO,
-    files_path = os.path.abspath(os.path.join(PROJECT_DIR, 'logs')),
+    files_path = path.abspath(path.join(PROJECT_DIR, 'logs')),
 ))
 
