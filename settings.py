@@ -81,7 +81,7 @@ STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, "media"),
     os.path.join(PINAX_ROOT, "media", PINAX_THEME),
     os.path.join(PROJECT_ROOT, "media", PINAX_THEME),
-    os.path.join(PROJECT_ROOT, "site_media", "static"),
+#    os.path.join(PROJECT_ROOT, "site_media", "static"),
 ]
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
@@ -133,6 +133,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.debug",
     "django.core.context_processors.i18n",
     "django.core.context_processors.media",
+    'django.core.context_processors.static',
     "django.core.context_processors.request",
     "django.contrib.messages.context_processors.messages",
 
@@ -159,12 +160,9 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.messages",
     "django.contrib.humanize",
-    
+
     "pinax.templatetags",
-    
-    #nose
-    "django_nose",
-    
+
     # external
     "notification", # must be first
     "staticfiles",
@@ -190,11 +188,6 @@ INSTALLED_APPS = [
     "pinax.apps.analytics",
     "pinax.apps.profiles",
 
-    # project
-    "about",
-#    "profiles",
-
-
     # Django Cms
     'cms',
     'menus',
@@ -209,6 +202,12 @@ INSTALLED_APPS = [
     'cms.plugins.snippet',
     'cms.plugins.googlemap',
 
+    #nose
+    "django_nose",
+
+    # project
+    "about",
+#    "profiles",
 ]
 
 FIXTURE_DIRS = [
@@ -256,6 +255,8 @@ CMS_TEMPLATES= (
     ('cms/cms_base.html', "Base" ),
     ('goyz_theme/cms/cms_base.html', "Goyz Base"),
 )
+
+CMS_MEDIA_ROOT = os.path.join(PROJECT_ROOT, "site_media", "static", "cms_media")
 CMS_MODERATOR=False
 CMS_PERMISSION = False
 CMS_TEMPLATE_INHERITANCE = True

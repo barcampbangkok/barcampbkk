@@ -7,11 +7,7 @@
 
 {% block head_title %}{% trans "Login" %}{% endblock %}
 
-{% block body %}
-    
-    {% if openid and not user.is_authenticated %}
-        <p><span class="warning">It appears you have started to login using OpenID. Want to <a href="/openid/register/">finish logging in</a>?</span></p>
-    {% endif %}
+{% block content %}
     
     <h1>{% trans "Log In" %}</h1>
     
@@ -36,41 +32,26 @@
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
             {% endif %}
             <div class="form_block">
-                <input type="submit" value="{% trans "Log in &raquo;" %}" />
+                <input type="submit" value="{% trans "Log in" %}" />
             </div>
         </fieldset>
     </form>
     
-    <p>{% trans "Or sign in with your OpenID" %}:</p>
-    {# @@@ why isn't this just does as a form object ? #}
-    <form class="login uniForm" action="/openid/register/" method="POST">
-        {% csrf_token %}
-        <fieldset class="inlineLabels">
-            {% if url_required %}
-                <div class="ctrlHolder error">
-                    <p class="errorField">
-                        <strong>This field is required.</strong>
-                    </p>
-                    <label for="id_username">* OpenID Identifier</label>
-                    <input class="openid" type="text" name="openid_url" />
+    <p>{% trans "Or sign in with your social network accounts" %}:</p>
+        <div id="openid_choice">
+            <div id="openid_btns">
+                <div id="twitter">
+                    {% load twitter_tags %}
+                    {% twitter_button %}
                 </div>
-            {% else %}
-                <div class="ctrlHolder">
-                    <label for="id_username">* OpenID Identifier</label>
-                    <input class="openid" type="text" name="openid_url" />
-                </div>
-            {% endif %}
-            <div class="form_block">
-                <input type="submit" value="{% trans "Log in &raquo;" %}" />
-            </div>
-        </fieldset>
-    </form>
-    
-    <p>{% blocktrans %}If you have any trouble logging in to your account, contact us at <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>.{% endblocktrans %}</p>
-{% endblock %}
 
-{% block extra_body %}
-<script>
-    $("#id_username").focus();
-</script>
+                <input type="hidden" name="openid_next" value="{{ next }}">
+            </div>
+
+        </div>
+
+    <p>{% blocktrans %}If you have any trouble logging in to your account, contact us at <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>.{% endblocktrans %}</p>
+    <script>
+        $("#id_username").focus();
+    </script>
 {% endblock %}

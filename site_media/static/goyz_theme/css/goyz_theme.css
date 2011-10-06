@@ -38,8 +38,8 @@
 	padding-top: 1px;
 }
 
-a:link{font-family: tahoma;	font-size: 10pt; text-decoration : none; color : #eee;}
-a:visited {font-family: tahoma;	font-size:	font-size: 10pt;text-decoration : none; color : #eee;}
+a:link{font-family: tahoma;	font-size: 10pt; text-decoration : none; color : #898989;}
+a:visited {font-family: tahoma;	font-size:	font-size: 10pt;text-decoration : none; color : #898989;}
 a:hover {font-family: tahoma;	font-size:font-size: 10pt;text-decoration : none; color : #65a3d8;}
 
 A.s-menu:link 		{font-family: Trebuchet MS;	font-size: 9pt;COLOR:#555;	TEXT-DECORATION: none}

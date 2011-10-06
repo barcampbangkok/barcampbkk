@@ -4,6 +4,8 @@
     |
     <a href="{% url acct_email %}">Account</a>
     |
+    <a href="{% url profile_detail user.username %}">Profile</a>
+    |
     {% if user.is_staff %}
         <a href="/admin/">Admin</a>
         |

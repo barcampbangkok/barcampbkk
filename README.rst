@@ -5,12 +5,6 @@ Barcamp Bangkok Web App
 Getting Started
 ===============
 
-.. Note::
-   If you're viewing this on GitHub, be aware that *this is currently a
-   git-svn mirror only* -- do **not** clone this git repository and push
-   changes to it! If you want to use git-svn, you should clone from the SVN
-   repository.  Contact the web team if you need SVN access.
-
 Pre-requisites
 --------------
 
@@ -191,4 +185,12 @@ and then commit the changed files into version control.
 .. _Django's localization support:
    https://docs.djangoproject.com/en/dev/topics/i18n/localization/
 .. _GNU gettext: http://www.gnu.org/software/gettext/
+
+Social Network Authentication
+==============================
+
+For development, you'll need to update site domain in the Sites table to the domain you're running at e.g. 127.0.0.1:8000
+This will be sent to Twitter for callback.
+
+For production, assuming we're going to deploy at barcampbangkok.org, just make sure that the site domain is barcampbangkok.org
 

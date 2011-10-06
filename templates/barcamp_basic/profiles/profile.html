@@ -14,7 +14,7 @@
 
 {% block head_title %}{% user_display other_user as other_user_display %}{% blocktrans %}Profile for {{ other_user_display }}{% endblocktrans %}{% endblock %}
 
-{% block body %}
+{% block content %}
     {% user_display other_user as other_user_display %}
     <div class="right_panel">
 {#        {% include "profiles/profile_right_panel.html" %}#}
@@ -46,58 +46,6 @@
                 <p><a href="{% url profile_edit %}" rel="facebox">Edit profile</a></p>
             {% endif %}
             
-            {% if user.is_authenticated %}
-                <p>
-{#                    <a href="{% url tweet_followers other_user %}">{% trans "Followers" %}</a>: {% follower_count other_user %}#}
-{#                    <a href="{% url tweet_following other_user %}">{% trans "Following" %}</a>: {% following_count other_user %}#}
-                </p>
-                
-                {% if is_me %}
-                {% else %}
-                    {# @@@ this could be done with ajax, or at the very least turned into an inclusion tag #}
-                    <div>
-                        <form method="POST" action="{% url toggle_follow other_user %}">
-                            {% csrf_token %}
-                            {% if is_following %}
-                                <input type="hidden" name="action" value="unfollow" /><input type="submit" value="{% trans "unfollow" %}"/>
-                            {% else %}
-                                <input type="hidden" name="action" value="follow" /><input type="submit" value="{% trans "follow tweets" %}"/>
-                            {% endif %}
-                        </form>
-                    </div>
-                    
-                    
-                    
-                {% endif %} {# is me #}
-                
-                <h2>{% trans "Wiki Articles" %}</h2>
-                
-                {% if other_user.article_set.all %}
-                    <table class="bookmarks">
-                        {% for article in other_user.article_set.all %}
-                        <tr class="{% cycle odd,even %}">
-                            <td class="meta">
-                                {{ article.created_at|date }}
-                            </td>
-                            <td>
-{#                                <h2><a href="{% groupurl wiki_article article.group title=article.title %}">{{ article.title }}</a></h2>#}
-                                <div class="body">{{ article.content|truncatewords:25 }}</div>
-                            </td>
-                        </tr>
-                        {% endfor %}
-                    </table>
-                {% else %}
-                    <p>{% trans "No wiki articles yet." %}</p>
-                {% endif %}
-                
-                
-              
-
-            {% else %} {# not user.is_authenticated #}
-                {% url acct_signup as signup_url %}
-                {% url acct_login as login_url %}
-                <p>{% blocktrans %}<a href="{{ signup_url }}">Sign up</a> and <a href="{{ login_url }}">log in </a> to add this person as a friend and see their tweets and blog posts.{% endblocktrans %}</p>
-            {% endif %}
         </div><!--/vcard-->
     </div>
 {% endblock %}
