@@ -31,3 +31,30 @@ class TestRegistration(TestCase):
         self.assertEqual(response.status_code,200)
         self.assertIn('<td class="name">Barcamper</td>',response.content)
         self.assertIn('<td class="email">barcamper@gmail.com</td>',response.content)
+
+    def test_post_required_not_found(self):
+        data = {
+            'name':'Barcamper',
+        }
+        response = self.client.post(self.url,data=data)
+        self.assertEqual(response.status_code,400)
+        self.assertIn(u'This field is required.',response.content)
+
+    def test_post_email_is_not_the_right_format(self):
+        data = {
+            'name':'Barcamper',
+            'email': 'barcamper'
+        }
+        response = self.client.post(self.url,data=data)
+        self.assertEqual(response.status_code,400)
+        self.assertIn(u'Enter a valid e-mail address.',response.content)
+
+    def test_post_website_url_is_not_the_right_format(self):
+        data = {
+            'name':'Barcamper',
+            'email': 'barcamper@gmail.com',
+            'website': 'barcamper'
+        }
+        response = self.client.post(self.url,data=data)
+        self.assertEqual(response.status_code,400)
+        self.assertIn(u'Enter a valid URL.',response.content)
