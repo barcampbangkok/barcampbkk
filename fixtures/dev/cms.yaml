@@ -9,7 +9,16 @@
     pk: 3
 -   fields: {default_width: null, slot: base_content}
     model: cms.placeholder
-    pk: 4
+    pk: 5
+-   fields: {default_width: null, slot: base_content}
+    model: cms.placeholder
+    pk: 6
+-   fields: {default_width: null, slot: base_content}
+    model: cms.placeholder
+    pk: 7
+-   fields: {default_width: null, slot: base_content}
+    model: cms.placeholder
+    pk: 8
 -   fields: {creation_date: !!timestamp '2011-05-28 17:24:03', language: en, level: 0,
         lft: 1, parent: null, placeholder: 2, plugin_type: TextPlugin, position: 0,
         rght: 2, tree_id: 3}
@@ -159,34 +168,6 @@
         tree_id: 3
     model: cms.page
     pk: 3
--   fields:
-        changed_by: chanita
-        changed_date: 2011-10-09 15:09:48.872000
-        created_by: chanita
-        creation_date: 2011-05-28 17:53:17
-        in_navigation: false
-        level: 0
-        lft: 1
-        limit_visibility_in_menu: null
-        login_required: false
-        moderator_state: 0
-        navigation_extenders: ''
-        parent: null
-        placeholders: [4]
-        publication_date: null
-        publication_end_date: null
-        published: false
-        publisher_is_draft: true
-        publisher_public: null
-        publisher_state: 1
-        reverse_id: null
-        rght: 2
-        site: 1
-        soft_root: false
-        template: goyz_theme/cms/cms_base.html
-        tree_id: 4
-    model: cms.page
-    pk: 4
 -   fields: {application_urls: '', creation_date: !!timestamp '2011-05-07 05:22:07',
         has_url_overwrite: false, language: en, menu_title: '', meta_description: '',
         meta_keywords: '', page: 1, page_title: '', path: '', redirect: '', slug: home,
@@ -211,12 +192,6 @@
         slug: where-when, title: Where & When}
     model: cms.title
     pk: 4
--   fields: {application_urls: null, creation_date: !!timestamp '2011-05-28 17:53:17',
-        has_url_overwrite: false, language: en, menu_title: null, meta_description: null,
-        meta_keywords: null, page: 4, page_title: null, path: registration, redirect: null,
-        slug: registration, title: Registration}
-    model: cms.title
-    pk: 5
 -   fields: {application_urls: '', creation_date: !!timestamp '2011-10-09 18:52:01.262000',
         has_url_overwrite: false, language: th, menu_title: '', meta_description: '',
         meta_keywords: '', page: 2, page_title: '', path: what-barcamp, redirect: '',

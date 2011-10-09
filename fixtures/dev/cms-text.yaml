@@ -13,10 +13,9 @@
             \ You can also check out our Flickr photos and YouTube videos.</p>\n<p>The\
             \ event will mainly be in both English and Thai, but you're welcome to\
             \ start topics in other languages (Yes, you can has LOLSpeak!).</p>\n\
-            <h2>When?</h2>\n<p>The date has not been fixed (yet), but it will happen\
-            \ around July-August.</p>\n<p>Note that this is real camp, 2 days and\
-            \ a night (optional) all over a weekend.</p>\n<h2>Where?</h2>\n<p>Sripatum\
-            \ University, Bangkhen Campus</p>\n\n"}
+            <h2>When?</h2>\n<p>November 26-27, 2011</p>\n<p>Note that this is real\
+            \ camp, 2 days and a night (optional) all over a weekend.</p>\n<h2>Where?</h2>\n\
+            <p>Sripatum University, Bangkhen Campus</p>\n\n"}
     model: text.text
     pk: 3
 -   fields: {body: <h1>Welcome to Barcamp Bangkok 5!</h1>}
@@ -129,24 +128,19 @@
             \u0E32\u0E1E\u0E32\u0E2A\u0E32\u0E27\u0E34\u0E1A\u0E31\u0E14\u0E40\u0E23\
             \u0E32\u0E01\u0E49\u0E2D\u0E21\u0E30\u0E2B\u0E49\u0E32\u0E21\u0E19\u0E30\
             !)</p><h2>\u0E08\u0E31\u0E14\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E44\u0E2B\
-            \u0E23\u0E48?</h2>\n<p>\u0E27\u0E31\u0E19\u0E08\u0E31\u0E14\u0E07\u0E32\
-            \u0E19\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E01\u0E33\
-            \u0E2B\u0E19\u0E14\u0E41\u0E19\u0E48\u0E0A\u0E31\u0E14 \u0E41\u0E15\u0E48\
-            \u0E08\u0E30\u0E08\u0E31\u0E14\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E40\
-            \u0E14\u0E37\u0E2D\u0E19\u0E01\u0E23\u0E01\u0E0E\u0E32\u0E04\u0E21-\u0E2A\
-            \u0E34\u0E07\u0E2B\u0E32\u0E04\u0E21\u0E19\u0E35\u0E49</p>\n<p>\u0E07\u0E32\
-            \u0E19\u0E08\u0E30\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E31\u0E49\u0E07\
-            \u0E41\u0E15\u0E48\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E0A\u0E49\
-            \u0E32\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E40\u0E2A\u0E32\u0E23\u0E4C\
-            \ \u0E08\u0E19\u0E16\u0E36\u0E07\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E22\u0E47\
-            \u0E19\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E2D\u0E32\u0E17\u0E34\u0E15\
-            \u0E22\u0E4C \u0E40\u0E23\u0E32\u0E08\u0E30\u0E2D\u0E2D\u0E01\u0E01\u0E33\
-            \u0E2B\u0E19\u0E14\u0E01\u0E32\u0E23\u0E21\u0E32\u0E43\u0E2B\u0E49\u0E17\
-            \u0E48\u0E32\u0E19\u0E2D\u0E35\u0E01\u0E17\u0E35</p>\n<h2>\u0E08\u0E31\
-            \u0E14\u0E17\u0E35\u0E48\u0E44\u0E2B\u0E19?</h2>\n<p>\u0E21\u0E2B\u0E32\
-            \u0E27\u0E34\u0E17\u0E22\u0E32\u0E25\u0E31\u0E22\u0E28\u0E23\u0E35\u0E1B\
-            \u0E17\u0E38\u0E21 \u0E27\u0E34\u0E17\u0E22\u0E32\u0E40\u0E02\u0E15\u0E1A\
-            \u0E32\u0E07\u0E40\u0E02\u0E19</p>"}
+            \u0E23\u0E48?</h2>\n<p>26-27 \u0E1E\u0E24\u0E28\u0E08\u0E34\u0E01\u0E32\
+            \u0E22\u0E19 2554</p>\n<p>\u0E07\u0E32\u0E19\u0E08\u0E30\u0E40\u0E23\u0E34\
+            \u0E48\u0E21\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E43\u0E19\u0E0A\
+            \u0E48\u0E27\u0E07\u0E40\u0E0A\u0E49\u0E32\u0E02\u0E2D\u0E07\u0E27\u0E31\
+            \u0E19\u0E40\u0E2A\u0E32\u0E23\u0E4C \u0E08\u0E19\u0E16\u0E36\u0E07\u0E0A\
+            \u0E48\u0E27\u0E07\u0E40\u0E22\u0E47\u0E19\u0E02\u0E2D\u0E07\u0E27\u0E31\
+            \u0E19\u0E2D\u0E32\u0E17\u0E34\u0E15\u0E22\u0E4C \u0E40\u0E23\u0E32\u0E08\
+            \u0E30\u0E2D\u0E2D\u0E01\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E01\u0E32\u0E23\
+            \u0E21\u0E32\u0E43\u0E2B\u0E49\u0E17\u0E48\u0E32\u0E19\u0E2D\u0E35\u0E01\
+            \u0E17\u0E35</p>\n<h2>\u0E08\u0E31\u0E14\u0E17\u0E35\u0E48\u0E44\u0E2B\
+            \u0E19?</h2>\n<p>\u0E21\u0E2B\u0E32\u0E27\u0E34\u0E17\u0E22\u0E32\u0E25\
+            \u0E31\u0E22\u0E28\u0E23\u0E35\u0E1B\u0E17\u0E38\u0E21 \u0E27\u0E34\u0E17\
+            \u0E22\u0E32\u0E40\u0E02\u0E15\u0E1A\u0E32\u0E07\u0E40\u0E02\u0E19</p>"}
     model: text.text
     pk: 13
 -   fields: {body: "<p>\u0E27\u0E34\u0E18\u0E35\u0E01\u0E32\u0E23\u0E40\u0E14\u0E34\
