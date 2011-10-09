@@ -14,8 +14,16 @@
             <tr>
                 <td class="name">{{ person.name }}</td>
                 <td class="email">{{ person.email }}</td>
-                <td class="twitter">{{ person.twitter }}</td>
-                <td class="website">{{ person.website }}</td>
+                <td class="twitter">
+                    {% if person.twitter %}
+                        <a href="http://twitter.com/{{ person.twitter }}" target="_blank">@{{ person.twitter }}</a>
+                    {% endif %}
+                </td>
+                <td class="website">
+                    {% if person.website %}
+                        <a href="{{ person.website }}" target="_blank">{{ person.website }}</a>
+                    {% endif %}
+                </td>
                 <td class="topics">{{ person.topics }}</td>
             </tr>
             {% endfor %}
