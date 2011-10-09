@@ -1,210 +1,184 @@
-########################################################################
-### P L A C E H O L D E R   I N S T A N C E S
-########################################################################
-
-- model: cms.placeholder
-  pk: 1
-  fields: {default_width: null, slot: base_content}
-- model: cms.placeholder
-  pk: 2
-  fields: {default_width: null, slot: base_content}
-- model: cms.placeholder
-  pk: 3
-  fields: {default_width: null, slot: base_content}
-- model: cms.placeholder
-  pk: 4
-  fields: {default_width: null, slot: base_content}
-
-########################################################################
-### P L U G I N   I N S T A N C E S
-########################################################################
-
-- model: cms.cmsplugin
-  pk: 3
-  fields: {creation_date: !!timestamp '2011-05-28 17:24:03.358475', language: en,
-    level: 0, lft: 1, parent: null, placeholder: 2, plugin_type: TextPlugin, position: 0,
-    rght: 2, tree_id: 3}
-- model: cms.cmsplugin
-  pk: 4
-  fields: {creation_date: !!timestamp '2011-05-28 17:38:13.354201', language: en,
-    level: 0, lft: 1, parent: null, placeholder: 3, plugin_type: TextPlugin, position: 0,
-    rght: 2, tree_id: 4}
-- model: cms.cmsplugin
-  pk: 5
-  fields: {creation_date: !!timestamp '2011-05-28 19:14:29.667074', language: en,
-    level: 0, lft: 1, parent: null, placeholder: 1, plugin_type: SnippetPlugin, position: 0,
-    rght: 2, tree_id: 5}
-- model: cms.cmsplugin
-  pk: 6
-  fields: {creation_date: !!timestamp '2011-05-29 10:28:21.021417', language: en,
-    level: 0, lft: 1, parent: null, placeholder: 1, plugin_type: SnippetPlugin, position: 1,
-    rght: 2, tree_id: 6}
-- model: cms.cmsplugin
-  pk: 7
-  fields: {creation_date: !!timestamp '2011-06-02 18:35:04.177039', language: th,
-    level: 0, lft: 1, parent: null, placeholder: 1, plugin_type: SnippetPlugin, position: 0,
-    rght: 2, tree_id: 7}
-- model: cms.cmsplugin
-  pk: 8
-  fields: {creation_date: !!timestamp '2011-06-04 19:03:00.494718', language: en,
-    level: 0, lft: 1, parent: null, placeholder: 1, plugin_type: TextPlugin, position: 3,
-    rght: 2, tree_id: 8}
-- model: cms.cmsplugin
-  pk: 9
-  fields: {creation_date: !!timestamp '2011-06-04 19:05:30.276492', language: th,
-    level: 0, lft: 1, parent: null, placeholder: 1, plugin_type: TextPlugin, position: 2,
-    rght: 2, tree_id: 9}
-- model: cms.cmsplugin
-  pk: 10
-  fields: {creation_date: !!timestamp '2011-06-04 19:06:06.223887', language: th,
-    level: 0, lft: 1, parent: null, placeholder: 1, plugin_type: SnippetPlugin, position: 1,
-    rght: 2, tree_id: 10}
-
-########################################################################
-### P A G E S
-########################################################################
-
-- model: cms.page
-  pk: 1
-  fields:
-    changed_by: admin
-    created_by: chanita
-    creation_date: 2011-05-07 05:22:07.561669
-    in_navigation: true
-    level: 0
-    lft: 1
-    limit_visibility_in_menu: null
-    login_required: false
-    moderator_state: 0
-    navigation_extenders: ''
-    parent: null
-    placeholders: [1]
-    publication_date: 2011-05-07 05:22:38.443329
-    publication_end_date: null
-    published: true
-    publisher_is_draft: true
-    publisher_public: null
-    publisher_state: 1
-    reverse_id: null
-    rght: 2
-    site: 1
-    soft_root: false
-    template: goyz_theme/cms/cms_base.html
-    tree_id: 1
-- model: cms.page
-  pk: 2
-  fields:
-    changed_by: chanita
-    created_by: chanita
-    creation_date: 2011-05-28 17:23:41.460082
-    in_navigation: true
-    level: 0
-    lft: 1
-    limit_visibility_in_menu: null
-    login_required: false
-    moderator_state: 0
-    navigation_extenders: ''
-    parent: null
-    placeholders: [2]
-    publication_date: 2011-05-28 17:23:45.577992
-    publication_end_date: null
-    published: true
-    publisher_is_draft: true
-    publisher_public: null
-    publisher_state: 1
-    reverse_id: null
-    rght: 2
-    site: 1
-    soft_root: false
-    template: goyz_theme/cms/cms_base.html
-    tree_id: 2
-- model: cms.page
-  pk: 3
-  fields:
-    changed_by: chanita
-    created_by: chanita
-    creation_date: 2011-05-28 17:38:05.522581
-    in_navigation: true
-    level: 0
-    lft: 1
-    limit_visibility_in_menu: null
-    login_required: false
-    moderator_state: 0
-    navigation_extenders: ''
-    parent: null
-    placeholders: [3]
-    publication_date: 2011-05-28 17:51:36.863021
-    publication_end_date: null
-    published: true
-    publisher_is_draft: true
-    publisher_public: null
-    publisher_state: 1
-    reverse_id: null
-    rght: 2
-    site: 1
-    soft_root: false
-    template: goyz_theme/cms/cms_base.html
-    tree_id: 3
-- model: cms.page
-  pk: 4
-  fields:
-    changed_by: chanita
-    created_by: chanita
-    creation_date: 2011-05-28 17:53:17.070525
-    in_navigation: false
-    level: 0
-    lft: 1
-    limit_visibility_in_menu: null
-    login_required: false
-    moderator_state: 0
-    navigation_extenders: ''
-    parent: null
-    placeholders: [4]
-    publication_date: null
-    publication_end_date: null
-    published: false
-    publisher_is_draft: true
-    publisher_public: null
-    publisher_state: 1
-    reverse_id: null
-    rght: 2
-    site: 1
-    soft_root: false
-    template: goyz_theme/cms/cms_base.html
-    tree_id: 4
-
-########################################################################
-### T I T L E S
-########################################################################
-
-- model: cms.title
-  pk: 1
-  fields: {application_urls: '', creation_date: !!timestamp '2011-05-07 05:22:07.616369',
-    has_url_overwrite: false, language: en, menu_title: '', meta_description: '',
-    meta_keywords: '', page: 1, page_title: '', path: home, redirect: '', slug: home,
-    title: Home}
-- model: cms.title
-  pk: 2
-  fields: {application_urls: '', creation_date: !!timestamp '2011-05-07 05:23:18.441160',
-    has_url_overwrite: false, language: th, menu_title: '', meta_description: '',
-    meta_keywords: '', page: 1, page_title: '', path: home_th, redirect: '', slug: home_th,
-    title: " \u0E2B\u0E19\u0E49\u0E32\u0E41\u0E23\u0E01"}
-- model: cms.title
-  pk: 3
-  fields: {application_urls: '', creation_date: !!timestamp '2011-05-28 17:23:41.680717',
-    has_url_overwrite: false, language: en, menu_title: '', meta_description: '',
-    meta_keywords: '', page: 2, page_title: '', path: what-barcamp, redirect: '',
-    slug: what-barcamp, title: 'What is Barcamp?'}
-- model: cms.title
-  pk: 4
-  fields: {application_urls: '', creation_date: !!timestamp '2011-05-28 17:38:05.575791',
-    has_url_overwrite: false, language: en, menu_title: '', meta_description: '',
-    meta_keywords: '', page: 3, page_title: '', path: where-when, redirect: '', slug: where-when,
-    title: Where & When}
-- model: cms.title
-  pk: 5
-  fields: {application_urls: null, creation_date: !!timestamp '2011-05-28 17:53:17.130340',
-    has_url_overwrite: false, language: en, menu_title: null, meta_description: null,
-    meta_keywords: null, page: 4, page_title: null, path: registration, redirect: null,
-    slug: registration, title: Registration}
-
+-   fields: {default_width: null, slot: base_content}
+    model: cms.placeholder
+    pk: 1
+-   fields: {default_width: null, slot: base_content}
+    model: cms.placeholder
+    pk: 2
+-   fields: {default_width: null, slot: base_content}
+    model: cms.placeholder
+    pk: 3
+-   fields: {default_width: null, slot: base_content}
+    model: cms.placeholder
+    pk: 4
+-   fields: {creation_date: !!timestamp '2011-05-28 17:24:03', language: en, level: 0,
+        lft: 1, parent: null, placeholder: 2, plugin_type: TextPlugin, position: 0,
+        rght: 2, tree_id: 3}
+    model: cms.cmsplugin
+    pk: 3
+-   fields: {creation_date: !!timestamp '2011-05-28 17:38:13', language: en, level: 0,
+        lft: 1, parent: null, placeholder: 3, plugin_type: TextPlugin, position: 0,
+        rght: 2, tree_id: 4}
+    model: cms.cmsplugin
+    pk: 4
+-   fields: {creation_date: !!timestamp '2011-05-28 19:14:29', language: en, level: 0,
+        lft: 1, parent: null, placeholder: 1, plugin_type: SnippetPlugin, position: 0,
+        rght: 2, tree_id: 5}
+    model: cms.cmsplugin
+    pk: 5
+-   fields: {creation_date: !!timestamp '2011-05-29 10:28:21', language: en, level: 0,
+        lft: 1, parent: null, placeholder: 1, plugin_type: SnippetPlugin, position: 1,
+        rght: 2, tree_id: 6}
+    model: cms.cmsplugin
+    pk: 6
+-   fields: {creation_date: !!timestamp '2011-10-09 16:05:36.472000', language: en,
+        level: 0, lft: 1, parent: null, placeholder: 1, plugin_type: TextPlugin, position: 2,
+        rght: 2, tree_id: 7}
+    model: cms.cmsplugin
+    pk: 7
+-   fields: {creation_date: !!timestamp '2011-10-09 16:06:42.837000', language: en,
+        level: 0, lft: 1, parent: null, placeholder: 1, plugin_type: SnippetPlugin,
+        position: 3, rght: 2, tree_id: 8}
+    model: cms.cmsplugin
+    pk: 8
+-   fields:
+        changed_by: chanita
+        changed_date: 2011-10-09 15:46:01.372000
+        created_by: chanita
+        creation_date: 2011-05-07 05:22:07
+        in_navigation: true
+        level: 0
+        lft: 1
+        limit_visibility_in_menu: null
+        login_required: false
+        moderator_state: 0
+        navigation_extenders: ''
+        parent: null
+        placeholders: [1]
+        publication_date: 2011-05-07 05:22:38
+        publication_end_date: null
+        published: true
+        publisher_is_draft: true
+        publisher_public: null
+        publisher_state: 1
+        reverse_id: null
+        rght: 2
+        site: 1
+        soft_root: false
+        template: goyz_theme/cms/cms_base.html
+        tree_id: 1
+    model: cms.page
+    pk: 1
+-   fields:
+        changed_by: chanita
+        changed_date: 2011-10-09 15:09:48.826000
+        created_by: chanita
+        creation_date: 2011-05-28 17:23:41
+        in_navigation: true
+        level: 0
+        lft: 1
+        limit_visibility_in_menu: null
+        login_required: false
+        moderator_state: 0
+        navigation_extenders: ''
+        parent: null
+        placeholders: [2]
+        publication_date: 2011-05-28 17:23:45
+        publication_end_date: null
+        published: true
+        publisher_is_draft: true
+        publisher_public: null
+        publisher_state: 1
+        reverse_id: null
+        rght: 2
+        site: 1
+        soft_root: false
+        template: goyz_theme/cms/cms_base.html
+        tree_id: 2
+    model: cms.page
+    pk: 2
+-   fields:
+        changed_by: chanita
+        changed_date: 2011-10-09 15:09:48.849000
+        created_by: chanita
+        creation_date: 2011-05-28 17:38:05
+        in_navigation: true
+        level: 0
+        lft: 1
+        limit_visibility_in_menu: null
+        login_required: false
+        moderator_state: 0
+        navigation_extenders: ''
+        parent: null
+        placeholders: [3]
+        publication_date: 2011-05-28 17:51:36
+        publication_end_date: null
+        published: true
+        publisher_is_draft: true
+        publisher_public: null
+        publisher_state: 1
+        reverse_id: null
+        rght: 2
+        site: 1
+        soft_root: false
+        template: goyz_theme/cms/cms_base.html
+        tree_id: 3
+    model: cms.page
+    pk: 3
+-   fields:
+        changed_by: chanita
+        changed_date: 2011-10-09 15:09:48.872000
+        created_by: chanita
+        creation_date: 2011-05-28 17:53:17
+        in_navigation: false
+        level: 0
+        lft: 1
+        limit_visibility_in_menu: null
+        login_required: false
+        moderator_state: 0
+        navigation_extenders: ''
+        parent: null
+        placeholders: [4]
+        publication_date: null
+        publication_end_date: null
+        published: false
+        publisher_is_draft: true
+        publisher_public: null
+        publisher_state: 1
+        reverse_id: null
+        rght: 2
+        site: 1
+        soft_root: false
+        template: goyz_theme/cms/cms_base.html
+        tree_id: 4
+    model: cms.page
+    pk: 4
+-   fields: {application_urls: '', creation_date: !!timestamp '2011-05-07 05:22:07',
+        has_url_overwrite: false, language: en, menu_title: '', meta_description: '',
+        meta_keywords: '', page: 1, page_title: '', path: '', redirect: '', slug: home,
+        title: Home}
+    model: cms.title
+    pk: 1
+-   fields: {application_urls: '', creation_date: !!timestamp '2011-05-07 05:23:18',
+        has_url_overwrite: false, language: th, menu_title: '', meta_description: '',
+        meta_keywords: '', page: 1, page_title: '', path: '', redirect: '', slug: home_th,
+        title: " \u0E2B\u0E19\u0E49\u0E32\u0E41\u0E23\u0E01"}
+    model: cms.title
+    pk: 2
+-   fields: {application_urls: '', creation_date: !!timestamp '2011-05-28 17:23:41',
+        has_url_overwrite: false, language: en, menu_title: '', meta_description: '',
+        meta_keywords: '', page: 2, page_title: '', path: what-barcamp, redirect: '',
+        slug: what-barcamp, title: 'What is Barcamp?'}
+    model: cms.title
+    pk: 3
+-   fields: {application_urls: '', creation_date: !!timestamp '2011-05-28 17:38:05',
+        has_url_overwrite: false, language: en, menu_title: '', meta_description: '',
+        meta_keywords: '', page: 3, page_title: '', path: where-when, redirect: '',
+        slug: where-when, title: Where & When}
+    model: cms.title
+    pk: 4
+-   fields: {application_urls: null, creation_date: !!timestamp '2011-05-28 17:53:17',
+        has_url_overwrite: false, language: en, menu_title: null, meta_description: null,
+        meta_keywords: null, page: 4, page_title: null, path: registration, redirect: null,
+        slug: registration, title: Registration}
+    model: cms.title
+    pk: 5

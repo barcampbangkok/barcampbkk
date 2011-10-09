@@ -71,6 +71,8 @@ h2{
     padding-bottom: 20px;
     padding-top: 5px;
 }
-#content_wrapper a:link,#content_wrapper a:visited{
+#content_wrapper a:link,#content_wrapper a:visited,
+a:link, a:visited{
     color: #9acd32;
 }
+

@@ -1,35 +1,24 @@
-########################################################################
-### S N I P P E T S
-########################################################################
-
-- model: snippet.snippet
-  pk: 1
-  fields: {html: <img src="/site_media/static/goyz_theme/images/main.jpg" />, name: Illustration,
-    template: snippets/illustration.html}
-- model: snippet.snippet
-  pk: 2
-  fields: {html: "        <a href=\"http://www.spu.ac.th/\" title=\"SPU\" target=\"\
-      _blank\"><img src=\"http://barcampbangkok.org/files/spu-logo.jpg\" alt=\"Sriprathum\
-      \ University\"></a>\r\n        <a href=\"http://proteus-tech.com\" title=\"\
-      PT\" target=\"_blank\"><img src=\"http://barcampbangkok.org/files/proteus-logo.jpg\"\
-      \ alt=\"Proteus Technologies\"></a>\r\n        <a href=\"http://dell.com\" title=\"\
-      SPU\" target=\"_blank\"><img src=\"http://barcampbangkok.org/files/180px-Dell.svg.png\"\
-      \ alt=\"Proteus Technologies\"></a>", name: Nathan Slides, template: snippets/nathan_slides.html}
-
-########################################################################
-### S N I P P E T   I N S T A N C E S
-########################################################################
-
-- model: snippet.snippetptr
-  fields: {snippet: 1}
-  pk: 5
-- model: snippet.snippetptr
-  fields: {snippet: 2}
-  pk: 6
-- model: snippet.snippetptr
-  fields: {snippet: 1}
-  pk: 7
-- model: snippet.snippetptr
-  fields: {snippet: 2}
-  pk: 10
-
+-   fields: {html: <img src="/site_media/static/goyz_theme/images/main.jpg" />, name: Illustration,
+        template: snippets/illustration.html}
+    model: snippet.snippet
+    pk: 3
+-   fields: {html: "        <a href=\"http://www.spu.ac.th/\" title=\"SPU\" target=\"\
+            _blank\"><img height=\"53\" style=\"margin-top:65px;\" src=\"http://barcampbangkok.org/files/spu-logo.jpg\"\
+            \ alt=\"Sriprathum University\"></a>\r\n        <a href=\"http://proteus-tech.com\"\
+            \ title=\"PT\" target=\"_blank\"><img src=\"http://barcampbangkok.org/files/proteus-logo.jpg\"\
+            \ alt=\"Proteus Technologies\"></a>", name: Nathan Slides, template: snippets/nathan_slides.html}
+    model: snippet.snippet
+    pk: 4
+-   fields: {html: "{% load i18n %}\r\n{% load ifsetting_tag %} \r\n<h1>{% trans \"\
+            Welcome to Barcamp Bangkok 5\" %}</h1>\r\n    ", name: home_snippet, template: ''}
+    model: snippet.snippet
+    pk: 1
+-   fields: {snippet: 3}
+    model: snippet.snippetptr
+    pk: 5
+-   fields: {snippet: 4}
+    model: snippet.snippetptr
+    pk: 6
+-   fields: {snippet: 1}
+    model: snippet.snippetptr
+    pk: 8

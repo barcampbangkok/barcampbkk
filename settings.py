@@ -81,7 +81,7 @@ STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, "media"),
     os.path.join(PINAX_ROOT, "media", PINAX_THEME),
     os.path.join(PROJECT_ROOT, "media", PINAX_THEME),
-    os.path.join(PROJECT_ROOT, "site_media", "static"),
+#    os.path.join(PROJECT_ROOT, "site_media", "static"),
 ]
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
@@ -108,7 +108,7 @@ MIDDLEWARE_CLASSES = [
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
 #    'cms.middleware.toolbar.ToolbarMiddleware',
-    'cms.middleware.media.PlaceholderMediaMiddleware',
+#    'cms.middleware.media.PlaceholderMediaMiddleware',
     'cms.middleware.multilingual.MultilingualURLMiddleware',
 
 
@@ -133,6 +133,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.debug",
     "django.core.context_processors.i18n",
     "django.core.context_processors.media",
+    'django.core.context_processors.static',
     "django.core.context_processors.request",
     "django.contrib.messages.context_processors.messages",
 
@@ -147,6 +148,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
 
     #cms
     'cms.context_processors.media',
+    'sekizai.context_processors.sekizai',
 ]
 
 INSTALLED_APPS = [
@@ -191,6 +193,7 @@ INSTALLED_APPS = [
     'mptt',
     'appmedia',
     'south',
+    'sekizai',
     'cms.plugins.text',
     'cms.plugins.picture',
     'cms.plugins.link',

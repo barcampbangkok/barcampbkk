@@ -126,23 +126,27 @@ Install App Dependencies
 2. Create the database for development. From inside the source code folder::
 
     python manage.py syncdb --all
-    python manage.py migrate --fake
+    python manage.py migrate
     python manage.py loaddata fixtures/dev/*
 
 When it asks you to create an admin user, please create one. When it runs
 successfully, it will create ``dev.db`` in your source code folder and load
 some stub content from fixtures.
 
-3. Make sure tests are passing with your setup::
+3. Symbolic link cms static files (Windows people, you will have to copy the folder over instead)
+
+    ln -s <virtual environment site-packages folder>/cms/static/cms site_media/static/cms
+
+4. Make sure tests are passing with your setup::
 
     python manage.py test
 
-4. Run the server::
+5. Run the server::
 
     python manage.py runserver
 
-5. Check if that works by going to http://localhost:8000/
-6. Start hackin'
+6. Check if that works by going to http://localhost:8000/
+7. Start hackin'
 
 Note that the Barcamp app builds on `django CMS`_, which uses the `South`_
 project for database migration support, as any good modern Django project
