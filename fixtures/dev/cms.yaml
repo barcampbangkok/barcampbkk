@@ -30,19 +30,29 @@
         rght: 2, tree_id: 6}
     model: cms.cmsplugin
     pk: 6
--   fields: {creation_date: !!timestamp '2011-10-09 16:05:36.472000', language: en,
+-   fields: {creation_date: !!timestamp '2011-10-09 17:20:34.290000', language: en,
         level: 0, lft: 1, parent: null, placeholder: 1, plugin_type: TextPlugin, position: 2,
         rght: 2, tree_id: 7}
     model: cms.cmsplugin
     pk: 7
--   fields: {creation_date: !!timestamp '2011-10-09 16:06:42.837000', language: en,
+-   fields: {creation_date: !!timestamp '2011-10-09 17:24:17.413000', language: th,
         level: 0, lft: 1, parent: null, placeholder: 1, plugin_type: SnippetPlugin,
-        position: 3, rght: 2, tree_id: 8}
+        position: 0, rght: 2, tree_id: 8}
     model: cms.cmsplugin
     pk: 8
+-   fields: {creation_date: !!timestamp '2011-10-09 17:24:24.974000', language: th,
+        level: 0, lft: 1, parent: null, placeholder: 1, plugin_type: SnippetPlugin,
+        position: 1, rght: 2, tree_id: 9}
+    model: cms.cmsplugin
+    pk: 9
+-   fields: {creation_date: !!timestamp '2011-10-09 17:24:35.727000', language: th,
+        level: 0, lft: 1, parent: null, placeholder: 1, plugin_type: TextPlugin, position: 2,
+        rght: 2, tree_id: 10}
+    model: cms.cmsplugin
+    pk: 10
 -   fields:
         changed_by: chanita
-        changed_date: 2011-10-09 15:46:01.372000
+        changed_date: 2011-10-09 17:25:09.796000
         created_by: chanita
         creation_date: 2011-05-07 05:22:07
         in_navigation: true
@@ -161,7 +171,7 @@
 -   fields: {application_urls: '', creation_date: !!timestamp '2011-05-07 05:23:18',
         has_url_overwrite: false, language: th, menu_title: '', meta_description: '',
         meta_keywords: '', page: 1, page_title: '', path: '', redirect: '', slug: home_th,
-        title: " \u0E2B\u0E19\u0E49\u0E32\u0E41\u0E23\u0E01"}
+        title: "\u0E2B\u0E19\u0E49\u0E32\u0E1A\u0E49\u0E32\u0E19"}
     model: cms.title
     pk: 2
 -   fields: {application_urls: '', creation_date: !!timestamp '2011-05-28 17:23:41',

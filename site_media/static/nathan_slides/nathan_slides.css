@@ -26,14 +26,22 @@
 	/*text-shadow:0 1px 0 rgba(255,255,255,.8);*/
 	/*-webkit-font-smoothing: subpixel-antialiased;*/
 /*}*/
-.float_right_slideshow {
+.float_right_snippet{
+    float:right;
+}
+
+.float_right_snippet h4{
+    margin-top: 0;
+}
+
+.sponsor_slideshow {
 	width:201px;/*199*//*240*/
 	height:149px;
 	position:relative;
     margin-bottom: 20px;
     background-color:#EBEBEB;
-    float:right;
 }
+
 .frame {
 	position:absolute;
 	z-index:0;

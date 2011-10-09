@@ -9,8 +9,9 @@
             \ alt=\"Proteus Technologies\"></a>", name: Nathan Slides, template: snippets/nathan_slides.html}
     model: snippet.snippet
     pk: 4
--   fields: {html: "{% load i18n %}\r\n{% load ifsetting_tag %} \r\n<h1>{% trans \"\
-            Welcome to Barcamp Bangkok 5\" %}</h1>\r\n    ", name: home_snippet, template: ''}
+-   fields: {html: "{% load i18n %}\r\n{% load ifsetting_tag %} \r\n<h1 style=\"float:left;\"\
+            >{% trans \"Welcome to Barcamp Bangkok 5\" %}</h1>\r\n    ", name: home_snippet,
+        template: ''}
     model: snippet.snippet
     pk: 1
 -   fields: {snippet: 3}
@@ -19,6 +20,9 @@
 -   fields: {snippet: 4}
     model: snippet.snippetptr
     pk: 6
--   fields: {snippet: 1}
+-   fields: {snippet: 3}
     model: snippet.snippetptr
     pk: 8
+-   fields: {snippet: 4}
+    model: snippet.snippetptr
+    pk: 9
