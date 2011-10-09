@@ -77,3 +77,27 @@ a.current{
     color: #ccc;
 }
 
+div.fieldWrapper{
+    margin: 5px 0;
+}
+
+div.fieldWrapper label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+div.fieldWrapper input{
+    width: 300px;
+}
+
+div.fieldWrapper select{
+    padding: 3px 0;
+    margin-left: 2px;
+}
+
+div.fieldWrapper span.help_text{
+    font-size: 11px;
+    color: #666;
+    margin-left: 5px;
+}

@@ -23,7 +23,8 @@ class BarcampRegistration(models.Model):
     email = models.EmailField(_('e-mail'))
     twitter = models.CharField(_('twitter'),max_length=512,blank=True,null=True)
     website = models.URLField(_('website'),verify_exists=False,blank=True,null=True)
-    tshirt_size = models.CharField(_('t-shirt size'),choices=TSHIRT_CHOICES,max_length=3,blank=True,null=True)
+    tshirt_size = models.CharField(_('t-shirt size'),choices=TSHIRT_CHOICES,max_length=3,
+                                   blank=True,null=True,help_text=_('US sizes'))
     topics = models.CharField(_('topics'),max_length=1024,blank=True,null=True)
 
     def __unicode__(self):
