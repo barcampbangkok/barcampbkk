@@ -58,3 +58,14 @@ class TestRegistration(TestCase):
         response = self.client.post(self.url,data=data)
         self.assertEqual(response.status_code,400)
         self.assertIn(u'Enter a valid URL.',response.content)
+
+    def test_post_duplicate_name_and_email(self):
+        self.test_post_required_only_check_result()
+        data = {
+            'name':'Barcamper',
+            'email': 'barcamper@gmail.com'
+        }
+        response = self.client.post(self.url,data=data)
+        self.assertEqual(response.status_code,400)
+        self.assertIn(u'Barcamp registration with this Name and E-mail already exists.',response.content)
+
