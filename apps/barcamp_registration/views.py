@@ -2,9 +2,11 @@
 
 from django.shortcuts import render_to_response
 from django.template.context import RequestContext
+from menus.utils import simple_language_changer
 
 from barcamp_registration.forms import BarcampRegistrationForm
 
+@simple_language_changer
 def registration(request):
     context = RequestContext(request)
     form = BarcampRegistrationForm()

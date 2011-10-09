@@ -101,3 +101,7 @@ div.fieldWrapper span.help_text{
     color: #666;
     margin-left: 5px;
 }
+
+div.fieldWrapper .required_mark{
+    color: red;
+}
