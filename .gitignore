@@ -10,3 +10,6 @@
 /.idea/workspace.xml
 *.pyc
 *.db
+
+logs/*
+
