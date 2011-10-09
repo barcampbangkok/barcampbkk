@@ -56,9 +56,6 @@ A.s-menu:active 	{font-family: Trebuchet MS;	font-size: 9pt;COLOR:#555;	TEXT-DEC
 }
 
 h1{
-    color: #e30000;
-    /*color: #2518B4;*/
-    /*color: #DF4371;*/
     color: #645BCD;
 }
 
@@ -74,5 +71,9 @@ h2{
 #content_wrapper a:link,#content_wrapper a:visited,
 a:link, a:visited{
     color: #9acd32;
+}
+
+a.current{
+    color: #ccc;
 }
 
