@@ -5,6 +5,12 @@ Barcamp Bangkok Web App
 Getting Started
 ===============
 
+.. Note::
+   If you're viewing this on GitHub, be aware that *this is currently a
+   git-svn mirror only* -- do **not** clone this git repository and push
+   changes to it! If you want to use git-svn, you should clone from the SVN
+   repository.  Contact the web team if you need SVN access.
+
 Pre-requisites
 --------------
 
