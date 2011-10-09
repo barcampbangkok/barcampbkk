@@ -97,3 +97,12 @@ class TestWhosComing(TestCase):
         self.assertIn('<a href="www.abcd.com" target="_blank">www.abcd.com</a>',response.content)
         self.assertIn('<td class="topics">Agile</td>',response.content)
 
+        # barcamper 2
+        self.assertIn('<td class="name">Barcamper 2</td>',response.content)
+        self.assertIn('<td class="email">barcamper2@gmail.com</td>',response.content)
+        self.assertIn('<a href="http://twitter.com/barcamper2" target="_blank">@barcamper2</a>',response.content)
+        self.assertIn('<a href="www.asdf.com" target="_blank">www.asdf.com</a>',response.content)
+        self.assertIn('<td class="topics">DCI</td>',response.content)
+
+        # 2 must come before 1 (check ordering)
+        self.assertGreater(response.content.find('Barcamper 1'),response.content.find('Barcamper 2'))
