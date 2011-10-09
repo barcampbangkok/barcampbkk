@@ -44,15 +44,18 @@
             <div id="cms_menu_left" style=""></div>
             <div id="cms_menu_content" style="">
                 {% show_menu 0 100 100 100 %}
-                &nbsp;<a href="/barcamp_registration/">Registration</a>&nbsp;&nbsp;<a href="#">Who's Coming?</a>&nbsp;&nbsp;<a href="#">Contact</a>
+                &nbsp;<a href="/barcamp_registration/">Registration</a>&nbsp;
+                &nbsp;<a href="/barcamp_registration/whos_coming/">Who's Coming?</a>&nbsp;
+                &nbsp;<a href="#">Contact</a>
             </div><!--id="cms_menu_content"-->
             <div id="cms_menu_content_shadow" style=""></div>
         </div><!--id="cms_menu"-->
 
         <div id="content_wrapper">
-            {% block subnav_super %}
-            <div id="subnav" class="clearfix">{% block subnav_base %}<div class="clearfix">{% block subnav %}&nbsp;{% endblock %}</div>{% endblock %}</div>
-            {% endblock subnav_super %}
+            {# We shall bring subnav back when we do the account stuff #}
+{#            {% block subnav_super %}#}
+{#            <div id="subnav" class="clearfix">{% block subnav_base %}<div class="clearfix">{% block subnav %}&nbsp;{% endblock %}</div>{% endblock %}</div>#}
+{#            {% endblock subnav_super %}#}
             {% block content %}
             {% endblock content %}
             <div class="clearboth"></div>

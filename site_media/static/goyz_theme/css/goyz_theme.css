@@ -119,3 +119,15 @@ div.fieldWrapper input[type="submit"]{
     font-weight: bold;
     margin-right: 3px;
 }
+
+div.fieldWrapper input[name="twitter"]{
+    width: 152px;
+}
+
+table#whos_coming_list{
+    width: 80%;
+}
+
+table#whos_coming_list thead td{
+    text-align: center;
+}

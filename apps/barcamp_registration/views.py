@@ -26,3 +26,8 @@ def registration(request):
     else:
         form = BarcampRegistrationForm()
     return render_to_response('barcamp_registration/registration.html',{'form':form},context_instance=context)
+
+@simple_language_changer
+def whos_coming(request):
+    context = RequestContext(request)
+    return render_to_response('barcamp_registration/whos_coming.html',context_instance=context)

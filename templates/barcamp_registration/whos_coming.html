@@ -1,0 +1,21 @@
+{% extends "site_base.html" %}
+{% block content %}
+    <table id="whos_coming_list">
+        <thead>
+            <td>Name</td>
+            <td>E-mail</td>
+            <td>Twitter</td>
+            <td>Website</td>
+            <td>Topics</td>
+        </thead>
+        <tbody>
+            {% for person in whos_coming %}
+                <td>{{ person.name }}</td>
+                <td>{{ person.email }}</td>
+                <td>{{ person.twitter }}</td>
+                <td>{{ person.website }}</td>
+                <td>{{ person.topics }}</td>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}

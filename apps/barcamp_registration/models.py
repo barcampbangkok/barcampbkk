@@ -21,7 +21,8 @@ class BarcampRegistration(models.Model):
     """
     name = models.CharField(_('name'),max_length=512)
     email = models.EmailField(_('e-mail'))
-    twitter = models.CharField(_('twitter'),max_length=512,blank=True,null=True)
+    twitter = models.CharField(_('twitter'),max_length=512,blank=True,null=True,
+                               help_text=_('twitter username without @'))
     website = models.URLField(_('website'),verify_exists=False,blank=True,null=True)
     tshirt_size = models.CharField(_('t-shirt size'),choices=TSHIRT_CHOICES,max_length=3,
                                    blank=True,null=True,help_text=_('US sizes'))
