@@ -1,0 +1,12 @@
+-   fields: {address: Sripatum University, city: Bangkok, content: '', lat: null,
+        lng: null, route_planer: false, route_planer_title: '', title: '', zipcode: '10900',
+        zoom: null}
+    model: googlemap.googlemap
+    pk: 12
+-   fields: {address: "\u0E21\u0E2B\u0E32\u0E27\u0E34\u0E17\u0E22\u0E32\u0E25\u0E31\
+            \u0E22 \u0E28\u0E23\u0E35\u0E1B\u0E17\u0E38\u0E21", city: "\u0E01\u0E23\
+            \u0E38\u0E07\u0E40\u0E17\u0E1E\u0E2F", content: '', lat: null, lng: null,
+        route_planer: false, route_planer_title: '', title: '', zipcode: '10900',
+        zoom: null}
+    model: googlemap.googlemap
+    pk: 15
