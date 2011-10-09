@@ -50,9 +50,34 @@
         rght: 2, tree_id: 10}
     model: cms.cmsplugin
     pk: 10
+-   fields: {creation_date: !!timestamp '2011-10-09 17:58:48.819000', language: en,
+        level: 0, lft: 1, parent: null, placeholder: 2, plugin_type: TextPlugin, position: 2,
+        rght: 2, tree_id: 11}
+    model: cms.cmsplugin
+    pk: 11
+-   fields: {creation_date: !!timestamp '2011-10-09 17:59:00.417000', language: en,
+        level: 0, lft: 1, parent: null, placeholder: 2, plugin_type: GoogleMapPlugin,
+        position: 1, rght: 2, tree_id: 12}
+    model: cms.cmsplugin
+    pk: 12
+-   fields: {creation_date: !!timestamp '2011-05-28 17:24:03', language: th, level: 0,
+        lft: 1, parent: null, placeholder: 2, plugin_type: TextPlugin, position: 0,
+        rght: 2, tree_id: 13}
+    model: cms.cmsplugin
+    pk: 13
+-   fields: {creation_date: !!timestamp '2011-10-09 17:58:48.819000', language: th,
+        level: 0, lft: 1, parent: null, placeholder: 2, plugin_type: TextPlugin, position: 2,
+        rght: 2, tree_id: 14}
+    model: cms.cmsplugin
+    pk: 14
+-   fields: {creation_date: !!timestamp '2011-10-09 17:59:00.417000', language: th,
+        level: 0, lft: 1, parent: null, placeholder: 2, plugin_type: GoogleMapPlugin,
+        position: 1, rght: 2, tree_id: 15}
+    model: cms.cmsplugin
+    pk: 15
 -   fields:
         changed_by: chanita
-        changed_date: 2011-10-09 17:25:09.796000
+        changed_date: 2011-10-09 18:56:04.249000
         created_by: chanita
         creation_date: 2011-05-07 05:22:07
         in_navigation: true
@@ -80,7 +105,7 @@
     pk: 1
 -   fields:
         changed_by: chanita
-        changed_date: 2011-10-09 15:09:48.826000
+        changed_date: 2011-10-09 18:55:23.175000
         created_by: chanita
         creation_date: 2011-05-28 17:23:41
         in_navigation: true
@@ -170,7 +195,7 @@
     pk: 1
 -   fields: {application_urls: '', creation_date: !!timestamp '2011-05-07 05:23:18',
         has_url_overwrite: false, language: th, menu_title: '', meta_description: '',
-        meta_keywords: '', page: 1, page_title: '', path: '', redirect: '', slug: home_th,
+        meta_keywords: '', page: 1, page_title: '', path: '', redirect: '', slug: home,
         title: "\u0E2B\u0E19\u0E49\u0E32\u0E1A\u0E49\u0E32\u0E19"}
     model: cms.title
     pk: 2
@@ -192,3 +217,10 @@
         slug: registration, title: Registration}
     model: cms.title
     pk: 5
+-   fields: {application_urls: '', creation_date: !!timestamp '2011-10-09 18:52:01.262000',
+        has_url_overwrite: false, language: th, menu_title: '', meta_description: '',
+        meta_keywords: '', page: 2, page_title: '', path: what-barcamp, redirect: '',
+        slug: what-barcamp, title: "\u0E2D\u0E30\u0E44\u0E23\u0E04\u0E37\u0E2D\u0E1A\
+            \u0E32\u0E23\u0E4C\u0E41\u0E04\u0E21\u0E1B\u0E4C?"}
+    model: cms.title
+    pk: 6

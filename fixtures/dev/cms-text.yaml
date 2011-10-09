@@ -1,43 +1,22 @@
--   fields: {body: "<h1>What is Barcamp?</h1>\r\n\r\n<p>BarCamp is an international\
-            \ network of user-generated conferences \u2014 open, participatory workshop-events,\
+-   fields: {body: "<h1>What is Barcamp?</h1>\n<p>BarCamp is an international network\
+            \ of user-generated conferences \u2014 open, participatory workshop-events,\
             \ whose content is provided by participants \u2014 often focusing on but\
             \ not limited to early-stage web applications, and related open source\
-            \ technologies, social protocols, and open data formats.</p>\r\n\r\n<p>There\
+            \ technologies, social protocols, and open data formats.</p>\n<p>There\
             \ is no audience, only participants. Attendees should prepare a demo,\
             \ a session, or help with one, or otherwise volunteer / contribute in\
             \ some way to support the event. All presentations are scheduled the day\
             \ they happen. The people present at the event will select the demos or\
-            \ presentations they want to see.</p>\r\n\r\n<h2>Who Participates?</h2>\r\
-            \n\r\n<p>Anyone feels like to contribute is welcome. If you have no idea\
-            \ what BarCampBangkok looks like, please turn back time to <a href=\"\
-            /event/1\">BarCampBangkok 1</a> and <a href=\"/event/3\">BarCampBangkok\
-            \ 2</a>. You can also check out our <a href=\"http://www.flickr.com/photos/tags/barcampbangkok/\"\
-            >Flickr photos</a> and <a href=\"http://www.youtube.com/results?search_query=barcampbangkok\"\
-            >YouTube videos</a>.</p>\r\n\r\n<p>The event will be bilingual, in both\
-            \ Thai and English. \u0E43\u0E0A\u0E49\u0E2A\u0E2D\u0E07\u0E20\u0E32\u0E29\
-            \u0E32-\u0E44\u0E17\u0E22\u0E41\u0E25\u0E30\u0E2D\u0E31\u0E07\u0E01\u0E24\
-            \u0E29</p>\r\n\r\n<h2>When</h2>\r\n\r\n<p>Oct 23, 24 at Sripatum University</p>\r\
-            \n\r\n<p>Note that this is real camp, 2 days and a night (optional).</p>\r\
-            \n\r\n<h2>Registration</h2>\r\n\r\n<p><a href=\"/event/4/register\">Register</a>\
-            \ now! and follow <a href=\"http://twitter.com/barcampbangkok\">BarcampBangkok\
-            \ on Twitter</a> and <a href=\"http://www.facebook.com/barcampbangkok\"\
-            >Facebook</a>.</p>\r\n\r\n<h2>Sponsors</h2>\r\n\r\n<p>Please contact our\
-            \ <a href=\"/event/4/organizers\">organizers</a> if you want to support\
-            \ us whatever you can. All sponsors will appear in cool t-shirts as well\
-            \ as a big sign in the event. We need your high resolution logo and a\
-            \ small one with a url to add in <a href=\"/event/4/sponsors\">sponsors</a>\
-            \ page.</p>\r\n\r\n<h2>Venue</h2>\r\n\r\n<p>Sripatum University - Details\
-            \ to follow.</p>\r\n\r\n<h3>How to get there?</h3>\r\n\r\n<p>TBA</p>\r\
-            \n\r\n<h2>Organizers</h2>\r\n\r\n<p>Go to <a href=\"/event/4/organizers\"\
-            >Organizers</a> page for the full list of organizers. Thanks for hard\
-            \ work!</p>\r\n\r\n<h2>Tag</h2>\r\n\r\n<p>The official tags for this event\
-            \ are <strong>#barcampbangkok</strong> and <strong>#barcampbkk4</strong>.\
-            \ Please tag your media with these, so others can find them.</p>\r\n\r\
-            \n<h2>Links</h2>\r\n\r\n<ul>\r\n<li>If you would like to contact organizers,\
-            \ please send email to our mailing list <a href=\"http://groups.google.com/group/barcamp-thailand\"\
-            >http://groups.google.com/group/barcamp-thailand</a></li>\r\n<li><a href=\"\
-            http://barcampbangkok.org\">http://barcampbangkok.org</a></li>\r\n\r\n\
-            <li>irc://irc.freenode.net/#barcamp-thailand</li>\r\n</ul>\r\n"}
+            \ presentations they want to join.</p>\n<h2>Who Participates?</h2>\n<p>Anyone\
+            \ feels like to contribute is welcome. If you have no idea what BarCampBangkok\
+            \ looks like, please turn back time to the previous four events (1,2,3,4).\
+            \ You can also check out our Flickr photos and YouTube videos.</p>\n<p>The\
+            \ event will mainly be in both English and Thai, but you're welcome to\
+            \ start topics in other languages (Yes, you can has LOLSpeak!).</p>\n\
+            <h2>When?</h2>\n<p>The date has not been fixed (yet), but it will happen\
+            \ around July-August.</p>\n<p>Note that this is real camp, 2 days and\
+            \ a night (optional) all over a weekend.</p>\n<h2>Where?</h2>\n<p>Sripatum\
+            \ University, Bangkhen Campus</p>\n\n"}
     model: text.text
     pk: 3
 -   fields: {body: <h1>Welcome to Barcamp Bangkok 5!</h1>}
@@ -48,3 +27,201 @@
             \u0E23\u0E38\u0E07\u0E40\u0E17\u0E1E\u0E2F 5</h1>"}
     model: text.text
     pk: 10
+-   fields: {body: "<p>The easiest way to get here is to get to BTS Mo Chit or MRT\
+            \ Chatuchak Park, and the taxi fare from there will be less than 100 baht.\
+            \ (Or you can hitchhike, or catch a bus, etc., whatever suits you!)</p><h2>Sponsors</h2><p>Please\
+            \ contact our organizers if you want to support us whatever you can. All\
+            \ sponsors will appear in cool t-shirts as well as big banners in the\
+            \ event.\_</p><p>We will need your hi-res/vector logo and your website's\
+            \ URL for printing and for our sponsors page.</p><h2>Organizers</h2><p>See\
+            \ the Organizers page for the full list of organizers. Thanks for hard\
+            \ work!</p><h2>Tag</h2><p>The official tags for this event are #barcampbangkok\
+            \ and #barcampbkk5.\_</p><p>Please tag your media with these (i.e. your\
+            \ tweets), so others can find them.</p><h2>Links</h2><p>If you would like\
+            \ to contact organizers, please send email to our mailing list<br/><a\
+            \ style=\"text-decoration: underline; padding-top: 1px; padding-right:\
+            \ 1px; padding-bottom: 1px; padding-left: 1px; color: rgb(0, 51, 153);\"\
+            \ href=\"http://groups.google.com/group/barcamp-thailand\">http://groups.google.com/group/barcamp-thailand</a><br/><a\
+            \ style=\"text-decoration: underline; padding-top: 1px; padding-right:\
+            \ 1px; padding-bottom: 1px; padding-left: 1px; color: rgb(0, 51, 153);\"\
+            \ href=\"http://barcampbangkok.org/\">http://barcampbangkok.org</a>\_\
+            <br/><a style=\"text-decoration: underline; padding-top: 1px; padding-right:\
+            \ 1px; padding-bottom: 1px; padding-left: 1px; color: rgb(0, 51, 153);\"\
+            \ href=\"irc://irc.freenode.net/#barcamp-thailand\">irc://irc.freenode.net/#barcamp-thailand</a></p>"}
+    model: text.text
+    pk: 11
+-   fields: {body: "<h1>\u0E2D\u0E30\u0E44\u0E23\u0E04\u0E37\u0E2D\u0E1A\u0E32\u0E23\
+            \u0E4C\u0E41\u0E04\u0E21\u0E1B\u0E4C?</h1>\n<p>\u0E1A\u0E32\u0E23\u0E4C\
+            \u0E41\u0E04\u0E21\u0E1B\u0E4C (Barcamp) \u0E04\u0E37\u0E2D\u0E40\u0E04\
+            \u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22\u0E19\u0E32\u0E19\u0E32\u0E0A\
+            \u0E32\u0E15\u0E34\u0E02\u0E2D\u0E07\u0E07\u0E32\u0E19\u0E2A\u0E31\u0E21\
+            \u0E21\u0E19\u0E32\u0E17\u0E35\u0E48\u0E1C\u0E39\u0E49\u0E43\u0E0A\u0E49\
+            \u0E2A\u0E23\u0E49\u0E32\u0E07 - \u0E07\u0E32\u0E19\u0E40\u0E1B\u0E47\u0E19\
+            \u0E40\u0E27\u0E34\u0E23\u0E4C\u0E04\u0E0A\u0E47\u0E2D\u0E1B\u0E17\u0E35\
+            \u0E48\u0E40\u0E1B\u0E34\u0E14\u0E01\u0E27\u0E49\u0E32\u0E07 \u0E41\u0E25\
+            \u0E30\u0E40\u0E19\u0E49\u0E19\u0E01\u0E32\u0E23\u0E21\u0E35\u0E2A\u0E48\
+            \u0E27\u0E19\u0E23\u0E48\u0E27\u0E21 - \u0E17\u0E35\u0E48\u0E40\u0E19\u0E37\
+            \u0E49\u0E2D\u0E2B\u0E32\u0E15\u0E48\u0E32\u0E07\u0E46\u0E19\u0E31\u0E49\
+            \u0E19\u0E1C\u0E39\u0E49\u0E40\u0E02\u0E49\u0E32\u0E23\u0E48\u0E27\u0E21\
+            \u0E08\u0E30\u0E40\u0E1B\u0E47\u0E19\u0E04\u0E19\u0E08\u0E30\u0E2B\u0E32\
+            \u0E41\u0E25\u0E30\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E21\u0E32\u0E40\
+            \u0E2D\u0E07 - \u0E2A\u0E48\u0E27\u0E19\u0E21\u0E32\u0E01\u0E41\u0E25\u0E49\
+            \u0E27\u0E08\u0E30\u0E40\u0E19\u0E49\u0E19 (\u0E41\u0E15\u0E48\u0E44\u0E21\
+            \u0E48\u0E08\u0E33\u0E01\u0E31\u0E14) \u0E43\u0E19\u0E40\u0E23\u0E37\u0E48\
+            \u0E2D\u0E07\u0E02\u0E2D\u0E07\u0E40\u0E27\u0E47\u0E1A\u0E41\u0E2D\u0E1E\
+            \u0E1E\u0E25\u0E34\u0E40\u0E04\u0E0A\u0E31\u0E48\u0E19\u0E43\u0E19\u0E0A\
+            \u0E31\u0E49\u0E19\u0E15\u0E49\u0E19 \u0E41\u0E25\u0E30\u0E40\u0E17\u0E04\
+            \u0E42\u0E19\u0E42\u0E25\u0E22\u0E35\u0E42\u0E2D\u0E40\u0E1E\u0E48\u0E19\
+            \u0E0B\u0E2D\u0E23\u0E4C\u0E2A\u0E17\u0E35\u0E48\u0E40\u0E01\u0E35\u0E48\
+            \u0E22\u0E27\u0E02\u0E49\u0E2D\u0E07 \u0E42\u0E1B\u0E23\u0E42\u0E15\u0E04\
+            \u0E2D\u0E25\u0E2A\u0E31\u0E07\u0E04\u0E21 (social protocol) \u0E41\u0E25\
+            \u0E30\u0E23\u0E30\u0E1A\u0E1A\u0E01\u0E32\u0E23\u0E08\u0E31\u0E14\u0E40\
+            \u0E01\u0E47\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E41\u0E1A\u0E1A\
+            \u0E40\u0E1B\u0E34\u0E14</p>\n<p>\u0E07\u0E32\u0E19\u0E19\u0E35\u0E48\u0E08\
+            \u0E30\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E23\u0E39\u0E1B\u0E41\u0E1A\
+            \u0E1A\u0E2D\u0E2A\u0E31\u0E21\u0E21\u0E19\u0E32 \u0E44\u0E21\u0E48\u0E21\
+            \u0E35\u0E1C\u0E39\u0E49\u0E1F\u0E31\u0E07 \u0E21\u0E35\u0E41\u0E15\u0E48\
+            \u0E1C\u0E39\u0E49\u0E40\u0E02\u0E49\u0E32\u0E23\u0E48\u0E27\u0E21 \u0E04\
+            \u0E19\u0E17\u0E35\u0E48\u0E21\u0E32\u0E07\u0E32\u0E19\u0E17\u0E38\u0E01\
+            \u0E04\u0E19\u0E04\u0E27\u0E23\u0E08\u0E30\u0E40\u0E15\u0E23\u0E35\u0E22\
+            \u0E21\u0E01\u0E32\u0E23\u0E2A\u0E32\u0E18\u0E34\u0E15 \u0E0A\u0E31\u0E48\
+            \u0E27\u0E42\u0E21\u0E07\u0E04\u0E38\u0E22 \u0E2B\u0E23\u0E37\u0E2D\u0E0A\
+            \u0E48\u0E27\u0E22\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E01\u0E32\u0E23\u0E19\
+            \u0E33\u0E40\u0E2A\u0E19\u0E2D\u0E0B\u0E31\u0E01\u0E2B\u0E31\u0E27\u0E02\
+            \u0E49\u0E2D \u0E2B\u0E23\u0E37\u0E2D\u0E44\u0E21\u0E48\u0E07\u0E31\u0E49\
+            \u0E19\u0E01\u0E47\u0E23\u0E48\u0E27\u0E21\u0E2D\u0E32\u0E2A\u0E32\u0E43\
+            \u0E19\u0E0B\u0E31\u0E01\u0E17\u0E32\u0E07\u0E17\u0E35\u0E48\u0E08\u0E30\
+            \u0E2A\u0E19\u0E31\u0E1A\u0E2A\u0E19\u0E38\u0E19\u0E07\u0E32\u0E19\u0E19\
+            \u0E35\u0E49 \u0E01\u0E32\u0E23\u0E19\u0E33\u0E40\u0E2A\u0E19\u0E2D\u0E17\
+            \u0E38\u0E01\u0E2B\u0E31\u0E27\u0E02\u0E49\u0E2D\u0E08\u0E30\u0E16\u0E39\
+            \u0E01\u0E08\u0E31\u0E14\u0E15\u0E32\u0E23\u0E32\u0E07\u0E43\u0E19\u0E27\
+            \u0E31\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E1E\u0E39\u0E14\u0E40\u0E25\
+            \u0E22 \u0E42\u0E14\u0E22\u0E17\u0E35\u0E48\u0E1C\u0E39\u0E49\u0E40\u0E02\
+            \u0E49\u0E32\u0E23\u0E48\u0E27\u0E21\u0E07\u0E32\u0E19\u0E17\u0E38\u0E01\
+            \u0E04\u0E19\u0E08\u0E30\u0E17\u0E33\u0E01\u0E32\u0E23\u0E42\u0E2B\u0E27\
+            \u0E15\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E2B\u0E31\u0E27\u0E02\u0E49\u0E2D\
+            \u0E17\u0E35\u0E48\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07\u0E2D\u0E22\u0E32\
+            \u0E01\u0E40\u0E02\u0E49\u0E32\u0E44\u0E1B\u0E23\u0E48\u0E27\u0E21\u0E14\
+            \u0E49\u0E27\u0E22</p>\n<h2>\u0E43\u0E04\u0E23\u0E21\u0E32\u0E23\u0E48\
+            \u0E27\u0E21\u0E1A\u0E49\u0E32\u0E07?</h2>\n<p>\u0E43\u0E04\u0E23\u0E01\
+            \u0E47\u0E44\u0E14\u0E49\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E32\u0E01\u0E21\
+            \u0E35\u0E2A\u0E48\u0E27\u0E19\u0E23\u0E48\u0E27\u0E21\u0E01\u0E47\u0E21\
+            \u0E32\u0E44\u0E14\u0E49 \u0E16\u0E49\u0E32\u0E04\u0E38\u0E13\u0E44\u0E21\
+            \u0E48\u0E21\u0E31\u0E48\u0E19\u0E43\u0E08\u0E27\u0E48\u0E32\u0E1A\u0E32\
+            \u0E23\u0E4C\u0E41\u0E04\u0E21\u0E1B\u0E4C\u0E01\u0E23\u0E38\u0E07\u0E40\
+            \u0E17\u0E1E\u0E2F\u0E40\u0E1B\u0E47\u0E19\u0E22\u0E31\u0E07\u0E44\u0E07\
+            \ \u0E04\u0E38\u0E13\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E22\u0E49\u0E2D\
+            \u0E19\u0E44\u0E1B\u0E14\u0E39\u0E07\u0E32\u0E19\u0E2A\u0E35\u0E48\u0E04\
+            \u0E23\u0E31\u0E49\u0E07\u0E01\u0E48\u0E2D\u0E19\u0E02\u0E2D\u0E07\u0E40\
+            \u0E23\u0E32\u0E44\u0E14\u0E49 (\u0E51,\u0E52,\u0E53,\u0E54) \u0E41\u0E25\
+            \u0E30\u0E04\u0E38\u0E13\u0E22\u0E31\u0E07\u0E40\u0E02\u0E49\u0E32\u0E44\
+            \u0E1B\u0E14\u0E39\u0E20\u0E32\u0E1E\u0E43\u0E19\u0E1F\u0E25\u0E34\u0E01\
+            \u0E40\u0E01\u0E2D\u0E23\u0E4C \u0E41\u0E25\u0E30\u0E27\u0E35\u0E14\u0E35\
+            \u0E42\u0E2D\u0E43\u0E19\u0E22\u0E39\u0E17\u0E39\u0E1B\u0E44\u0E14\u0E49\
+            </p>\n<p>\u0E07\u0E32\u0E19\u0E08\u0E30\u0E43\u0E0A\u0E49\u0E2A\u0E2D\u0E07\
+            \u0E20\u0E32\u0E29\u0E32\u0E2B\u0E25\u0E31\u0E01\u0E46\u0E04\u0E37\u0E2D\
+            \u0E20\u0E32\u0E29\u0E32\u0E44\u0E17\u0E22\u0E41\u0E25\u0E30\u0E20\u0E32\
+            \u0E29\u0E32\u0E2D\u0E31\u0E07\u0E01\u0E24\u0E29 \u0E41\u0E15\u0E48\u0E40\
+            \u0E23\u0E32\u0E01\u0E47\u0E44\u0E21\u0E48\u0E1A\u0E31\u0E07\u0E04\u0E31\
+            \u0E1A\u0E16\u0E49\u0E32\u0E04\u0E38\u0E13\u0E2D\u0E22\u0E32\u0E01\u0E08\
+            \u0E30\u0E40\u0E23\u0E34\u0E48\u0E21\u0E2B\u0E31\u0E27\u0E02\u0E49\u0E2D\
+            \u0E43\u0E19\u0E20\u0E32\u0E29\u0E32\u0E2D\u0E37\u0E48\u0E19\u0E46 (\u0E08\
+            \u0E32\u0E1E\u0E32\u0E2A\u0E32\u0E27\u0E34\u0E1A\u0E31\u0E14\u0E40\u0E23\
+            \u0E32\u0E01\u0E49\u0E2D\u0E21\u0E30\u0E2B\u0E49\u0E32\u0E21\u0E19\u0E30\
+            !)</p><h2>\u0E08\u0E31\u0E14\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E44\u0E2B\
+            \u0E23\u0E48?</h2>\n<p>\u0E27\u0E31\u0E19\u0E08\u0E31\u0E14\u0E07\u0E32\
+            \u0E19\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E01\u0E33\
+            \u0E2B\u0E19\u0E14\u0E41\u0E19\u0E48\u0E0A\u0E31\u0E14 \u0E41\u0E15\u0E48\
+            \u0E08\u0E30\u0E08\u0E31\u0E14\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E40\
+            \u0E14\u0E37\u0E2D\u0E19\u0E01\u0E23\u0E01\u0E0E\u0E32\u0E04\u0E21-\u0E2A\
+            \u0E34\u0E07\u0E2B\u0E32\u0E04\u0E21\u0E19\u0E35\u0E49</p>\n<p>\u0E07\u0E32\
+            \u0E19\u0E08\u0E30\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E31\u0E49\u0E07\
+            \u0E41\u0E15\u0E48\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E0A\u0E49\
+            \u0E32\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E40\u0E2A\u0E32\u0E23\u0E4C\
+            \ \u0E08\u0E19\u0E16\u0E36\u0E07\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E22\u0E47\
+            \u0E19\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E2D\u0E32\u0E17\u0E34\u0E15\
+            \u0E22\u0E4C \u0E40\u0E23\u0E32\u0E08\u0E30\u0E2D\u0E2D\u0E01\u0E01\u0E33\
+            \u0E2B\u0E19\u0E14\u0E01\u0E32\u0E23\u0E21\u0E32\u0E43\u0E2B\u0E49\u0E17\
+            \u0E48\u0E32\u0E19\u0E2D\u0E35\u0E01\u0E17\u0E35</p>\n<h2>\u0E08\u0E31\
+            \u0E14\u0E17\u0E35\u0E48\u0E44\u0E2B\u0E19?</h2>\n<p>\u0E21\u0E2B\u0E32\
+            \u0E27\u0E34\u0E17\u0E22\u0E32\u0E25\u0E31\u0E22\u0E28\u0E23\u0E35\u0E1B\
+            \u0E17\u0E38\u0E21 \u0E27\u0E34\u0E17\u0E22\u0E32\u0E40\u0E02\u0E15\u0E1A\
+            \u0E32\u0E07\u0E40\u0E02\u0E19</p>"}
+    model: text.text
+    pk: 13
+-   fields: {body: "<p>\u0E27\u0E34\u0E18\u0E35\u0E01\u0E32\u0E23\u0E40\u0E14\u0E34\
+            \u0E19\u0E17\u0E32\u0E07\u0E17\u0E35\u0E48\u0E07\u0E48\u0E32\u0E22\u0E17\
+            \u0E35\u0E48\u0E2A\u0E38\u0E14\u0E04\u0E37\u0E2D\u0E25\u0E07\u0E08\u0E32\
+            \u0E01\u0E23\u0E16\u0E44\u0E1F\u0E1F\u0E49\u0E32\u0E17\u0E35\u0E48\u0E2A\
+            \u0E16\u0E32\u0E19\u0E35\u0E2B\u0E21\u0E2D\u0E0A\u0E34\u0E15 \u0E2B\u0E23\
+            \u0E37\u0E2D\u0E23\u0E16\u0E43\u0E15\u0E49\u0E14\u0E34\u0E19\u0E2A\u0E27\
+            \u0E19\u0E08\u0E15\u0E38\u0E08\u0E31\u0E01\u0E23 \u0E41\u0E25\u0E49\u0E27\
+            \u0E15\u0E48\u0E2D\u0E41\u0E17\u0E47\u0E01\u0E0B\u0E35\u0E48\u0E08\u0E32\
+            \u0E01\u0E15\u0E23\u0E07\u0E19\u0E31\u0E49\u0E19\u0E21\u0E32\u0E1B\u0E23\
+            \u0E30\u0E21\u0E32\u0E13 \u0E51\u0E50\u0E50 \u0E1A\u0E32\u0E17 (\u0E2B\
+            \u0E23\u0E37\u0E2D\u0E08\u0E30\u0E15\u0E34\u0E14\u0E23\u0E16\u0E04\u0E19\
+            \u0E2D\u0E37\u0E48\u0E19 \u0E2B\u0E23\u0E37\u0E2D\u0E08\u0E30\u0E19\u0E31\
+            \u0E48\u0E07\u0E23\u0E16\u0E40\u0E21\u0E25\u0E4C\u0E01\u0E47\u0E44\u0E14\
+            \u0E49 \u0E41\u0E25\u0E49\u0E27\u0E41\u0E15\u0E48\u0E04\u0E38\u0E13\u0E16\
+            \u0E19\u0E31\u0E14!)</p>\n<h2>\u0E1C\u0E39\u0E49\u0E2A\u0E19\u0E31\u0E1A\
+            \u0E2A\u0E19\u0E38\u0E19</h2>\n<p>\u0E42\u0E1B\u0E23\u0E14\u0E15\u0E34\
+            \u0E14\u0E15\u0E48\u0E2D\u0E17\u0E32\u0E07\u0E17\u0E35\u0E21\u0E07\u0E32\
+            \u0E19\u0E1C\u0E39\u0E49\u0E08\u0E31\u0E14\u0E16\u0E49\u0E32\u0E04\u0E38\
+            \u0E13\u0E21\u0E35\u0E04\u0E27\u0E32\u0E21\u0E1B\u0E23\u0E30\u0E2A\u0E07\
+            \u0E04\u0E4C\u0E08\u0E30\u0E43\u0E2B\u0E49\u0E01\u0E32\u0E23\u0E2A\u0E19\
+            \u0E31\u0E1A\u0E2A\u0E19\u0E38\u0E19\u0E07\u0E32\u0E19\u0E19\u0E35\u0E49\
+            \u0E43\u0E19\u0E17\u0E32\u0E07\u0E44\u0E2B\u0E19\u0E01\u0E47\u0E44\u0E14\
+            \u0E49 \u0E1C\u0E39\u0E49\u0E2A\u0E19\u0E31\u0E1A\u0E2A\u0E19\u0E38\u0E19\
+            \u0E17\u0E38\u0E01\u0E23\u0E32\u0E22\u0E08\u0E30\u0E21\u0E35\u0E42\u0E25\
+            \u0E42\u0E01\u0E49\u0E15\u0E34\u0E14\u0E2D\u0E22\u0E39\u0E48\u0E1A\u0E19\
+            \u0E40\u0E2A\u0E37\u0E49\u0E2D\u0E22\u0E37\u0E14\u0E17\u0E35\u0E48\u0E40\
+            \u0E23\u0E32\u0E08\u0E30\u0E41\u0E08\u0E01\u0E43\u0E2B\u0E49\u0E1C\u0E39\
+            \u0E49\u0E40\u0E02\u0E49\u0E32\u0E23\u0E48\u0E27\u0E21\u0E07\u0E32\u0E19\
+            \ \u0E41\u0E25\u0E30\u0E1A\u0E19\u0E1B\u0E49\u0E32\u0E22\u0E41\u0E1A\u0E19\
+            \u0E40\u0E19\u0E2D\u0E23\u0E4C\u0E15\u0E48\u0E32\u0E07\u0E46\u0E14\u0E49\
+            \u0E27\u0E22&amp;#160</p>\n<p>\u0E40\u0E23\u0E32\u0E08\u0E30\u0E15\u0E49\
+            \u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E42\u0E25\u0E42\u0E01\u0E49\u0E04\u0E27\
+            \u0E32\u0E21\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E2A\u0E39\u0E07\
+            \u0E2B\u0E23\u0E37\u0E2D\u0E40\u0E27\u0E47\u0E01\u0E40\u0E15\u0E2D\u0E23\
+            \u0E4C\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13 \u0E41\u0E25\u0E49\u0E27\u0E01\
+            \u0E47 URL \u0E02\u0E2D\u0E07\u0E40\u0E27\u0E47\u0E1A\u0E44\u0E0B\u0E15\
+            \u0E4C\u0E04\u0E38\u0E13 \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E01\u0E32\u0E23\
+            \u0E1E\u0E34\u0E21\u0E1E\u0E4C \u0E41\u0E25\u0E30\u0E43\u0E2A\u0E48\u0E43\
+            \u0E19\u0E2B\u0E19\u0E49\u0E32\u0E1C\u0E39\u0E49\u0E2A\u0E19\u0E31\u0E1A\
+            \u0E2A\u0E19\u0E38\u0E19\u0E02\u0E2D\u0E07\u0E40\u0E23\u0E32</p>\n<h2>\u0E17\
+            \u0E35\u0E21\u0E07\u0E32\u0E19</h2>\n<p>\u0E44\u0E1B\u0E14\u0E39\u0E2B\
+            \u0E19\u0E49\u0E32\u0E17\u0E35\u0E21\u0E07\u0E32\u0E19\u0E1C\u0E39\u0E49\
+            \u0E08\u0E31\u0E14\u0E44\u0E14\u0E49\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\
+            \u0E23\u0E32\u0E22\u0E0A\u0E37\u0E48\u0E2D\u0E17\u0E35\u0E21\u0E07\u0E32\
+            \u0E19\u0E41\u0E1A\u0E1A\u0E40\u0E15\u0E47\u0E21\u0E46 \u0E02\u0E2D\u0E1A\
+            \u0E04\u0E38\u0E13\u0E17\u0E35\u0E48\u0E02\u0E22\u0E31\u0E19\u0E01\u0E31\
+            \u0E19\u0E19\u0E30</p>\n<h2>\u0E41\u0E17\u0E47\u0E01</h2>\n<p>\u0E41\u0E17\
+            \u0E47\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E1B\u0E47\u0E19\u0E17\
+            \u0E32\u0E07\u0E01\u0E32\u0E23\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E07\
+            \u0E32\u0E19\u0E19\u0E35\u0E49\u0E04\u0E37\u0E2D #barcampbangkok \u0E41\
+            \u0E25\u0E30 #barcampbkk5</p>\n<p>\u0E42\u0E1B\u0E23\u0E14\u0E43\u0E2A\
+            \u0E48\u0E41\u0E17\u0E47\u0E01\u0E2A\u0E37\u0E48\u0E2D\u0E15\u0E48\u0E32\
+            \u0E07\u0E46\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13 (\u0E40\u0E0A\u0E48\u0E19\
+            \u0E17\u0E27\u0E35\u0E15\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13) \u0E40\u0E1E\
+            \u0E37\u0E48\u0E2D\u0E17\u0E35\u0E48\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\
+            \u0E08\u0E30\u0E44\u0E14\u0E49\u0E15\u0E32\u0E21\u0E2D\u0E48\u0E32\u0E19\
+            \u0E44\u0E14\u0E49\u0E07\u0E48\u0E32\u0E22\u0E46</p>\n<h2>\u0E25\u0E34\
+            \u0E07\u0E01\u0E4C\u0E15\u0E48\u0E32\u0E07\u0E46</h2>\n<p>\u0E16\u0E49\
+            \u0E32\u0E04\u0E38\u0E13\u0E21\u0E35\u0E04\u0E27\u0E32\u0E21\u0E1B\u0E23\
+            \u0E30\u0E2A\u0E07\u0E04\u0E4C\u0E08\u0E30\u0E15\u0E34\u0E14\u0E15\u0E48\
+            \u0E2D\u0E17\u0E35\u0E21\u0E07\u0E32\u0E19\u0E1C\u0E39\u0E49\u0E08\u0E31\
+            \u0E14 \u0E42\u0E1B\u0E23\u0E14\u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\
+            \u0E25\u0E4C\u0E21\u0E32\u0E17\u0E35\u0E48\u0E40\u0E21\u0E25\u0E25\u0E34\
+            \u0E48\u0E07\u0E25\u0E34\u0E2A\u0E15\u0E4C\u0E02\u0E2D\u0E07\u0E40\u0E23\
+            \u0E32<br/>\n<a style=\"text-decoration: underline; padding-top: 1px;\
+            \ padding-right: 1px; padding-bottom: 1px; padding-left: 1px; color: rgb(0,\
+            \ 51, 153);\" href=\"http://groups.google.com/group/barcamp-thailand\"\
+            >http://groups.google.com/group/barcamp-thailand</a><br/>\n<a style=\"\
+            text-decoration: underline; padding-top: 1px; padding-right: 1px; padding-bottom:\
+            \ 1px; padding-left: 1px; color: rgb(0, 51, 153);\" href=\"http://barcampbangkok.org/\"\
+            >http://barcampbangkok.org</a><br/>\n<a style=\"text-decoration: underline;\
+            \ padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left:\
+            \ 1px; color: rgb(0, 51, 153);\" href=\"irc://irc.freenode.net/#barcamp-thailand\"\
+            >irc://irc.freenode.net/#barcamp-thailand</a></p>"}
+    model: text.text
+    pk: 14
