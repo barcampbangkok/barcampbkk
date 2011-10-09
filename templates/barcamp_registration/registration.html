@@ -5,8 +5,7 @@
         {{ form.non_field_errors }}
         {% for field in form %}
             <div class="fieldWrapper">
-                {{ field.label_tag }}: {{ field }}
-                {% if field.field.required %}<span class="required_mark">*</span>{% endif %}
+                {{ field.label_tag }}: {{ field }}{% if field.field.required %}<span class="required_mark">*</span>{% endif %}
                 {% if field.help_text %}<span class="help_text">{{ field.help_text }}</span>{% endif %}
                 {% if field.errors %}
                     {% for error in field.errors %}
