@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from django.test import TestCase
 
+from barcamp_registration.models import BarcampRegistration
+
 class TestRegistration(TestCase):
     url = '/barcamp_registration/'
     def test_get_form(self):
@@ -68,4 +70,30 @@ class TestRegistration(TestCase):
         response = self.client.post(self.url,data=data)
         self.assertEqual(response.status_code,400)
         self.assertIn(u'Barcamp registration with this Name and E-mail already exists.',response.content)
+
+class TestWhosComing(TestCase):
+    url = '/barcamp_registration/whos_coming/'
+    def test_get_whos_coming(self):
+        BarcampRegistration.objects.create(
+            name='Barcamper 1',
+            email='barcamper1@gmail.com',
+            twitter='barcamper1',
+            website='www.abcd.com',
+            topics='Agile',
+        )
+        BarcampRegistration.objects.create(
+            name='Barcamper 2',
+            email='barcamper2@gmail.com',
+            twitter='barcamper2',
+            website='www.asdf.com',
+            topics='DCI',
+        )
+        response = self.client.get(self.url)
+
+        # barcamper 1
+        self.assertIn('<td class="name">Barcamper 1</td>',response.content)
+        self.assertIn('<td class="email">barcamper1@gmail.com</td>',response.content)
+        self.assertIn('<a href="http://twitter.com/barcamper1" target="_blank">@barcamper1</a>',response.content)
+        self.assertIn('<a href="www.abcd.com" target="_blank">www.abcd.com</a>',response.content)
+        self.assertIn('<td class="topics">Agile</td>',response.content)
 
