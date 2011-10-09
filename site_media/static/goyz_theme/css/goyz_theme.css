@@ -79,6 +79,7 @@ a.current{
 
 div.fieldWrapper{
     margin: 5px 0;
+    width: 431px;
 }
 
 div.fieldWrapper label{
@@ -104,4 +105,17 @@ div.fieldWrapper span.help_text{
 
 div.fieldWrapper .required_mark{
     color: red;
+}
+
+div.fieldWrapper input[type="submit"]{
+    margin: 10px 0;
+    padding: 5px;
+    float: right;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #91C22F;
+    font-weight: bold;
+    margin-right: 3px;
 }

@@ -27,5 +27,8 @@ class BarcampRegistration(models.Model):
                                    blank=True,null=True,help_text=_('US sizes'))
     topics = models.CharField(_('topics'),max_length=1024,blank=True,null=True)
 
+    class Meta:
+        unique_together = (('name','email'),)
+
     def __unicode__(self):
         return u'Barcamp Registration for: %s (%s)' % (self.name,self.email)
