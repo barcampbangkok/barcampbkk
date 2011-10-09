@@ -3,170 +3,2122 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-02 19:34+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-10-10 00:10+0700\n"
+"PO-Revision-Date: 2011-10-10 00:05+0700\n"
+"Last-Translator: Pam <suebvisai.pam@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: templates/homepage.html:6
-msgid "Welcome"
+#: .\apps\barcamp_registration\models.py:5
+msgid "XS"
 msgstr ""
 
-#: templates/homepage.html:12
-msgid "Welcome to Pinax"
+#: .\apps\barcamp_registration\models.py:6
+msgid "S"
 msgstr ""
 
-#: templates/homepage.html:15
-msgid ""
-"\n"
-"        <b>Pinax</b> is a <a href=\"http://djangoproject.com/\">Django</a>\n"
-"        project intended to provide a starting point for websites. By\n"
-"        integrating numerous reusable Django apps to take care of the\n"
-"        things that many sites have in common, it lets you focus on what\n"
-"        makes your site different.\n"
-"        "
+#: .\apps\barcamp_registration\models.py:7
+msgid "M"
 msgstr ""
 
-#: templates/homepage.html:25
-msgid ""
-"\n"
-"        For more information about Pinax, see\n"
-"        <a href=\"http://pinaxproject.com/\">http://pinaxproject.com/</a>.\n"
-"        "
+#: .\apps\barcamp_registration\models.py:8
+msgid "L"
 msgstr ""
 
-#: templates/homepage.html:31
-msgid "About this project"
+#: .\apps\barcamp_registration\models.py:9
+msgid "XL"
 msgstr ""
 
-#: templates/homepage.html:34
-msgid ""
-"\n"
-"        This project comes with the bare minimum set of applications and\n"
-"        templates to get you started. It includes no extra tabs, only the\n"
-"        profile and notices tabs are included by default. From here you can\n"
-"        add any extra functionality and applications that you would like.\n"
-"        "
+#: .\apps\barcamp_registration\models.py:22 .\apps\profiles\models.py:8
+msgid "name"
 msgstr ""
 
-#: templates/homepage.html:45
-#, python-format
-msgid "Wondering <a href=\"%(what_next_url)s\">What Next</a>?"
+#: .\apps\barcamp_registration\models.py:23
+msgid "e-mail"
+msgstr "อีเมล"
+
+#: .\apps\barcamp_registration\models.py:24
+msgid "twitter"
 msgstr ""
 
-#: templates/homepage.html:50
-#, python-format
-msgid ""
-"You can <a href=\"%(signup_url)s\">Sign up</a> and <a href=\"%(login_url)s"
-"\">Log in</a> to try out the site."
+#: .\apps\barcamp_registration\models.py:25
+msgid "twitter username without @"
+msgstr "twitter username ไม่มี @"
+
+#: .\apps\barcamp_registration\models.py:26 .\apps\profiles\models.py:11
+msgid "website"
 msgstr ""
 
-#: templates/homepage.html:52
-#, python-format
-msgid "You can <a href=\"%(login_url)s\">Log in</a> to try out the site."
+#: .\apps\barcamp_registration\models.py:27
+msgid "t-shirt size"
+msgstr "ขนาดเสื้อ"
+
+#: .\apps\barcamp_registration\models.py:28
+msgid "US sizes"
+msgstr "size แบบ US"
+
+#: .\apps\barcamp_registration\models.py:29
+msgid "topics"
+msgstr "หัวข้อที่สนใจ"
+
+#: .\apps\profiles\models.py:9
+msgid "about"
 msgstr ""
 
-#: templates/site_base.html:16
-msgid "Account"
+#: .\apps\profiles\models.py:10
+msgid "location"
 msgstr ""
 
-#: templates/site_base.html:16
-msgid "Admin"
+#: .\templates\base.html.py:39 .\templates\barcamp_basic\base.html.py:37
+#: .\templates\barcamp_basic\announcements\announcement_list.html.py:15
+#: .\templates\goyz_theme\base.html.py:37
+msgid "Hide announcement"
 msgstr ""
 
-#: templates/site_base.html:16
-msgid "Logout"
+#: .\templates\base.html.py:59 .\templates\barcamp_basic\base.html.py:58
+#: .\templates\goyz_theme\base.html.py:58
+msgid "clear"
 msgstr ""
 
-#: templates/site_base.html:18
-msgid "Login"
+#: .\templates\site_base.html.py:36
+msgid "&copy; 2011 Barcamp Bangkok Organization"
 msgstr ""
 
-#: templates/site_base.html:18
-msgid "or"
-msgstr ""
+#: .\templates\site_base.html.py:47
+msgid "Registration"
+msgstr "ลงทะเบียน"
 
-#: templates/site_base.html:18
-msgid "Sign up"
-msgstr ""
+#: .\templates\site_base.html.py:48
+msgid "Who's Coming?"
+msgstr "ใครมาบ้าง?"
 
-#: templates/site_base.html:27
-msgid "Profile"
-msgstr ""
-
-#: templates/site_base.html:28
-msgid "Notices"
-msgstr ""
-
-#: templates/site_base.html:35
-msgid "&copy; 2010 &lt;your company here&gt;"
-msgstr ""
-
-#: templates/site_base.html:36
-msgid "About"
-msgstr ""
-
-#: templates/site_base.html:37
-msgid "Terms of Service"
-msgstr ""
-
-#: templates/site_base.html:38
-msgid "Privacy Policy"
-msgstr ""
-
-#: templates/site_base.html:39
-msgid "DMCA Notice"
-msgstr ""
-
-#: templates/about/what_next.html:6 templates/about/what_next.html.py:9
+#: .\templates\about\what_next.html.py:6 .\templates\about\what_next.html.py:9
 msgid "What Next?"
 msgstr ""
 
-#: templates/about/what_next.html:35
+#: .\templates\about\what_next.html.py:35
 #, python-format
 msgid ""
 "Start by <a href=\"%(signup_url)s\">signing up</a> and <a href=\"%(login_url)"
 "s\">logging in</a>."
 msgstr ""
 
-#: templates/about/what_next.html:37
+#: .\templates\about\what_next.html.py:37
 #, python-format
 msgid "Start by <a href=\"%(login_url)s\">logging in</a>."
 msgstr ""
 
-#: templates/account/base.html:10
+#: .\templates\barcamp_basic\404.html.py:5
+msgid "Not Found"
+msgstr ""
+
+#: .\templates\barcamp_basic\404.html.py:8
+msgid "We're sorry but that page could not be found."
+msgstr ""
+
+#: .\templates\barcamp_basic\500.html.py:5
+msgid "Server Error"
+msgstr ""
+
+#: .\templates\barcamp_basic\500.html.py:8
+msgid ""
+"We're sorry but a server error has occurred. We've been notified and will "
+"look into it as soon as possible."
+msgstr ""
+
+#: .\templates\barcamp_basic\about\about.html.py:5
+#: .\templates\barcamp_basic\idios\profile.html.py:21
+#: .\templates\barcamp_basic\profiles\profile.html.py:40
+msgid "About"
+msgstr ""
+
+#: .\templates\barcamp_basic\about\about.html.py:8
+msgid ""
+"\n"
+"        <p>Your <b>About Page</b> would normally go here...</p>\n"
+"    "
+msgstr ""
+
+#: .\templates\barcamp_basic\about\about.html.py:11
+msgid ""
+"\n"
+"        Pinax includes the <a href=\"http://www.famfamfam.com/lab/icons/silk/"
+"\">Silk icon set 1.3</a> by Mark James.\n"
+"    "
+msgstr ""
+
+#: .\templates\barcamp_basic\about\dmca.html.py:5
+msgid "Digital Millennium Copyright Act Notice"
+msgstr ""
+
+#: .\templates\barcamp_basic\about\dmca.html.py:8
+msgid ""
+"<p>Your <b>Digital Millennium Copyright Act Notice</b> would normally go "
+"here...</p>"
+msgstr ""
+
+#: .\templates\barcamp_basic\about\privacy.html.py:5
+msgid "Privacy Policy"
+msgstr ""
+
+#: .\templates\barcamp_basic\about\privacy.html.py:8
+msgid "<p>Your <b>Privacy Policy</b> would normally go here...</p>"
+msgstr ""
+
+#: .\templates\barcamp_basic\about\terms.html.py:5
+msgid "Terms of Service"
+msgstr ""
+
+#: .\templates\barcamp_basic\about\terms.html.py:8
+msgid "<p>Your <b>Terms of Service</b> would normally go here...</p>"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\base.html.py:11
 msgid "E-Mail Addresses"
 msgstr ""
 
-#: templates/account/base.html:11
-msgid "OpenID Associations"
-msgstr ""
-
-#: templates/account/base.html:13
+#: .\templates\barcamp_basic\account\base.html.py:14
+#: .\templates\barcamp_basic\account\password_change.html.py:5
+#: .\templates\barcamp_basic\account\password_change.html.py:8
+#: .\templates\barcamp_basic\account\password_reset_from_key.html.py:5
+#: .\templates\barcamp_basic\account\password_reset_from_key.html.py:8
 msgid "Change Password"
 msgstr ""
 
-#: templates/account/base.html:15
+#: .\templates\barcamp_basic\account\base.html.py:16
+#: .\templates\barcamp_basic\account\password_set.html.py:6
+#: .\templates\barcamp_basic\account\password_set.html.py:9
 msgid "Set Password"
 msgstr ""
 
-#: templates/account/base.html:18
-msgid "Delete Password"
-msgstr ""
-
-#: templates/account/base.html:20
+#: .\templates\barcamp_basic\account\base.html.py:18
+#: .\templates\barcamp_basic\account\language_change.html.py:6
+#: .\templates\barcamp_basic\account\language_change.html.py:9
 msgid "Language"
 msgstr ""
 
-#: templates/account/base.html:21
+#: .\templates\barcamp_basic\account\base.html.py:19
+#: .\templates\barcamp_basic\account\timezone_change.html.py:6
+#: .\templates\barcamp_basic\account\timezone_change.html.py:9
 msgid "Timezone"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\email.html.py:6
+#: .\templates\barcamp_basic\account\email.html.py:9
+msgid "Account"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\email.html.py:11
+msgid "E-mail Addresses"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\email.html.py:20
+msgid "verified"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\email.html.py:22
+msgid "primary"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\email.html.py:30
+msgid "make primary"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\email.html.py:35
+msgid "unverified"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\email.html.py:42
+msgid "re-send verification e-mail"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\email.html.py:53
+msgid "remove"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\email.html.py:60
+msgid "None"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\email.html.py:60
+msgid ""
+"You should really add one so you can receive notifications, reset your "
+"password if you forget it, etc."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\email.html.py:63
+msgid "Add E-mail Address"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\email.html.py:71
+#: .\templates\barcamp_basic\projects\project.html.py:86
+msgid "add"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\language_change.html.py:11
+msgid "Pinax can be used in your preferred language."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\language_change.html.py:18
+msgid "Change my language"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\login.html.py:8
+msgid "Login"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\login.html.py:12
+#: .\templates\barcamp_basic\account\signup.html.py:14
+msgid "Log In"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\login.html.py:16
+#: .\templates\barcamp_basic\account\password_reset.html.py:13
+#: .\templates\barcamp_basic\account\password_reset_done.html.py:12
+#: .\templates\barcamp_basic\notification\notices.html.py:61
+msgid "Note"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\login.html.py:16
+#: .\templates\barcamp_basic\account\password_reset.html.py:13
+#: .\templates\barcamp_basic\account\password_reset_done.html.py:12
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\login.html.py:20
+#, python-format
+msgid "Don't have an account? <a href=\"%(signup_url)s\">Sign up</a>!"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\login.html.py:28
+msgid "Forgot password?"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\login.html.py:35
+msgid "Log in"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\login.html.py:40
+msgid "Or sign in with your social network accounts"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\login.html.py:53
+#, python-format
+msgid ""
+"If you have any trouble logging in to your account, contact us at <a href="
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\logout.html.py:5
+msgid "Logout"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\logout.html.py:8
+msgid "You've been logged out."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_change.html.py:15
+#: .\templates\barcamp_basic\account\password_reset_from_key.html.py:20
+msgid "change password"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_delete.html.py:5
+#: .\templates\barcamp_basic\account\password_delete.html.py:8
+msgid "Delete Password"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_delete.html.py:9
+msgid ""
+"You may delete your password since you are currently logged in using OpenID."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_delete.html.py:12
+msgid "delete my password"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_delete_done.html.py:5
+#: .\templates\barcamp_basic\account\password_delete_done.html.py:8
+msgid "Password Deleted"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_delete_done.html.py:9
+msgid "Your password has been deleted."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_reset.html.py:7
+#: .\templates\barcamp_basic\account\password_reset.html.py:11
+#: .\templates\barcamp_basic\account\password_reset_done.html.py:6
+#: .\templates\barcamp_basic\account\password_reset_done.html.py:9
+msgid "Password Reset"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_reset.html.py:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_reset.html.py:23
+msgid "Reset my password"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_reset.html.py:28
+#, python-format
+msgid ""
+"If you have any trouble resetting your password, contact us at <a href="
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_reset_done.html.py:15
+#, python-format
+msgid ""
+"We have sent you an e-mail. If you do not receive it within a few minutes, "
+"contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_reset_from_key.html.py:8
+msgid "Bad Token"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_reset_from_key.html.py:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\password_set.html.py:16
+msgid "set password"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\signup.html.py:6
+msgid "Signup"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\signup.html.py:9
+msgid "Sign Up"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\signup.html.py:12
+msgid "You are already logged in."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\signup.html.py:14
+msgid "Already have an account?"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\signup.html.py:24
+#: .\templates\barcamp_basic\django_openid\register.html.py:22
+msgid "Sign Up &raquo;"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\signup.html.py:31
+#, python-format
+msgid ""
+"By clicking \"Sign Up\", you are indicating that you have read and agree to "
+"the <a href=\"%(terms_url)s\">Terms of Use</a> and <a href=\"%(privacy_url)s"
+"\">Privacy Policy</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\signup.html.py:33
+#: .\templates\barcamp_basic\django_openid\register.html.py:32
+#, python-format
+msgid ""
+"If you have any trouble creating your account, contact us at <a href="
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\timezone_change.html.py:11
+msgid ""
+"Pinax can localize all times into your preferred timezone. Change your "
+"timezone below."
+msgstr ""
+
+#: .\templates\barcamp_basic\account\timezone_change.html.py:18
+msgid "Change my timezone"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\verification_sent.html.py:5
+#: .\templates\barcamp_basic\account\verification_sent.html.py:8
+msgid "Verify your e-mail address"
+msgstr ""
+
+#: .\templates\barcamp_basic\account\verification_sent.html.py:10
+#, python-format
+msgid ""
+"We have sent you an e-mail to <b>%(email)s</b> for verification. Follow the "
+"link provided to finalize the signup process. If you do not receive it "
+"within a few minutes, contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">%"
+"(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\announcements\announcement_detail.html.py:5
+#, python-format
+msgid "Announcements : %(object)s"
+msgstr ""
+
+#: .\templates\barcamp_basic\announcements\announcement_list.html.py:5
+#: .\templates\barcamp_basic\announcements\announcement_list.html.py:8
+msgid "Announcements"
+msgstr ""
+
+#: .\templates\barcamp_basic\announcements\announcement_list.html.py:20
+msgid "There are no announcements for you."
+msgstr ""
+
+#: .\templates\barcamp_basic\avatar\change.html.py:6
+#: .\templates\barcamp_basic\avatar\change.html.py:9
+#: .\templates\barcamp_basic\avatar\confirm_delete.html.py:5
+#: .\templates\barcamp_basic\avatar\confirm_delete.html.py:8
+msgid "Avatar"
+msgstr ""
+
+#: .\templates\barcamp_basic\avatar\change.html.py:10
+msgid "Here is your current avatar:"
+msgstr ""
+
+#: .\templates\barcamp_basic\avatar\change.html.py:26
+#, python-format
+msgid ""
+"Don&rsquo;t like these avatars? You can <a href=\"%(avatar_delete_url)s"
+"\">choose which ones to delete</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\avatar\change.html.py:31
+msgid "Upload an Avatar:"
+msgstr ""
+
+#: .\templates\barcamp_basic\avatar\change.html.py:32
+msgid "Avatar Image"
+msgstr ""
+
+#: .\templates\barcamp_basic\avatar\change.html.py:33
+msgid "Upload New Image"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\base.html.py:10
+#: .\templates\barcamp_basic\blog\friends_posts.html.py:7
+#: .\templates\barcamp_basic\blog\friends_posts.html.py:11
+msgid "Friends' Blogs"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\base.html.py:11
+#: .\templates\barcamp_basic\blog\blogs.html.py:13
+#: .\templates\barcamp_basic\blog\blogs.html.py:21
+msgid "All Blogs"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\base.html.py:12
+#: .\templates\barcamp_basic\blog\your_posts.html.py:21
+msgid "Your Posts"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\base.html.py:13
+#: .\templates\barcamp_basic\blog\new.html.py:6
+msgid "Write a Blog Post"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\blog_item.html.py:22
+msgid "Posted:"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\blog_item.html.py:23
+msgid "on"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\blogs.html.py:24
+msgid "These are blog posts from everyone:"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\blogs.html.py:35
+#: .\templates\barcamp_basic\blog\friends_posts.html.py:25
+#: .\templates\barcamp_basic\blog\your_posts.html.py:70
+msgid "No blog posts yet."
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\edit.html.py:6
+msgid "Editing Post"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\edit.html.py:16
+msgid "Update"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\edit.html.py:21
+msgid "You are not the author of this post"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\friends_posts.html.py:14
+msgid "These are blog posts from your friends:"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\new.html.py:17
+#: .\templates\barcamp_basic\projects\create.html.py:24
+#: .\templates\barcamp_basic\swaps\new_offer.html.py:17
+#: .\templates\barcamp_basic\tribes\create.html.py:24
+msgid "create"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\post.html.py:11
+msgid "Blog Post"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\your_posts.html.py:12
+msgid "Your Blog Posts"
+msgstr ""
+
+#: .\templates\barcamp_basic\blog\your_posts.html.py:62
+#: .\templates\barcamp_basic\threadedcomments\comments.html.py:24
+msgid "Delete Post"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\add.html.py:6
+#: .\templates\barcamp_basic\bookmarks\add.html.py:10
+#: .\templates\barcamp_basic\bookmarks\base.html.py:9
+msgid "Add Bookmark"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\add.html.py:19
+msgid "add bookmark"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\base.html.py:10
+#: .\templates\barcamp_basic\bookmarks\your_bookmarks.html.py:9
+#: .\templates\barcamp_basic\bookmarks\your_bookmarks.html.py:12
+msgid "Your Bookmarks"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\base.html.py:11
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:12
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:17
+msgid "Friends' Bookmarks"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\base.html.py:12
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:12
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:19
+msgid "All Bookmarks"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:24
+msgid "These are bookmarks from everyone:"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:26
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:25
+msgid "Sort by:"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:29
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:31
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:37
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:39
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:44
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:46
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:28
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:30
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:36
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:38
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:43
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:45
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:42
+msgid "or"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:30
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:29
+msgid "total points"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:36
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:35
+msgid "reddit-like hotness"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:47
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:46
+msgid "date added"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:83
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:82
+#, python-format
+msgid ""
+"\n"
+"                                Saved once\n"
+"                            "
+msgid_plural ""
+"\n"
+"                                Saved %(count)s times\n"
+"                            "
+msgstr[0] ""
+
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:89
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:88
+msgid "(including you)"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:91
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:90
+msgid "save"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\bookmarks.html.py:104
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:103
+#: .\templates\barcamp_basic\bookmarks\your_bookmarks.html.py:48
+msgid "No bookmarks yet."
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\friends_bookmarks.html.py:23
+msgid "These are bookmarks from your friends:"
+msgstr ""
+
+#: .\templates\barcamp_basic\bookmarks\your_bookmarks.html.py:36
+msgid "Delete Bookmark"
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\already_logged_in.html.py:5
+#: .\templates\barcamp_basic\django_openid\already_logged_in.html.py:8
+msgid "Already logged in"
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\already_logged_in.html.py:10
+#, python-format
+msgid ""
+"You are already logged into the site. To login with a different OpenID "
+"please <a href=\"/openid/logout/?next=%(url_acct_logout)s\">logout</a> first."
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\associate.html.py:6
+#: .\templates\barcamp_basic\django_openid\associate.html.py:9
+msgid "Verify this Association"
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\associations.html.py:5
+msgid "OpenID Associations"
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\associations.html.py:8
+msgid "Manage OpenID Associations"
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\associations.html.py:11
+#, python-format
+msgid ""
+"You have not set a password for this user account. You are unable to remove "
+"OpenID associations until you <a href=\"%(acct_passwd_set_url)s\">set a "
+"password</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\associations.html.py:14
+#, python-format
+msgid ""
+"Your account is currently associated with the following OpenID %(buttons)s:"
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\associations.html.py:22
+msgid "Remove association"
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\associations.html.py:29
+msgid "To associate a new OpenID with this account, sign in with it here:"
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\associations.html.py:36
+msgid "Authenticate and associate with this account"
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\register.html.py:6
+#: .\templates\barcamp_basic\django_openid\register.html.py:9
+msgid "Choose a Username"
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\register.html.py:12
+msgid "Please correct the errors below:"
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\register.html.py:15
+msgid ""
+"Now that you have logged in with your OpenID, we need you to choose a "
+"username for this site."
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\register.html.py:30
+#, python-format
+msgid ""
+"<strong>Already have an account?</strong> <a href=\"%(acct_login_openid_url)s"
+"\">Login here</a> to associate your OpenID with your existing account."
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\register.html.py:31
+#, python-format
+msgid ""
+"By clicking &quot;Sign Up&quot;, you are indicating that you have read and "
+"agree to the <a href=\"%(terms_url)s\">Terms of Use</a> and <a href=\"%"
+"(privacy_url)s\">Privacy Policy</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\registration_closed.html.py:5
+#: .\templates\barcamp_basic\django_openid\registration_closed.html.py:8
+msgid "Signup closed"
+msgstr ""
+
+#: .\templates\barcamp_basic\django_openid\registration_closed.html.py:10
+msgid ""
+"Whoops, you can't register for an account now. This site is currently closed "
+"for sign-up."
+msgstr ""
+
+#: .\templates\barcamp_basic\emailconfirmation\confirm_email.html.py:6
+msgid "Confirm E-mail"
+msgstr ""
+
+#: .\templates\barcamp_basic\emailconfirmation\confirm_email.html.py:10
+msgid "E-mail Confirmed"
+msgstr ""
+
+#: .\templates\barcamp_basic\emailconfirmation\confirm_email.html.py:12
+#, python-format
+msgid ""
+"You have confirmed that %(email)s is an e-mail address for user '%"
+"(user_display)s'."
+msgstr ""
+
+#: .\templates\barcamp_basic\emailconfirmation\confirm_email.html.py:14
+msgid "Invalid confirmation key."
+msgstr ""
+
+#: .\templates\barcamp_basic\idios\base.html.py:10
+#: .\templates\barcamp_basic\profiles\base.html.py:10
+msgid "Your Profile"
+msgstr ""
+
+#: .\templates\barcamp_basic\idios\base.html.py:11
+#: .\templates\barcamp_basic\idios\profiles.html.py:7
+#: .\templates\barcamp_basic\idios\profiles.html.py:10
+#: .\templates\barcamp_basic\profiles\base.html.py:11
+#: .\templates\barcamp_basic\profiles\profiles.html.py:9
+msgid "All Profiles"
+msgstr ""
+
+#: .\templates\barcamp_basic\idios\profile.html.py:7
+#: .\templates\barcamp_basic\profiles\profile.html.py:15
+#, python-format
+msgid "Profile for %(other_user_display)s"
+msgstr ""
+
+#: .\templates\barcamp_basic\idios\profile.html.py:14
+#: .\templates\barcamp_basic\profiles\profile.html.py:33
+#, python-format
+msgid "Profile for <span class=\"nickname\">%(other_user_display)s</span>"
+msgstr ""
+
+#: .\templates\barcamp_basic\idios\profile.html.py:16
+#: .\templates\barcamp_basic\profiles\profile.html.py:35
+#, python-format
+msgid "Profile for <span class=\"fn nickname\">%(other_user_display)s</span>"
+msgstr ""
+
+#: .\templates\barcamp_basic\idios\profile.html.py:20
+#: .\templates\barcamp_basic\profiles\profile.html.py:39
+#: .\templates\barcamp_basic\profiles\profiles.html.py:26
+#: .\templates\barcamp_registration\whos_coming.html.py:5
+msgid "Name"
+msgstr "ชื่อ"
+
+#: .\templates\barcamp_basic\idios\profile.html.py:22
+#: .\templates\barcamp_basic\profiles\profile.html.py:41
+msgid "Location"
+msgstr ""
+
+#: .\templates\barcamp_basic\idios\profile.html.py:23
+#: .\templates\barcamp_basic\profiles\profile.html.py:42
+#: .\templates\barcamp_registration\whos_coming.html.py:8
+msgid "Website"
+msgstr ""
+
+#: .\templates\barcamp_basic\idios\profile_edit.html.py:5
+#: .\templates\barcamp_basic\idios\profile_edit.html.py:9
+#: .\templates\barcamp_basic\idios\profile_edit_facebox.html.py:3
+#: .\templates\barcamp_basic\profiles\profile_edit.html.py:6
+#: .\templates\barcamp_basic\profiles\profile_edit.html.py:10
+#: .\templates\barcamp_basic\profiles\profile_edit_facebox.html.py:3
+msgid "Edit Profile"
+msgstr ""
+
+#: .\templates\barcamp_basic\locations\base.html.py:10
+msgid "Your Checkins"
+msgstr ""
+
+#: .\templates\barcamp_basic\locations\base.html.py:11
+msgid "Friends Checkins"
+msgstr ""
+
+#: .\templates\barcamp_basic\locations\base.html.py:12
+msgid "Nearby Checkins"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\base.html.py:11
+msgid "Compose"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\base.html.py:12
+#: .\templates\barcamp_basic\messages\inbox.html.py:8
+msgid "Inbox"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\base.html.py:13
+#: .\templates\barcamp_basic\messages\outbox.html.py:12
+msgid "Sent"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\base.html.py:14
+msgid "Trash"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\base.html.py:15
+#: .\templates\barcamp_basic\notification\notices.html.py:7
+#: .\templates\barcamp_basic\notification\notices.html.py:16
+msgid "Notices"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\base.html.py:16
+msgid "Invitations"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\base.html.py:17
+msgid "Contacts"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\compose.html.py:7
+msgid "Compose Message"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\compose.html.py:14
+msgid "Send"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\inbox.html.py:12
+#: .\templates\barcamp_basic\messages\trash.html.py:12
+#: .\templates\barcamp_basic\messages\view.html.py:12
+msgid "Sender"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\inbox.html.py:12
+#: .\templates\barcamp_basic\messages\outbox.html.py:12
+#: .\templates\barcamp_basic\messages\trash.html.py:12
+#: .\templates\barcamp_basic\messages\view.html.py:14
+msgid "Subject"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\inbox.html.py:12
+msgid "Received"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\inbox.html.py:12
+#: .\templates\barcamp_basic\messages\outbox.html.py:12
+#: .\templates\barcamp_basic\messages\trash.html.py:12
+msgid "Action"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\inbox.html.py:24
+#: .\templates\barcamp_basic\messages\outbox.html.py:21
+#: .\templates\barcamp_basic\messages\trash.html.py:21
+#: .\templates\barcamp_basic\messages\view.html.py:17
+#: .\templates\barcamp_basic\tasks\task.html.py:44
+#: .\templates\barcamp_basic\wakawaka\page.html.py:45
+msgid "DATETIME_FORMAT"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\inbox.html.py:25
+#: .\templates\barcamp_basic\messages\outbox.html.py:22
+msgid "delete"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\new_messages.html.py:4
+#, python-format
+msgid "Sent from %(site_url)s"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\outbox.html.py:8
+msgid "Sent Messages"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\outbox.html.py:12
+#: .\templates\barcamp_basic\messages\view.html.py:18
+msgid "Recipient"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\trash.html.py:8
+msgid "Deleted Messages"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\trash.html.py:12
+#: .\templates\barcamp_basic\messages\view.html.py:16
+#: .\templates\barcamp_basic\profiles\profiles.html.py:28
+msgid "Date"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\trash.html.py:22
+msgid "undelete"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\trash.html.py:28
+msgid ""
+"Deleted Messages are removed from the trash at irregular intervals, don't "
+"rely on this feature for long-time storage."
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\view.html.py:9
+msgid "View Message"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\view.html.py:25
+msgid "Reply"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\view.html.py:28
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:64
+msgid "Delete"
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\notification\messages_deleted\notice.html.py:1
+#, python-format
+msgid ""
+"You have deleted the message <a href=\"%(message_url)s\">%(message)s</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\notification\messages_received\notice.html.py:2
+#, python-format
+msgid ""
+"You have received the message <a href=\"%(message_url)s\">%(message)s</a> "
+"from <a href=\"%(sender_url)s\">%(sender_display)s</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\notification\messages_recovered\notice.html.py:1
+#, python-format
+msgid ""
+"You have recovered the message <a href=\"%(message_url)s\">%(message)s</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\notification\messages_replied\notice.html.py:2
+#, python-format
+msgid ""
+"You have replied to <a href=\"%(message_url)s\">%(message_parent_msg)s</a> "
+"from <a href=\"%(recipient_url)s\">%(recipient_display)s</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\notification\messages_reply_received\notice.html.py:2
+#, python-format
+msgid ""
+"<a href=\"%(sender_url)s\">%(sender_display)s</a> has sent you a reply to <a "
+"href=\"%(message_url)s\">%(message_parent_msg)s</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\messages\notification\messages_sent\notice.html.py:2
+#, python-format
+msgid ""
+"You have sent the message <a href=\"%(message_url)s\">%(message)s</a> to <a "
+"href=\"%(recipient_url)s\">%(recipient_display)s</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\base.html.py:10
+msgid "Tweets You Follow"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\base.html.py:11
+#: .\templates\barcamp_basic\microblogging\friends_tweets.html.py:8
+#: .\templates\barcamp_basic\microblogging\friends_tweets.html.py:11
+msgid "Friends' Tweets"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\base.html.py:12
+#: .\templates\barcamp_basic\microblogging\public.html.py:14
+msgid "All Tweets"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\base.html.py:13
+msgid "Your Followers"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\base.html.py:14
+msgid "Who You Are Following"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\followers.html.py:9
+#: .\templates\barcamp_basic\microblogging\followers.html.py:12
+#, python-format
+msgid "Followers of %(other_user_display)s"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\followers.html.py:16
+#, python-format
+msgid ""
+"Followers of <a href=\"%(other_user_url)s\">%(other_user_display)s</a>'s "
+"tweets:"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\followers.html.py:28
+msgid "No followers."
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\followers.html.py:32
+#, python-format
+msgid ""
+"Also see <a href=\"%(tweet_following_url)s\">who %(other_user_display)s is "
+"following</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\following.html.py:9
+#: .\templates\barcamp_basic\microblogging\following.html.py:12
+#, python-format
+msgid "%(other_user_display)s is Following"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\following.html.py:15
+#, python-format
+msgid ""
+"Users whose tweets <a href=\"%(other_user_url)s\">%(other_user_display)s</a> "
+"is following:"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\following.html.py:27
+msgid "Not following anyone."
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\following.html.py:31
+#, python-format
+msgid ""
+"Also see <a href=\"%(tweet_followers_url)s\">who is following</a> %"
+"(other_user_display)s."
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\friends_tweets.html.py:13
+msgid "These are tweets from your friends:"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\friends_tweets.html.py:24
+#: .\templates\barcamp_basic\microblogging\listing.html.py:14
+#, python-format
+msgid "%(tweet_age)s ago"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\friends_tweets.html.py:25
+#: .\templates\barcamp_basic\microblogging\listing.html.py:15
+msgid "reply"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\friends_tweets.html.py:29
+msgid "No tweets yet."
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\listing.html.py:21
+#, python-format
+msgid "You haven't posted any <a href=\"%(tweets_url)s\">tweets</a> yet."
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\listing.html.py:23
+msgid "There are currently no tweets to be listed."
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\personal.html.py:7
+#: .\templates\barcamp_basic\microblogging\personal.html.py:15
+msgid "Tweets"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\personal.html.py:20
+msgid "What are you doing?"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\personal.html.py:23
+msgid "You have authorized a twitter account."
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\personal.html.py:25
+msgid "Publish to Twitter?"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\personal.html.py:29
+msgid "chars left."
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\personal.html.py:30
+msgid "post"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\personal.html.py:34
+msgid "person,people"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\personal.html.py:34
+#, python-format
+msgid ""
+"\n"
+"        These are tweets from the %(follow_count)s %(follow_name)s you are "
+"following (plus your own)"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\public.html.py:6
+msgid "Public Tweets"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\public.html.py:16
+msgid "These are tweets from everyone:"
+msgstr ""
+
+#: .\templates\barcamp_basic\microblogging\single.html.py:7
+#: .\templates\barcamp_basic\microblogging\single.html.py:10
+msgid "Single Tweet"
+msgstr ""
+
+#: .\templates\barcamp_basic\notification\notices.html.py:21
+msgid "Mark all unseen notices seen"
+msgstr ""
+
+#: .\templates\barcamp_basic\notification\notices.html.py:27
+#: .\templates\barcamp_basic\profiles\profiles.html.py:38
+#: .\templates\barcamp_basic\tasks\focus.html.py:141
+#: .\templates\barcamp_basic\tasks\task_list.html.py:139
+#: .\templates\barcamp_basic\tasks\task_list_detail.html.py:60
+msgid "MONTH_DAY_FORMAT"
+msgstr ""
+
+#: .\templates\barcamp_basic\notification\notices.html.py:45
+msgid "No notices."
+msgstr ""
+
+#: .\templates\barcamp_basic\notification\notices.html.py:50
+msgid "Settings"
+msgstr ""
+
+#: .\templates\barcamp_basic\notification\notices.html.py:55
+msgid "Primary email"
+msgstr ""
+
+#: .\templates\barcamp_basic\notification\notices.html.py:57
+#, python-format
+msgid "change under <a href=\"%(email_url)s\">Account</a>"
+msgstr ""
+
+#: .\templates\barcamp_basic\notification\notices.html.py:62
+#, python-format
+msgid ""
+"You do not have a verified email address to which notices can be sent. You "
+"can add one by going to <a href=\"%(email_url)s\">Account</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\notification\notices.html.py:70
+msgid "Notification Type"
+msgstr ""
+
+#: .\templates\barcamp_basic\notification\notices.html.py:88
+msgid "Change"
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\base.html.py:11
+#: .\templates\barcamp_basic\photos\latest.html.py:12
+#: .\templates\barcamp_basic\photos\latest.html.py:16
+#: .\templates\barcamp_basic\photos\upload.html.py:6
+msgid "Latest Photos"
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\base.html.py:12
+#: .\templates\barcamp_basic\photos\memberphotos.html.py:12
+#: .\templates\barcamp_basic\photos\yourphotos.html.py:12
+#: .\templates\barcamp_basic\photos\yourphotos.html.py:16
+msgid "Your Photos"
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\base.html.py:13
+msgid "Upload a Photo"
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\details.html.py:12
+#: .\templates\barcamp_basic\photos\details.html.py:21
+#: .\templates\barcamp_basic\photos\edit.html.py:18
+msgid "Photo Details"
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\details.html.py:35
+msgid "Flag as inappropriate"
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\edit.html.py:10
+msgid "Editing Photo Details"
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\friends_photos.html.py:12
+#: .\templates\barcamp_basic\photos\friends_photos.html.py:16
+msgid "Friends' Photos"
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\latest.html.py:26
+#, python-format
+msgid "Viewed %(view_count)s times"
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\latest.html.py:32
+msgid "No photos were found."
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\memberphotos.html.py:16
+msgid "Photos from "
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\photo_right_panel.html.py:29
+msgid "Get Embed Code"
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\photo_right_panel.html.py:42
+msgid "Delete Photo"
+msgstr ""
+
+#: .\templates\barcamp_basic\photos\upload.html.py:15
+msgid "Upload"
+msgstr ""
+
+#: .\templates\barcamp_basic\profiles\profile_right_panel.html.py:9
+#: .\templates\barcamp_basic\tribes\base.html.py:16
+#: .\templates\barcamp_basic\tribes\your_tribes.html.py:7
+#: .\templates\barcamp_basic\tribes\your_tribes.html.py:11
+msgid "Your Tribes"
+msgstr ""
+
+#: .\templates\barcamp_basic\profiles\profile_right_panel.html.py:16
+#, python-format
+msgid "You are not yet a member of any <a href=\"%(tribe_url)s\">tribes</a>."
+msgstr ""
+
+#: .\templates\barcamp_basic\profiles\profile_right_panel.html.py:20
+msgid "Your Friends"
+msgstr ""
+
+#: .\templates\barcamp_basic\profiles\profile_right_panel.html.py:34
+msgid ""
+"None. You should look at the list of <a href=\"/profiles/\">profiles</a> and "
+"see if there's anyone you know."
+msgstr ""
+
+#: .\templates\barcamp_basic\profiles\profile_right_panel.html.py:41
+#, python-format
+msgid "%(other_user_display)s's Tribes"
+msgstr ""
+
+#: .\templates\barcamp_basic\profiles\profile_right_panel.html.py:47
+msgid "Not yet a member of any tribes."
+msgstr ""
+
+#: .\templates\barcamp_basic\profiles\profile_right_panel.html.py:51
+#, python-format
+msgid "%(other_user_display)s's Friends"
+msgstr ""
+
+#: .\templates\barcamp_basic\profiles\profiles.html.py:12
+msgid "Profiles"
+msgstr ""
+
+#: .\templates\barcamp_basic\profiles\profiles.html.py:24
+#: .\templates\barcamp_basic\projects\projects.html.py:36
+#: .\templates\barcamp_basic\tribes\tribes.html.py:36
+msgid "Order by:"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\base.html.py:17
+#: .\templates\barcamp_basic\projects\your_projects.html.py:7
+#: .\templates\barcamp_basic\projects\your_projects.html.py:11
+msgid "Your Projects"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\base.html.py:18
+msgid "Create a Project"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\base.html.py:20
+msgid "All Projects"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\create.html.py:11
+#: .\templates\barcamp_basic\projects\create.html.py:14
+msgid "Create Project"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\create.html.py:16
+msgid ""
+"A <b>project</b> is a group of people working together on a common set of "
+"tasks."
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\create.html.py:31
+#: .\templates\barcamp_basic\projects\projects.html.py:23
+#, python-format
+msgid ""
+"<a href=\"%(signup_url)s\">Sign up</a> and <a href=\"%(login_url)s\">log in "
+"</a> to create your own project or join an existing one."
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:23
+#: .\templates\barcamp_basic\tribes\tribe.html.py:24
+msgid "Members"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:41
+msgid "Project"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:44
+#: .\templates\barcamp_basic\tribes\tribe.html.py:45
+msgid "Slug:"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:45
+#: .\templates\barcamp_basic\tribes\tribe.html.py:46
+msgid "Creator:"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:46
+#: .\templates\barcamp_basic\tribes\tribe.html.py:47
+msgid "Created:"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:55
+#: .\templates\barcamp_basic\tribes\tribe.html.py:56
+msgid "Edit details"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:63
+#: .\templates\barcamp_basic\tribes\tribe.html.py:64
+msgid "updated"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:78
+msgid "Add new member"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:92
+msgid "Delete project"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:95
+msgid "Delete Project"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:107
+#: .\templates\barcamp_basic\topics\topics.html.py:11
+#: .\templates\barcamp_basic\tribes\tribe.html.py:107
+msgid "Discussion Topics"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:115
+#: .\templates\barcamp_basic\projects\project.html.py:131
+#: .\templates\barcamp_basic\tribes\tribe.html.py:115
+#: .\templates\barcamp_basic\tribes\tribe.html.py:131
+msgid "more..."
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:118
+#: .\templates\barcamp_basic\tribes\tribe.html.py:118
+#, python-format
+msgid "None yet. <a href=\"%(new_topic_url)s\">Start one...</a>"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:123
+#: .\templates\barcamp_basic\tribes\tribe.html.py:123
+msgid "Wiki Articles"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:135
+#: .\templates\barcamp_basic\tribes\tribe.html.py:135
+#, python-format
+msgid ""
+"\n"
+"                        None yet. Go to the <a href=\"%(wiki_url)s\" title="
+"\"wiki\">wiki</a> to start a new article.\n"
+"                    "
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project.html.py:141
+msgid "Tasks"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project_item.html.py:7
+#: .\templates\barcamp_basic\tribes\tribe_item.html.py:8
+msgid "Members:"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\project_item.html.py:9
+#: .\templates\barcamp_basic\tribes\tribe_item.html.py:10
+msgid "Topics:"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\projects.html.py:12
+#: .\templates\barcamp_basic\projects\projects.html.py:15
+msgid "Projects"
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\projects.html.py:17
+msgid "A <b>project</b> is a group of people working on a common set of tasks."
+msgstr ""
+
+#: .\templates\barcamp_basic\projects\your_projects.html.py:13
+msgid "These are the projects you participate in."
+msgstr ""
+
+#: .\templates\barcamp_basic\signup_codes\admin_invite_user.html.py:4
+msgid "Home"
+msgstr ""
+
+#: .\templates\barcamp_basic\signup_codes\admin_invite_user.html.py:8
+msgid ""
+"Invite a user given an e-mail address. The user will be e-mailed a signup "
+"code to create their account on this website."
+msgstr ""
+
+#: .\templates\barcamp_basic\signup_codes\failure.html.py:5
+#: .\templates\barcamp_basic\signup_codes\failure.html.py:8
+msgid "Incorrect Code"
+msgstr ""
+
+#: .\templates\barcamp_basic\signup_codes\failure.html.py:11
+#, python-format
+msgid "The code <b>%(code)s</b> is incorrect."
+msgstr ""
+
+#: .\templates\barcamp_basic\signup_codes\failure.html.py:13
+msgid "You must specify a code."
+msgstr ""
+
+#: .\templates\barcamp_basic\signup_codes\failure.html.py:16
+msgid "try again:"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\accepted.html.py:14
+#: .\templates\barcamp_basic\swaps\accepted.html.py:17
+msgid "Your accepted Swaps"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\base.html.py:10
+msgid "Open Offers"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\base.html.py:11
+#: .\templates\barcamp_basic\swaps\your_offers.html.py:14
+#: .\templates\barcamp_basic\swaps\your_offers.html.py:17
+msgid "Your Offers"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\base.html.py:12
+msgid "Make an Offer"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\base.html.py:13
+msgid "Proposed to you"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\base.html.py:14
+msgid "Proposed by you"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\base.html.py:15
+msgid "Accepted"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\base.html.py:16
+msgid "Dead"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\dead.html.py:14
+#: .\templates\barcamp_basic\swaps\dead.html.py:17
+msgid "Your dead Swaps"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\edit_offer.html.py:6
+#: .\templates\barcamp_basic\swaps\edit_offer.html.py:9
+msgid "Editing Offer"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\edit_offer.html.py:19
+msgid "update"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\new_offer.html.py:6
+#: .\templates\barcamp_basic\swaps\new_offer.html.py:9
+msgid "Add a new Offer"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\offer.html.py:11
+msgid "Offer"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\offer.html.py:39
+#: .\templates\barcamp_basic\swaps\swap.html.py:32
+#: .\templates\barcamp_basic\swaps\swap.html.py:57
+msgid "Edit Offer"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\offer.html.py:44
+msgid "Delete Offer"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\offer.html.py:50
+msgid "Cancel Offer"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\offers.html.py:15
+#: .\templates\barcamp_basic\swaps\offers.html.py:53
+msgid "All Open Offers"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\offers.html.py:70
+msgid "Propose Swap"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\propose_swap.html.py:7
+#: .\templates\barcamp_basic\swaps\propose_swap.html.py:10
+msgid "Propose a Swap"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\propose_swap.html.py:31
+msgid "propose"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\proposed_by_you.html.py:9
+#: .\templates\barcamp_basic\swaps\proposed_by_you.html.py:13
+msgid "Swaps proposed by you"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\proposed_by_you.html.py:37
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:48
+msgid "Cancel"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\proposed_to_you.html.py:9
+#: .\templates\barcamp_basic\swaps\proposed_to_you.html.py:12
+msgid "Swaps proposed to you"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\proposed_to_you.html.py:36
+msgid "Accept"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\proposed_to_you.html.py:40
+msgid "Reject"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\swap.html.py:9
+#: .\templates\barcamp_basic\swaps\swap.html.py:12
+msgid "Swap"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\notification\swaps_acceptance\notice.html.py:2
+#, python-format
+msgid ""
+"<a href=\"%(creator_url)s\">%(creator_display)s</a> has accepted your "
+"proposed '<a href=\"%(swap_url)s\">swap</a>' of %(proposing_offer)s for %"
+"(responding_offer)s.\n"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\notification\swaps_cancellation\notice.html.py:2
+#, python-format
+msgid ""
+"<a href=\"%(creator_url)s\">%(creator_display)s</a> has cancelled their "
+"proposed '<a href=\"%(swap_url)s\">swap</a>' of %(proposing_offer)s for %"
+"(responding_offer)s.\n"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\notification\swaps_comment\notice.html.py:2
+#, python-format
+msgid ""
+"<a href=\"%(user_url)s\">%(commenter_display)s</a> has commented on the swap "
+"'<a href=\"%(swap_url)s\">%(swap)s</a>' in which your offer is involved."
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\notification\swaps_conflict\notice.html.py:1
+#, python-format
+msgid ""
+"\n"
+"One of your offers was involved in a swap <a href=\"%(losing_swap_url)s\">%"
+"(losing_swap)s</a>\n"
+"that lost a conflict to another swap <a href=\"%(winning_swap_url)s\">%"
+"(winning_swap)s</a>.\n"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\notification\swaps_proposal\notice.html.py:2
+#, python-format
+msgid ""
+"<a href=\"%(creator_url)s\">%(creator_display)s</a> has proposed a '<a href="
+"\"%(swap_url)s\">swap</a>' of %(proposing_offer)s for your %"
+"(responding_offer)s.\n"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\notification\swaps_proposing_offer_changed\notice.html.py:2
+#, python-format
+msgid ""
+"<a href=\"%(creator_url)s\">%(creator_display)s</a> has changed their offer %"
+"(proposing_offer)s in a proposed '<a href=\"%(swap_url)s\">swap</a>' for "
+"your %(responding_offer)s.\n"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\notification\swaps_rejection\notice.html.py:2
+#, python-format
+msgid ""
+"<a href=\"%(creator_url)s\">%(creator_display)s</a> has rejected your "
+"proposed '<a href=\"%(swap_url)s\">swap</a>' of %(proposing_offer)s for %"
+"(responding_offer)s.\n"
+msgstr ""
+
+#: .\templates\barcamp_basic\swaps\notification\swaps_responding_offer_changed\notice.html.py:2
+#, python-format
+msgid ""
+"<a href=\"%(creator_url)s\">%(creator_display)s</a> has changed their "
+"responding offer %(responding_offer)s to your proposed '<a href=\"%(swap_url)"
+"s\">swap</a>' for %(proposing_offer)s.\n"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\add.html.py:20
+msgid "Add task"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\add.html.py:21
+msgid "Add task and add another"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\add.html.py:28
+msgid "You are not a member and so cannot add a task."
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\add.html.py:36
+msgid "search"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\add.html.py:40
+#: .\templates\barcamp_basic\tasks\task.html.py:61
+msgid "assign to me"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\base.html.py:11
+msgid "Add Task"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\base.html.py:12
+msgid "Your Tasks"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\base.html.py:13
+msgid "All Tasks"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\base.html.py:14
+msgid "Tasks History"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\focus.html.py:18
+msgid "Back to All Tasks"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task.html.py:17
+msgid "Back to Task List"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task.html.py:22
+#: .\templates\barcamp_basic\wakawaka\page.html.py:54
+msgid "Edit"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task.html.py:29
+msgid "Update Task"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task.html.py:37
+msgid "Attachments"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task.html.py:53
+msgid "Comment"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task_item.html.py:17
+msgid "Assignee"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task_item.html.py:19
+msgid "Unassigned"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task_item.html.py:21
+msgid "State"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task_item.html.py:22
+msgid "Creator"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task_item.html.py:23
+msgid "Created"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task_item.html.py:24
+msgid "Modified"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task_item.html.py:25
+msgid "History of this Task"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task_item.html.py:62
+msgid "Status"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\task_item.html.py:66
+msgid "none"
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\user_tasks.html.py:67
+msgid "You have no nudged tasks right now."
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\user_tasks.html.py:119
+msgid "You have no assigned tasks right now."
+msgstr ""
+
+#: .\templates\barcamp_basic\tasks\user_tasks.html.py:171
+msgid "You have no created tasks right now."
+msgstr ""
+
+#: .\templates\barcamp_basic\threadedcomments\comments.html.py:28
+msgid "Reply to This Post"
+msgstr ""
+
+#: .\templates\barcamp_basic\threadedcomments\comments.html.py:32
+#: .\templates\barcamp_basic\threadedcomments\comments.html.py:52
+msgid "Post Response"
+msgstr ""
+
+#: .\templates\barcamp_basic\threadedcomments\comments.html.py:59
+#, python-format
+msgid ""
+"\n"
+"        <h3>Please <a href=\"%(acct_login_url)s\">Login</a> (or <a href=\"%"
+"(acct_signup_url)s\">Sign Up</a>) to leave a comment</h3>\n"
+"    "
+msgstr ""
+
+#: .\templates\barcamp_basic\topics\topic.html.py:12
+msgid "Topic"
+msgstr ""
+
+#: .\templates\barcamp_basic\topics\topic.html.py:15
+msgid "Back to Topic List"
+msgstr ""
+
+#: .\templates\barcamp_basic\topics\topic.html.py:33
+msgid "Delete Topic"
+msgstr ""
+
+#: .\templates\barcamp_basic\topics\topic_item.html.py:21
+#, python-format
+msgid ""
+"\n"
+"                (most recent: %(topic_modified)s)\n"
+"                "
+msgstr ""
+
+#: .\templates\barcamp_basic\topics\topics.html.py:9
+#, python-format
+msgid "Discussion Topics for %(group_name)s"
+msgstr ""
+
+#: .\templates\barcamp_basic\topics\topics.html.py:18
+#, python-format
+msgid "Topics for <a href=\"%(group_url)s\">%(group_name)s</a>"
+msgstr ""
+
+#: .\templates\barcamp_basic\topics\topics.html.py:20
+#: .\templates\barcamp_registration\whos_coming.html.py:9
+msgid "Topics"
+msgstr "หัวข้อที่สนใจ"
+
+#: .\templates\barcamp_basic\topics\topics.html.py:33
+msgid "New Topic"
+msgstr ""
+
+#: .\templates\barcamp_basic\topics\topics.html.py:41
+msgid "Create New Topic"
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\base.html.py:17
+msgid "Create a Tribe"
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\base.html.py:19
+msgid "All Tribes"
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\create.html.py:11
+#: .\templates\barcamp_basic\tribes\create.html.py:14
+msgid "Create Tribe"
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\create.html.py:16
+#: .\templates\barcamp_basic\tribes\tribes.html.py:17
+msgid "A <b>tribe</b> is a group of people with some common interest."
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\create.html.py:31
+#: .\templates\barcamp_basic\tribes\tribes.html.py:23
+#, python-format
+msgid ""
+"<a href=\"%(signup_url)s\">Sign up</a> and <a href=\"%(login_url)s\">log in "
+"</a> to create your own tribe or join an existing one."
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\tribe.html.py:42
+msgid "Tribe"
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\tribe.html.py:71
+msgid "Delete tribe"
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\tribe.html.py:74
+msgid "Delete Tribe"
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\tribe.html.py:77
+msgid "You are not the only member of the tribe so you can't delete the tribe."
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\tribe.html.py:88
+msgid "You are the creator of this tribe so can't leave (yet)."
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\tribe.html.py:91
+msgid "leave"
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\tribe.html.py:95
+msgid "join tribe"
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\tribe.html.py:102
+#, python-format
+msgid ""
+"<a href=\"%(signup_url)s\">Sign up</a> and <a href=\"%(login_url)s\">log in "
+"</a> to join this tribe."
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\tribe.html.py:144
+msgid "Tribe Photo Pool"
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\tribe.html.py:151
+#, python-format
+msgid "%(commentcount)s Comments "
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\tribe.html.py:158
+#, python-format
+msgid ""
+"\n"
+"                        There are no photos associated to this tribe. You "
+"can <a href=\"%(photo_upload_url)s\">add a photo</a>.</a>\n"
+"                    "
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\tribes.html.py:12
+#: .\templates\barcamp_basic\tribes\tribes.html.py:15
+msgid "Tribes"
+msgstr ""
+
+#: .\templates\barcamp_basic\tribes\your_tribes.html.py:13
+msgid "These are the tribes you participate in."
+msgstr ""
+
+#: .\templates\barcamp_basic\waitinglist\list_signup.html.py:6
+#: .\templates\barcamp_basic\waitinglist\success.html.py:5
+#: .\templates\cms\cms_base.html.py:6
+#: .\templates\goyz_theme\cms\cms_base.html.py:6
+msgid "Welcome"
+msgstr ""
+
+#: .\templates\barcamp_basic\waitinglist\list_signup.html.py:10
+msgid "Signup for the waiting list"
+msgstr ""
+
+#: .\templates\barcamp_basic\waitinglist\list_signup.html.py:12
+msgid "Give us your e-mail address and you'll be added to the waiting list"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\base.html.py:10
+msgid "Start"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\base.html.py:11
+msgid "Recent revisions"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\base.html.py:12
+msgid "All Pages"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\changes.html.py:14
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:10
+#: .\templates\barcamp_basic\wakawaka\page.html.py:15
+#: .\templates\barcamp_basic\wakawaka\revisions.html.py:10
+msgid "Edit this page"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\changes.html.py:19
+#, python-format
+msgid "Changes for %(slug)s"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:16
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:25
+#, python-format
+msgid "Add %(slug)s"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:18
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:27
+#, python-format
+msgid "Edit %(slug)s"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:32
+msgid "You are editing an revision which is not the latest!"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:36
+msgid "The page is locked for you."
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:41
+msgid "Save changes"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:52
+#, python-format
+msgid "The page is locked for %(lock_owner)s since about %(lock_timestamp)s."
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:53
+msgid "Reset lock"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:60
+msgid "Please confirm deletion"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\edit.html.py:69
+msgid "Revisions for this page"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\page.html.py:28
+msgid "You are viewing an older revision!"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\page.html.py:30
+msgid "See the latest version"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\page.html.py:45
+#, python-format
+msgid ""
+"\n"
+"                Recently modified by <em>%(creator)s</em>: %(modified)s\n"
+"            "
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\page.html.py:49
+msgid "History"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\page_list.html.py:8
+#: .\templates\barcamp_basic\wakawaka\page_list.html.py:12
+msgid "All wiki pages"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\revision_list.html.py:7
+#: .\templates\barcamp_basic\wakawaka\revision_list.html.py:11
+msgid "List of all revisions"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\revision_list.html.py:15
+msgid "Page"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\revision_list.html.py:16
+#: .\templates\barcamp_basic\wakawaka\revision_table.html.py:9
+msgid "Changed"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\revision_list.html.py:17
+#: .\templates\barcamp_basic\wakawaka\revision_table.html.py:10
+msgid "Message"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\revision_list.html.py:18
+#: .\templates\barcamp_basic\wakawaka\revision_table.html.py:11
+msgid "Modified by"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\revision_list.html.py:28
+#: .\templates\barcamp_basic\wakawaka\revision_table.html.py:40
+msgid "View"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\revision_list.html.py:30
+#: .\templates\barcamp_basic\wakawaka\revision_table.html.py:41
+msgid "Revert"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\revision_table.html.py:8
+msgid "Compare"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\revision_table.html.py:47
+msgid "Compare revisions"
+msgstr ""
+
+#: .\templates\barcamp_basic\wakawaka\revisions.html.py:15
+#: .\templates\barcamp_basic\wakawaka\revisions.html.py:19
+#, python-format
+msgid "History for %(slug)s"
+msgstr ""
+
+#: .\templates\barcamp_registration\registration.html.py:19
+msgid "Register"
+msgstr "ลงทะเบียน"
+
+#: .\templates\barcamp_registration\whos_coming.html.py:6
+msgid "E-mail"
+msgstr ""
+
+#: .\templates\barcamp_registration\whos_coming.html.py:7
+msgid "Twitter"
+msgstr ""
+
+#: .\templates\snippets\nathan_slides.html.py:3
+msgid "Special Thanks to Our Sponsors"
+msgstr ""
+
+#: .\templates\socialregistration\setup.html.py:9
+msgid "Your session timed out. Please try again."
+msgstr ""
+
+#: .\templates\socialregistration\setup.html.py:11
+msgid "Please select the username and e-mail for your account."
+msgstr ""
+
+#: .\templates\socialregistration\setup.html.py:17
+msgid "Save"
 msgstr ""

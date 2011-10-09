@@ -1,12 +1,13 @@
 {% extends "site_base.html" %}
+{% load i18n %}
 {% block content %}
     <table id="whos_coming_list">
         <thead>
-            <td class="name">Name</td>
-            <td class="email">E-mail</td>
-            <td class="twitter">Twitter</td>
-            <td class="website">Website</td>
-            <td class="topics">Topics</td>
+            <td class="name">{% trans "Name" %}</td>
+            <td class="email">{% trans "E-mail" %}</td>
+            <td class="twitter">{% trans "Twitter" %}</td>
+            <td class="website">{% trans "Website" %}</td>
+            <td class="topics">{% trans "Topics" %}</td>
         </thead>
         <tbody>
             {% for person in whos_coming %}
