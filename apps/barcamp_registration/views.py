@@ -10,6 +10,7 @@ from django.core.urlresolvers import reverse
 
 from menus.utils import simple_language_changer
 
+from barcamp_registration.models import BarcampRegistration
 from barcamp_registration.forms import BarcampRegistrationForm
 
 @simple_language_changer
@@ -30,4 +31,4 @@ def registration(request):
 @simple_language_changer
 def whos_coming(request):
     context = RequestContext(request)
-    return render_to_response('barcamp_registration/whos_coming.html',context_instance=context)
+    return render_to_response('barcamp_registration/whos_coming.html',{'whos_coming':BarcampRegistration.objects.all()},context_instance=context)

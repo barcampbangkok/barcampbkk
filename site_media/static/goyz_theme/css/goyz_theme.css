@@ -79,7 +79,6 @@ a.current{
 
 div.fieldWrapper{
     margin: 5px 0;
-    width: 431px;
 }
 
 div.fieldWrapper label{
@@ -122,6 +121,10 @@ div.fieldWrapper input[type="submit"]{
 
 div.fieldWrapper input[name="twitter"]{
     width: 152px;
+}
+
+div.fieldWrapper span.field_error{
+    color: red;
 }
 
 table#whos_coming_list{

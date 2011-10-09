@@ -1,4 +1,5 @@
 {% extends "site_base.html" %}
+{% load i18n %}
 {% block content %}
     <form id="barcamp_registration_form" action="." method="POST">
         {{ form.non_field_errors }}
@@ -7,10 +8,15 @@
                 {{ field.label_tag }}: {{ field }}
                 {% if field.field.required %}<span class="required_mark">*</span>{% endif %}
                 {% if field.help_text %}<span class="help_text">{{ field.help_text }}</span>{% endif %}
+                {% if field.errors %}
+                    {% for error in field.errors %}
+                        <span class="field_error">{{ error }}</span>
+                    {% endfor %}
+                {% endif %}
             </div>
         {% endfor %}
         <div class="fieldWrapper">
-            <input type="submit" value="Register &raquo;" />
+            <input type="submit" value="{% trans "Register" %} &raquo;" />
         </div>
     </form>
 {% endblock content %}
