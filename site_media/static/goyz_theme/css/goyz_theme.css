@@ -128,9 +128,40 @@ div.fieldWrapper span.field_error{
 }
 
 table#whos_coming_list{
-    width: 80%;
+    width: 100%;
 }
 
-table#whos_coming_list thead td{
-    text-align: center;
+table#whos_coming_list thead{
+    color: #645BCD;
+    font-weight: bold;
+}
+
+table#whos_coming_list tbody tr{
+    height: 35px;
+    border-top: 1px solid #ccc;
+}
+
+table#whos_coming_list td{
+    padding: 5px 0 5px 5px;
+    vertical-align: top;
+}
+
+table#whos_coming_list .name{
+    width: 20%;
+}
+
+table#whos_coming_list .email{
+    width: 25%;
+}
+
+table#whos_coming_list .twitter{
+    width: 15%;
+}
+
+table#whos_coming_list .website{
+    width: 20%;
+}
+
+table#whos_coming_list .topics{
+    width: 20%;
 }

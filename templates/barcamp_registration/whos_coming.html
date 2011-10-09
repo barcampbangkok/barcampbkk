@@ -2,19 +2,21 @@
 {% block content %}
     <table id="whos_coming_list">
         <thead>
-            <td>Name</td>
-            <td>E-mail</td>
-            <td>Twitter</td>
-            <td>Website</td>
-            <td>Topics</td>
+            <td class="name">Name</td>
+            <td class="email">E-mail</td>
+            <td class="twitter">Twitter</td>
+            <td class="website">Website</td>
+            <td class="topics">Topics</td>
         </thead>
         <tbody>
             {% for person in whos_coming %}
-                <td>{{ person.name }}</td>
-                <td>{{ person.email }}</td>
-                <td>{{ person.twitter }}</td>
-                <td>{{ person.website }}</td>
-                <td>{{ person.topics }}</td>
+            <tr>
+                <td class="name">{{ person.name }}</td>
+                <td class="email">{{ person.email }}</td>
+                <td class="twitter">{{ person.twitter }}</td>
+                <td class="website">{{ person.website }}</td>
+                <td class="topics">{{ person.topics }}</td>
+            </tr>
             {% endfor %}
         </tbody>
     </table>
