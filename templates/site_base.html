@@ -44,9 +44,15 @@
             <div id="cms_menu_left" style=""></div>
             <div id="cms_menu_content" style="">
                 {% show_menu 0 100 100 100 %}
-                &nbsp;<a href="/barcamp_registration/">{% trans "Registration" %}</a>&nbsp;
-                &nbsp;<a href="/barcamp_registration/whos_coming/">{% trans "Who's Coming?" %}</a>&nbsp;
-                &nbsp;<a href="#">Contact</a>
+                <li>
+                    <a href="/barcamp_registration/">{% trans "Registration" %}</a>
+                </li>
+                <li>
+                    <a href="/barcamp_registration/whos_coming/">{% trans "Who's Coming?" %}</a>
+                </li>
+                <li>
+                    <a href="#">{% trans "Contact" %}</a>
+                </li>
             </div><!--id="cms_menu_content"-->
             <div id="cms_menu_content_shadow" style=""></div>
         </div><!--id="cms_menu"-->

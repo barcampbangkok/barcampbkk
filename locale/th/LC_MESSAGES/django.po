@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-10 00:10+0700\n"
+"POT-Creation-Date: 2011-10-10 00:15+0700\n"
 "PO-Revision-Date: 2011-10-10 00:05+0700\n"
 "Last-Translator: Pam <suebvisai.pam@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,13 +91,17 @@ msgstr ""
 msgid "&copy; 2011 Barcamp Bangkok Organization"
 msgstr ""
 
-#: .\templates\site_base.html.py:47
+#: .\templates\site_base.html.py:48
 msgid "Registration"
 msgstr "ลงทะเบียน"
 
-#: .\templates\site_base.html.py:48
+#: .\templates\site_base.html.py:51
 msgid "Who's Coming?"
 msgstr "ใครมาบ้าง?"
+
+#: .\templates\site_base.html.py:54
+msgid "Contact"
+msgstr "ติดต่อทีมงาน"
 
 #: .\templates\about\what_next.html.py:6 .\templates\about\what_next.html.py:9
 msgid "What Next?"
@@ -831,7 +835,7 @@ msgstr ""
 #: .\templates\barcamp_basic\idios\profile.html.py:20
 #: .\templates\barcamp_basic\profiles\profile.html.py:39
 #: .\templates\barcamp_basic\profiles\profiles.html.py:26
-#: .\templates\barcamp_registration\whos_coming.html.py:5
+#: .\templates\barcamp_registration\whos_coming.html.py:6
 msgid "Name"
 msgstr "ชื่อ"
 
@@ -842,7 +846,7 @@ msgstr ""
 
 #: .\templates\barcamp_basic\idios\profile.html.py:23
 #: .\templates\barcamp_basic\profiles\profile.html.py:42
-#: .\templates\barcamp_registration\whos_coming.html.py:8
+#: .\templates\barcamp_registration\whos_coming.html.py:9
 msgid "Website"
 msgstr ""
 
@@ -1842,7 +1846,7 @@ msgid "Topics for <a href=\"%(group_url)s\">%(group_name)s</a>"
 msgstr ""
 
 #: .\templates\barcamp_basic\topics\topics.html.py:20
-#: .\templates\barcamp_registration\whos_coming.html.py:9
+#: .\templates\barcamp_registration\whos_coming.html.py:10
 msgid "Topics"
 msgstr "หัวข้อที่สนใจ"
 
@@ -2099,11 +2103,11 @@ msgstr ""
 msgid "Register"
 msgstr "ลงทะเบียน"
 
-#: .\templates\barcamp_registration\whos_coming.html.py:6
+#: .\templates\barcamp_registration\whos_coming.html.py:7
 msgid "E-mail"
 msgstr ""
 
-#: .\templates\barcamp_registration\whos_coming.html.py:7
+#: .\templates\barcamp_registration\whos_coming.html.py:8
 msgid "Twitter"
 msgstr ""
 
