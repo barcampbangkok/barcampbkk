@@ -1,0 +1,12 @@
+
+/.idea/.name
+/.idea/barcampbkk.iml
+/.idea/dataSources.ids
+/.idea/dataSources.xml
+/.idea/encodings.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
+*.pyc
+*.db
