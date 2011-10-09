@@ -44,10 +44,10 @@
             <div id="cms_menu_left" style=""></div>
             <div id="cms_menu_content" style="">
                 {% show_menu 0 100 100 100 %}
-                <li>
+                <li {% if request.path == "/barcamp_registration/" %}class="selected"{% endif %}>
                     <a href="/barcamp_registration/">{% trans "Registration" %}</a>
                 </li>
-                <li>
+                <li {% if request.path == "/barcamp_registration/whos_coming/" %}class="selected"{% endif %}>
                     <a href="/barcamp_registration/whos_coming/">{% trans "Who's Coming?" %}</a>
                 </li>
                 <li>
@@ -102,5 +102,9 @@
 			});
 		});
 	</script>
-
+    <script type="text/javascript">
+        if('{{ request.path }}' != '/'){
+            $('div#cms_menu_content li:first').removeClass('selected');
+        }
+    </script>
 {% endblock %}
