@@ -1,0 +1,10 @@
+# Packages that do not need to be installed on an app server for the app to
+# run, but are used for development or deployment.
+
+--requirement=production.txt
+
+# Because editing fixtures sucks, but editing JSON fixtures sucks worse
+PyYAML==3.10
+
+Fabric>=1.2.2
+

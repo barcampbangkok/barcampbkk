@@ -112,7 +112,7 @@ Install App Dependencies
 1. Install libraries required for the project:
 
    1. Go inside the source code folder
-   2. ``pip install -r requirements/project.txt``
+   2. ``pip install -r requirements/development.txt``
    3. See that all libraries are installed successfully (it should say so at
       the end), if not, you may want to open project.txt and install
       one-by-one for your machine).
