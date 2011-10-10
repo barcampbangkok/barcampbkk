@@ -5,12 +5,6 @@ Barcamp Bangkok Web App
 Getting Started
 ===============
 
-.. Note::
-   If you're viewing this on GitHub, be aware that *this is currently a
-   git-svn mirror only* -- do **not** clone this git repository and push
-   changes to it! If you want to use git-svn, you should clone from the SVN
-   repository.  Contact the web team if you need SVN access.
-
 Pre-requisites
 --------------
 
@@ -126,12 +120,12 @@ Install App Dependencies
 2. Create the database for development. From inside the source code folder::
 
     python manage.py syncdb --all
-    python manage.py migrate
+    python manage.py migrate --fake
     python manage.py loaddata fixtures/dev/*
 
-When it asks you to create an admin user, please create one. When it runs
-successfully, it will create ``dev.db`` in your source code folder and load
-some stub content from fixtures.
+   When it asks you to create an admin user, please create one. When it runs
+   successfully, it will create ``dev.db`` in your source code folder and load
+   some stub content from fixtures.
 
 3. Symbolic link cms static files (Windows people, you will have to copy the folder over instead)
 
