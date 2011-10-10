@@ -32,7 +32,6 @@ django_microblogging
 
 
 #CMS
-pil
 django-mptt==0.4.2
 django-cms==2.2
 south
@@ -50,3 +49,4 @@ git+git://github.com/Proteus-tech/django-logger.git
 
 #social registration
 django-socialregistration==0.4.6
+
