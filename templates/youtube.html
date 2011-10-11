@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>My Videos</title>
+    <style>
+        #mediaplayer {
+            margin-left: 40px;
+        }
+
+        ul.menus {
+            list-style: none;
+            margin-top: 40px;
+        }
+        ul.menus li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        ul.videos {
+            list-style: none;
+        }
+        ul.videos img {
+            width: 130px;
+            height: 100px;
+        }
+        ul.videos li {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">
+    <div id="mediaplayer"></div>
+    <ul id="keywords" class="menus"></ul>
+    <ul id="playlist" class="videos"></ul>
+</div>
+
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}jwplayer/jwplayer.js"></script>
+<script type="text/javascript">
+
+    var keywords = ['tlc', 'blackeyedpeas', 'johnmayer', 'maroon5'];
+    var playerUrls = [];
+    var selectedKeyword = null;
+
+    var $keywords = $('#keywords');
+    var $playlist = $('#playlist');
+
+    jwplayer('mediaplayer').setup({
+        'flashplayer': '{{ STATIC_URL }}jwplayer/player.swf',
+        'id': 'playerID'
+    });
+
+    for (var i = 0; i < keywords.length; i++) {
+        var keyword = keywords[i];
+        $keywords.append(keywordLi(keyword));
+
+        // Load first playlist if any
+        if (i == 0) $.getJSON(youtubeUrl(keyword), null, loadPlaylist);
+    }
+
+    setInterval("$.getJSON('https://gdata.youtube.com/feeds/api/videos/-/geekcalendar?alt=json&format=5&orderby=published&max-results=10', null, prependPlaylist)", 5000);
+
+    function appendVideo(playerUrl, thumbnailUrl) {
+        playerUrls.push(playerUrl);
+        $playlist.append(videoLi(playerUrl, thumbnailUrl));
+    }
+
+    function emptyPlaylist() {
+        playerUrls = [];
+        $playlist.empty();
+    }
+
+    function keywordLi(keyword) {
+        var onclickFunction = "$.getJSON('" + youtubeUrl(keyword) + "', null, loadPlaylist)";
+        return '<li onclick="' + onclickFunction + '">' + keyword + '</li>';
+    }
+
+    function loadPlaylist(data) {
+        emptyPlaylist();
+
+        var feed = data.feed;
+        var entries = feed.entry || [];
+        for (var i = 0; i < entries.length; i++) {
+            var entry = entries[i];
+            var title = entry.title.$t;
+            var thumbnailUrl = entry.media$group.media$thumbnail[0].url;
+            var playerUrl = entry.media$group.media$content[0].url;
+            appendVideo(playerUrl, thumbnailUrl);
+
+            // Load first video if any
+            if (i == 0) jwplayer().load(playerUrl);
+        }
+    }
+
+    function prependPlaylist(data) {
+        var feed = data.feed;
+        var entries = feed.entry || [];
+        for (var i = 0; i < entries.length; i++) {
+            var entry = entries[i];
+            var title = entry.title.$t;
+            var thumbnailUrl = entry.media$group.media$thumbnail[0].url;
+            var playerUrl = entry.media$group.media$content[0].url;
+
+            if ($.inArray(playerUrl, playerUrls) == -1) {
+                prependVideo(playerUrl, thumbnailUrl);
+            }
+
+        }
+    }
+
+    function prependVideo(playerUrl, thumbnailUrl) {
+        playerUrls.push(playerUrl);
+        $playlist.prepend(videoLi(playerUrl, thumbnailUrl));
+    }
+
+    function videoLi(playerUrl, thumbnailUrl) {
+        var imgTag = '<img src="' + thumbnailUrl + '"/>';
+        var onclickFunction = "jwplayer().load('" + playerUrl + "'); jwplayer().play(true);";
+        return '<li onclick="' + onclickFunction + '">' + imgTag + '</li>';
+    }
+
+    function youtubeUrl(keyword) {
+        return 'https://gdata.youtube.com/feeds/api/videos/-/' +
+                keyword +
+                '?alt=json&format=5&orderby=published&max-results=10';
+    }
+
+</script>
+</body>
+</html>

@@ -23,7 +23,9 @@ urlpatterns = patterns("",
     url(r"^announcements/", include("announcements.urls")),
 
     url(r'^social/', include('socialregistration.urls')),
-    url(r'^barcamp_registration/', include('barcamp_registration.urls'))
+    url(r'^barcamp_registration/', include('barcamp_registration.urls')),
+
+    url(r'^youtube/?$', direct_to_template, {'template': 'youtube.html'}),
 )
 
 if settings.DEBUG:
