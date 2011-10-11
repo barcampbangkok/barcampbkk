@@ -40,7 +40,7 @@
 <script type="text/javascript" src="{{ STATIC_URL }}jwplayer/jwplayer.js"></script>
 <script type="text/javascript">
 
-    var keywords = ['tlc', 'blackeyedpeas', 'johnmayer', 'maroon5'];
+    var keywords = ['bestofyoutube', 'blackeyedpeas', 'johnmayer', 'maroon5', 'universe', 'jasonmraz', 'beer', 'jeep'];
     var playerUrls = [];
     var selectedKeyword = null;
 
@@ -57,10 +57,13 @@
         $keywords.append(keywordLi(keyword));
 
         // Load first playlist if any
-        if (i == 0) $.getJSON(youtubeUrl(keyword), null, loadPlaylist);
+        if (i == 0) {
+            selectedKeyword = keyword;
+            $.getJSON(youtubeUrl(keyword), null, loadPlaylistCallback);
+        }
     }
 
-    setInterval("$.getJSON('https://gdata.youtube.com/feeds/api/videos/-/geekcalendar?alt=json&format=5&orderby=published&max-results=10', null, prependPlaylist)", 5000);
+    setInterval('updatePlaylist();', 60000);
 
     function appendVideo(playerUrl, thumbnailUrl) {
         playerUrls.push(playerUrl);
@@ -73,11 +76,11 @@
     }
 
     function keywordLi(keyword) {
-        var onclickFunction = "$.getJSON('" + youtubeUrl(keyword) + "', null, loadPlaylist)";
+        var onclickFunction = "selectedKeyword = '" + keyword + "'; $.getJSON('" + youtubeUrl(keyword) + "', null, loadPlaylistCallback)";
         return '<li onclick="' + onclickFunction + '">' + keyword + '</li>';
     }
 
-    function loadPlaylist(data) {
+    function loadPlaylistCallback(data) {
         emptyPlaylist();
 
         var feed = data.feed;
@@ -94,25 +97,27 @@
         }
     }
 
-    function prependPlaylist(data) {
+    function prependPlaylistCallback(data) {
         var feed = data.feed;
         var entries = feed.entry || [];
+        entries.reverse();                                  // Process backward so that newest video appear in front
         for (var i = 0; i < entries.length; i++) {
             var entry = entries[i];
             var title = entry.title.$t;
             var thumbnailUrl = entry.media$group.media$thumbnail[0].url;
             var playerUrl = entry.media$group.media$content[0].url;
 
-            if ($.inArray(playerUrl, playerUrls) == -1) {
-                prependVideo(playerUrl, thumbnailUrl);
-            }
-
+            if ($.inArray(playerUrl, playerUrls) == -1) prependVideo(playerUrl, thumbnailUrl);
         }
     }
 
     function prependVideo(playerUrl, thumbnailUrl) {
         playerUrls.push(playerUrl);
         $playlist.prepend(videoLi(playerUrl, thumbnailUrl));
+    }
+
+    function updatePlaylist() {
+        if (selectedKeyword) $.getJSON('https://gdata.youtube.com/feeds/api/videos/-/' + selectedKeyword + '?alt=json&format=5&orderby=published&max-results=10', null, prependPlaylistCallback);
     }
 
     function videoLi(playerUrl, thumbnailUrl) {
