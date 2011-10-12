@@ -25,7 +25,7 @@
         {% block extra_head_base %}
             {% block extra_head %}{% endblock %}
         {% endblock %}
-        {% renderblock "css" %}
+        {% render_block "css" %}
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
@@ -78,6 +78,6 @@
         {% block extra_body_base %}
             {% block extra_body %}{% endblock %}
         {% endblock %}
-        {% renderblock "js" %}
+        {% render_block "js" %}
     </body>
 </html>
