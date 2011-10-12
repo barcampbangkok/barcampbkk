@@ -61,10 +61,7 @@ STATIC_URL = "/site_media/static/"
 
 # Additional directories which hold static files
 STATICFILES_DIRS = [
-    path.join(PROJECT_ROOT, "media"),
-    path.join(PINAX_ROOT, "media", PINAX_THEME),
-    path.join(PROJECT_ROOT, "media", PINAX_THEME),
-#    path.join(PROJECT_ROOT, "site_media", "static"),
+    path.join(PROJECT_ROOT, "site_media", "media", PINAX_THEME),
 ]
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
@@ -93,8 +90,6 @@ MIDDLEWARE_CLASSES = [
 
 
     "pinax.apps.account.middleware.LocaleMiddleware",
-    "pagination.middleware.PaginationMiddleware",
-    "pinax.middleware.security.HideSensistiveFieldsMiddleware",
     #"debug_toolbar.middleware.DebugToolbarMiddleware",
 
     'csrf_tools.middleware.CsrfDisabledMiddleware',
@@ -140,12 +135,12 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.messages",
     "django.contrib.humanize",
+    "django.contrib.staticfiles",
 
     "pinax.templatetags",
 
     # external
     "notification", # must be first
-    "staticfiles",
     "debug_toolbar",
     "mailer",
     "uni_form",
