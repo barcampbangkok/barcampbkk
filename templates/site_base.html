@@ -73,11 +73,6 @@
 
 {% endblock %}
 
-{% block extra_body_base %}
-    {% ga %}
-    {% block extra_body %}{% endblock %}
-{% endblock %}
-
 {% block script_defer %}
     <script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
 	<script src="{{ STATIC_URL }}nathan_slides/slides.min.jquery.js"></script>
