@@ -127,7 +127,8 @@ Install App Dependencies
    successfully, it will create ``dev.db`` in your source code folder and load
    some stub content from fixtures.
 
-3. Symbolic link cms static files (Windows people, you will have to copy the folder over instead)
+3. Symbolic link cms static files (Windows people, you will have to copy the
+   folder over instead)
 
     ln -s <virtual environment site-packages folder>/cms/static/cms site_media/static/cms
 
@@ -193,8 +194,23 @@ and then commit the changed files into version control.
 Social Network Authentication
 ==============================
 
-For development, you'll need to update site domain in the Sites table to the domain you're running at e.g. 127.0.0.1:8000
-This will be sent to Twitter for callback.
+For development, you'll need to update site domain in the Sites table to the
+domain you're running at e.g. 127.0.0.1:8000 This will be sent to Twitter for
+callback.
 
-For production, assuming we're going to deploy at barcampbangkok.org, just make sure that the site domain is barcampbangkok.org
+For production, assuming we're going to deploy at barcampbangkok.org, just make
+sure that the site domain is barcampbangkok.org
+
+HACKS
+=====
+
+Dirty things to be aware that we should fix if there is a better solution in
+the future.
+
+1. Monkey-patched ``loaddata`` management command to work around `a signal bug
+   in django-cms`_ that causes fixture loading to fail. This is in the 'hacks'
+   app.
+
+.. _a signal bug in django-cms: https://github.com/divio/django-cms/issues/1031
+
 

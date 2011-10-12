@@ -189,6 +189,7 @@ INSTALLED_APPS = [
 #    "profiles",
     'socialregistration',
     'barcamp_registration',
+    'hacks'
 ]
 
 FIXTURE_DIRS = [ path.join(PROJECT_ROOT, "fixtures") ]
