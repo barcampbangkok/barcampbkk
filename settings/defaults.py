@@ -72,9 +72,6 @@ STATICFILES_DIRS = [
 # Examples: "http://foo.com/media/", "/media/".
 ADMIN_MEDIA_PREFIX = path.join(STATIC_URL, "admin/")
 
-# Make this unique, and don't share it with anybody.
-SECRET_KEY = "c$z-3#l4jzku!+*pwby3zf!=n9#q54lv)gg@076)0xnmm8)q(9"
-
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = [
     "django.template.loaders.filesystem.Loader",
