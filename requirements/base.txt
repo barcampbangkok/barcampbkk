@@ -50,3 +50,6 @@ git+git://github.com/Proteus-tech/django-logger.git
 #social registration
 django-socialregistration==0.4.6
 
+# Because editing fixtures sucks, but editing JSON fixtures sucks worse
+PyYAML==3.10
+

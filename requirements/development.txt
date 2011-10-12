@@ -6,8 +6,5 @@
 # Python Imaging Library -- Ubuntu packages used in production
 pil==1.1.7
 
-# Because editing fixtures sucks, but editing JSON fixtures sucks worse
-PyYAML==3.10
-
 Fabric>=1.2.2
 
