@@ -21,7 +21,3 @@ logging.setLoggerClass(LoggerClass(
     files_path = path.abspath(path.join(PROJECT_ROOT, 'logs')),
 ))
 
-# settings/secrets.py will be put in place by Chef, to contain database
-# config and other sensitive credentials to be kept out of public source control
-from secrets import *
-

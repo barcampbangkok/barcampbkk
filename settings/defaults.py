@@ -223,10 +223,7 @@ LOGIN_REDIRECT_URL = '/'
 EMAIL_CONFIRMATION_DAYS = 2
 
 ### Socialauth #####
-TWITTER_CONSUMER_KEY = '838bFpYe8sk4eHLCGCqkYQ'
-TWITTER_CONSUMER_SECRET_KEY = 'AwfRsy3AuSzpxyoXeXvtIumjQDQ0damIlzmNs1Iiak'
-TWITTER_ACCESS_TOKEN = '12223502-r2LFtPSMNGYpiF2GeGNVb4JPcmyvpMa79fKh2PH03'
-TWITTER_ACCESS_TOKEN_SECRET = '72A5pjsELAqrIYf7ockXa8lJmCEEh1UhLVgicOTN16E'
+# Please set private keys in settings/secrets.py
 TWITTER_REQUEST_TOKEN_URL = 'https://api.twitter.com/oauth/request_token'
 TWITTER_ACCESS_TOKEN_URL = 'https://api.twitter.com/oauth/access_token'
 TWITTER_AUTHORIZATION_URL = 'https://api.twitter.com/oauth/authorize'
@@ -262,4 +259,12 @@ logging.setLoggerClass(LoggerClass(
     default_level = logging.INFO,
     files_path = path.abspath(path.join(PROJECT_ROOT, 'logs')),
 ))
+
+# Use this for settings that you need in all environments but that shouldn't be
+# kept in public version control, like Twitter API keys, etc.
+#
+# This does not catch an ImportError because it *should* be a fatal error in
+# production if it's missing (database credentials, etc.). It will be put in
+# place by Chef in production.
+from secrets import *
 
