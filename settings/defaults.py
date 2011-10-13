@@ -57,7 +57,7 @@ STATIC_URL = "/site_media/static/"
 
 # Additional directories which hold static files
 STATICFILES_DIRS = [
-    path.join(PROJECT_ROOT, "site_media", "media", PINAX_THEME),
+    path.join(PROJECT_ROOT, "site_media", "static", PINAX_THEME),
     path.join(PROJECT_ROOT, "site_media", "static"),
 ]
 
