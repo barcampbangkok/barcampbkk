@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 
 # Directory where collectstatic will aggregate assets on deployment to be
 # served by a web server
-STATIC_ROOT = '/var/www/barcampbangkok.org'
+STATIC_ROOT = '/var/www/barcampbangkok.org/static'
 
 #logger
 logging.setLoggerClass(LoggerClass(

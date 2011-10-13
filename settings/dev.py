@@ -25,5 +25,5 @@ DATABASES = {
 SECRET_KEY = "c$z-3#l4jzku!+*pwby3zf!=n9#q54lv)gg@076)0xnmm8)q(9"
 
 # we just need this here so django won't complete, only needed for "collectstatic"
-STATIC_ROOT = path.join(PROJECT_ROOT, "static")
+STATIC_ROOT = path.join(PROJECT_ROOT, "static", "collection")
 

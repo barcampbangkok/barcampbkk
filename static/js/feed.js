@@ -1,4 +1,4 @@
-/* require /site_media/static/pinax/js/jquery-1.3.2.min.js */    
+/* require /static/pinax/js/jquery-1.3.2.min.js */
 
 var feed = [];
 var twitter_username = 'juacompe';

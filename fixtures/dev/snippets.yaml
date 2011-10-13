@@ -1,4 +1,4 @@
--   fields: {html: <img src="/site_media/static/goyz_theme/images/main.jpg" />, name: Illustration,
+-   fields: {html: <img src="/static/goyz_theme/images/main.jpg" />, name: Illustration,
         template: snippets/illustration.html}
     model: snippet.snippet
     pk: 3

@@ -44,21 +44,21 @@ USE_I18N = True
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = path.join(PROJECT_ROOT, "site_media", "media")
+MEDIA_ROOT = path.join(PROJECT_ROOT, "media")
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = "/site_media/media/"
+MEDIA_URL = "/media/"
 
 # URL that handles the static files like app media.
 # Example: "http://media.lawrence.com"
-STATIC_URL = "/site_media/static/"
+STATIC_URL = "/static/"
 
 # Additional directories which hold static files
 STATICFILES_DIRS = [
-    path.join(PROJECT_ROOT, "site_media", "static", PINAX_THEME),
-    path.join(PROJECT_ROOT, "site_media", "static"),
+    path.join(PROJECT_ROOT, "static", PINAX_THEME),
+    path.join(PROJECT_ROOT, "static"),
 ]
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
