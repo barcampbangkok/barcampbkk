@@ -5,9 +5,6 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 EMAIL_DEBUG = DEBUG
 
-# tells Pinax to serve media through the staticfiles app.
-SERVE_MEDIA = DEBUG
-
 ADMINS = [
     # Don't be emailin' me in dev, yo
 ]
@@ -26,4 +23,7 @@ DATABASES = {
 
 # Secure this for production!
 SECRET_KEY = "c$z-3#l4jzku!+*pwby3zf!=n9#q54lv)gg@076)0xnmm8)q(9"
+
+# we just need this here so django won't complete, only needed for "collectstatic"
+STATIC_ROOT = path.join(PROJECT_ROOT, "static")
 
