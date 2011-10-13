@@ -111,17 +111,19 @@ Install App Dependencies
 
 1. Install libraries required for the project:
 
-   1. Go inside the source code folder
-   2. ``pip install -r requirements/development.txt``
-   3. See that all libraries are installed successfully (it should say so at
+   1. ``git clone git@github.com:barcampbangkok/barcampbkk.git``
+   2. Change into the ``barcampbkk`` directory and activate your virtualenv for
+      the project.
+   3. ``pip install -r requirements/development.txt``
+   4. See that all libraries are installed successfully (it should say so at
       the end), if not, you may want to open project.txt and install
       one-by-one for your machine).
+   5. Create a file in ``settings/secrets.py`` for API keys and such -- you
+      can get this from another developer.
 
 2. Create the database for development. From inside the source code folder::
 
-    python manage.py syncdb --all
-    python manage.py migrate --fake
-    python manage.py loaddata fixtures/dev/*
+    fab startdev
 
    When it asks you to create an admin user, please create one. When it runs
    successfully, it will create ``dev.db`` in your source code folder and load
@@ -134,7 +136,7 @@ Install App Dependencies
 
 4. Make sure tests are passing with your setup::
 
-    python manage.py test
+    fab test
 
 5. Run the server::
 
@@ -213,4 +215,15 @@ the future.
 
 .. _a signal bug in django-cms: https://github.com/divio/django-cms/issues/1031
 
+Deployment
+==========
+
+Quick and dirty for now -- there will be more deployment features in the Fabric
+tasks in the future, and everything will be better-documented, for now the
+short answer is::
+
+    fab production deploy
+
+This will attempt to install anything added to the pip requirements during the
+deploy, and will run any added South migrations as well.
 
