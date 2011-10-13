@@ -31,11 +31,6 @@ if settings.DEBUG:
         (r'^' + settings.MEDIA_URL.lstrip('/'), include('appmedia.urls')),
     ) + urlpatterns
 
-if settings.SERVE_MEDIA:
-    urlpatterns += patterns("",
-        url(r"", include("staticfiles.urls")),
-    )
-
 urlpatterns += patterns("",
     url(r'^', include('cms.urls')),
 )

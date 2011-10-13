@@ -5,9 +5,6 @@ DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 EMAIL_DEBUG = DEBUG
 
-# tells Pinax to serve media through the staticfiles app.
-SERVE_MEDIA = DEBUG
-
 ADMINS = [
     'Web Ops Team', 'ops@hackerspace.in.th'
 ]
