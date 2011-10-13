@@ -1,46 +1,29 @@
 # -*- coding: utf-8 -*-
 # Django settings for basic pinax project.
 
-import os.path
-import posixpath
-import pinax
+import logging
+import sys
+from os import path
 
-PINAX_ROOT = os.path.abspath(os.path.dirname(pinax.__file__))
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
-PROJECT_DIR = PROJECT_ROOT
+import pinax
+from django_logger import LoggerClass
+
+PINAX_ROOT = path.abspath(path.dirname(pinax.__file__))
+SETTINGS_ROOT = path.abspath(path.dirname(__file__))
+PROJECT_ROOT = path.abspath(path.dirname(SETTINGS_ROOT))
+
+# organize local apps in a subdir. kinda dirty, but it's Pinax's doing
+sys.path.insert(0, path.join(PROJECT_ROOT, "apps"))
 
 # tells Pinax to use the default theme
 PINAX_THEME = "barcamp_basic"
 GOYZ_THEME = "goyz_theme"
 
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
-
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
-
-# tells Pinax to serve media through the staticfiles app.
-SERVE_MEDIA = DEBUG
 
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
-
-ADMINS = [
-    # ("Your Name", "your_email@domain.com"),
-]
-
-MANAGERS = ADMINS
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3", # Add "postgresql_psycopg2", "postgresql", "mysql", "sqlite3" or "oracle".
-        "NAME": "dev.db",                       # Or path to database file if using sqlite3.
-        "USER": "",                             # Not used with sqlite3.
-        "PASSWORD": "",                         # Not used with sqlite3.
-        "HOST": "",                             # Set to empty string for localhost. Not used with sqlite3.
-        "PORT": "",                             # Set to empty string for default. Not used with sqlite3.
-    }
-}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -61,7 +44,7 @@ USE_I18N = True
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, "site_media", "media")
+MEDIA_ROOT = path.join(PROJECT_ROOT, "site_media", "media")
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -70,7 +53,7 @@ MEDIA_URL = "/site_media/media/"
 
 # Absolute path to the directory that holds static files like app media.
 # Example: "/home/media/media.lawrence.com/apps/"
-STATIC_ROOT = os.path.join(PROJECT_ROOT, "site_media", "static")
+STATIC_ROOT = path.join(PROJECT_ROOT, "site_media", "static")
 
 # URL that handles the static files like app media.
 # Example: "http://media.lawrence.com"
@@ -78,16 +61,13 @@ STATIC_URL = "/site_media/static/"
 
 # Additional directories which hold static files
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, "site_media", "media", PINAX_THEME),
+    path.join(PROJECT_ROOT, "site_media", "media", PINAX_THEME),
 ]
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = posixpath.join(STATIC_URL, "admin/")
-
-# Make this unique, and don't share it with anybody.
-SECRET_KEY = "c$z-3#l4jzku!+*pwby3zf!=n9#q54lv)gg@076)0xnmm8)q(9"
+ADMIN_MEDIA_PREFIX = path.join(STATIC_URL, "admin/")
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = [
@@ -118,9 +98,9 @@ MIDDLEWARE_CLASSES = [
 ROOT_URLCONF = "urls"
 
 TEMPLATE_DIRS = [
-    os.path.join(PROJECT_ROOT, "templates"),
-    os.path.join(PINAX_ROOT, "templates", PINAX_THEME),
-    os.path.join(PROJECT_ROOT, "templates", PINAX_THEME),
+    path.join(PROJECT_ROOT, "templates"),
+    path.join(PINAX_ROOT, "templates", PINAX_THEME),
+    path.join(PROJECT_ROOT, "templates", PINAX_THEME),
 ]
 
 TEMPLATE_CONTEXT_PROCESSORS = [
@@ -204,11 +184,10 @@ INSTALLED_APPS = [
 #    "profiles",
     'socialregistration',
     'barcamp_registration',
+    'hacks'
 ]
 
-FIXTURE_DIRS = [
-    os.path.join(PROJECT_ROOT, "fixtures"),
-]
+FIXTURE_DIRS = [ path.join(PROJECT_ROOT, "fixtures") ]
 
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 
@@ -235,13 +214,13 @@ LOGIN_REDIRECT_URLNAME = "what_next"
 LOGIN_REDIRECT_URL = '/'
 
 EMAIL_CONFIRMATION_DAYS = 2
-EMAIL_DEBUG = DEBUG
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'proteus.tech.com@gmail.com'
-EMAIL_HOST_PASSWORD = 'wrong#h1n1'
-EMAIL_USE_TLS = True
+### Socialauth #####
+# Please set private keys in settings/secrets.py
+TWITTER_REQUEST_TOKEN_URL = 'https://api.twitter.com/oauth/request_token'
+TWITTER_ACCESS_TOKEN_URL = 'https://api.twitter.com/oauth/access_token'
+TWITTER_AUTHORIZATION_URL = 'https://api.twitter.com/oauth/authorize'
+####################
 
 # URCHIN_ID = "ua-..."
 
@@ -264,9 +243,6 @@ CMS_LANGUAGES =(
 LANGUAGES= CMS_LANGUAGES
 
 #logger
-import logging
-from django_logger import LoggerClass
-
 logging.getLogger('django.db.backends').setLevel(logging.ERROR)
 logging.getLogger('PYREADLINE').setLevel(logging.ERROR)
 logging.getLogger('south').setLevel(logging.ERROR)
@@ -274,22 +250,14 @@ logging.getLogger('south').setLevel(logging.ERROR)
 logging.setLoggerClass(LoggerClass(
     file_suffix = '.log',
     default_level = logging.INFO,
-    files_path = os.path.abspath(os.path.join(PROJECT_DIR, 'logs')),
+    files_path = path.abspath(path.join(PROJECT_ROOT, 'logs')),
 ))
 
-### Socialauth #####
-TWITTER_CONSUMER_KEY = '838bFpYe8sk4eHLCGCqkYQ'
-TWITTER_CONSUMER_SECRET_KEY = 'AwfRsy3AuSzpxyoXeXvtIumjQDQ0damIlzmNs1Iiak'
-TWITTER_ACCESS_TOKEN = '12223502-r2LFtPSMNGYpiF2GeGNVb4JPcmyvpMa79fKh2PH03'
-TWITTER_ACCESS_TOKEN_SECRET = '72A5pjsELAqrIYf7ockXa8lJmCEEh1UhLVgicOTN16E'
-TWITTER_REQUEST_TOKEN_URL = 'https://api.twitter.com/oauth/request_token'
-TWITTER_ACCESS_TOKEN_URL = 'https://api.twitter.com/oauth/access_token'
-TWITTER_AUTHORIZATION_URL = 'https://api.twitter.com/oauth/authorize'
-####################
+# Use this for settings that you need in all environments but that shouldn't be
+# kept in public version control, like Twitter API keys, etc.
+#
+# This does not catch an ImportError because it *should* be a fatal error in
+# production if it's missing (database credentials, etc.). It will be put in
+# place by Chef in production.
+from secrets import *
 
-# local_settings.py can be used to override environment-specific settings
-# like database and email that differ between development and production.
-try:
-    from local_settings import *
-except ImportError:
-    pass

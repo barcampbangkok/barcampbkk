@@ -1,14 +1,15 @@
-/.idea/.name
-/.idea/barcampbkk.iml
-/.idea/dataSources.ids
-/.idea/dataSources.xml
-/.idea/encodings.xml
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/vcs.xml
-/.idea/workspace.xml
+# Generally, put editor/IDE-specific ignores in your global git excludesfile
+# (search `git help config`) so you don't have to pollute every project you
+# work on with them.
+/.idea
+
 *.pyc
 *.db
 
 logs/*
+settings/secrets.py
+
+# Convenient to keep chef-repo here for dev, but it doesn't need to be deployed
+# with the app so there's not much point in a submodule.
+chef
 

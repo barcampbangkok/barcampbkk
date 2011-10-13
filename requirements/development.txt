@@ -1,0 +1,10 @@
+# Packages that do not need to be installed on an app server for the app to
+# run, but are used for development or deployment.
+
+--requirement=production.txt
+
+# Python Imaging Library -- Ubuntu packages used in production
+pil==1.1.7
+
+Fabric>=1.2.2
+

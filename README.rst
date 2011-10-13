@@ -5,12 +5,6 @@ Barcamp Bangkok Web App
 Getting Started
 ===============
 
-.. Note::
-   If you're viewing this on GitHub, be aware that *this is currently a
-   git-svn mirror only* -- do **not** clone this git repository and push
-   changes to it! If you want to use git-svn, you should clone from the SVN
-   repository.  Contact the web team if you need SVN access.
-
 Pre-requisites
 --------------
 
@@ -118,7 +112,7 @@ Install App Dependencies
 1. Install libraries required for the project:
 
    1. Go inside the source code folder
-   2. ``pip install -r requirements/project.txt``
+   2. ``pip install -r requirements/development.txt``
    3. See that all libraries are installed successfully (it should say so at
       the end), if not, you may want to open project.txt and install
       one-by-one for your machine).
@@ -126,14 +120,15 @@ Install App Dependencies
 2. Create the database for development. From inside the source code folder::
 
     python manage.py syncdb --all
-    python manage.py migrate
+    python manage.py migrate --fake
     python manage.py loaddata fixtures/dev/*
 
-When it asks you to create an admin user, please create one. When it runs
-successfully, it will create ``dev.db`` in your source code folder and load
-some stub content from fixtures.
+   When it asks you to create an admin user, please create one. When it runs
+   successfully, it will create ``dev.db`` in your source code folder and load
+   some stub content from fixtures.
 
-3. Symbolic link cms static files (Windows people, you will have to copy the folder over instead)
+3. Symbolic link cms static files (Windows people, you will have to copy the
+   folder over instead)
 
     ln -s <virtual environment site-packages folder>/cms/static/cms site_media/static/cms
 
@@ -199,8 +194,23 @@ and then commit the changed files into version control.
 Social Network Authentication
 ==============================
 
-For development, you'll need to update site domain in the Sites table to the domain you're running at e.g. 127.0.0.1:8000
-This will be sent to Twitter for callback.
+For development, you'll need to update site domain in the Sites table to the
+domain you're running at e.g. 127.0.0.1:8000 This will be sent to Twitter for
+callback.
 
-For production, assuming we're going to deploy at barcampbangkok.org, just make sure that the site domain is barcampbangkok.org
+For production, assuming we're going to deploy at barcampbangkok.org, just make
+sure that the site domain is barcampbangkok.org
+
+HACKS
+=====
+
+Dirty things to be aware that we should fix if there is a better solution in
+the future.
+
+1. Monkey-patched ``loaddata`` management command to work around `a signal bug
+   in django-cms`_ that causes fixture loading to fail. This is in the 'hacks'
+   app.
+
+.. _a signal bug in django-cms: https://github.com/divio/django-cms/issues/1031
+
 
