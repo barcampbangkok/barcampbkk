@@ -32,7 +32,7 @@ class TestRegistration(TestCase):
         response = self.client.post(self.url,data=data,follow=True)
         self.assertEqual(response.status_code,200)
         self.assertIn('<td class="name">Barcamper</td>',response.content)
-        self.assertIn('<td class="email">barcamper@gmail.com</td>',response.content)
+        self.assertNotIn('<td class="email">barcamper@gmail.com</td>',response.content)
 
     def test_post_required_not_found(self):
         data = {
@@ -92,14 +92,14 @@ class TestWhosComing(TestCase):
 
         # barcamper 1
         self.assertIn('<td class="name">Barcamper 1</td>',response.content)
-        self.assertIn('<td class="email">barcamper1@gmail.com</td>',response.content)
+        self.assertNotIn('<td class="email">barcamper1@gmail.com</td>',response.content)
         self.assertIn('<a href="http://twitter.com/barcamper1" target="_blank">@barcamper1</a>',response.content)
         self.assertIn('<a href="www.abcd.com" target="_blank">www.abcd.com</a>',response.content)
         self.assertIn('<td class="topics">Agile</td>',response.content)
 
         # barcamper 2
         self.assertIn('<td class="name">Barcamper 2</td>',response.content)
-        self.assertIn('<td class="email">barcamper2@gmail.com</td>',response.content)
+        self.assertNotIn('<td class="email">barcamper2@gmail.com</td>',response.content)
         self.assertIn('<a href="http://twitter.com/barcamper2" target="_blank">@barcamper2</a>',response.content)
         self.assertIn('<a href="www.asdf.com" target="_blank">www.asdf.com</a>',response.content)
         self.assertIn('<td class="topics">DCI</td>',response.content)

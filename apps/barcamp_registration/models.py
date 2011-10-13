@@ -20,7 +20,8 @@ class BarcampRegistration(models.Model):
     - topics
     """
     name = models.CharField(_('name'),max_length=512)
-    email = models.EmailField(_('e-mail'))
+    email = models.EmailField(_('e-mail'),
+                                help_text=_('we will use this to contact you, and not display anywhere'))
     twitter = models.CharField(_('twitter'),max_length=512,blank=True,null=True,
                                help_text=_('twitter username without @'))
     website = models.URLField(_('website'),verify_exists=False,blank=True,null=True)

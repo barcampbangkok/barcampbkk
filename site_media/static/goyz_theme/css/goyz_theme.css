@@ -150,10 +150,6 @@ table#whos_coming_list .name{
     width: 20%;
 }
 
-table#whos_coming_list .email{
-    width: 25%;
-}
-
 table#whos_coming_list .twitter{
     width: 15%;
 }

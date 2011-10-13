@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-10 00:15+0700\n"
+"POT-Creation-Date: 2011-10-13 16:56+0700\n"
 "PO-Revision-Date: 2011-10-10 00:05+0700\n"
 "Last-Translator: Pam <suebvisai.pam@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,26 +45,30 @@ msgid "e-mail"
 msgstr "อีเมล"
 
 #: .\apps\barcamp_registration\models.py:24
+msgid "we will use this to contact you, and not display anywhere"
+msgstr "เราจะใช้อีเมลเพื่อการติดต่อเท่านั้น  ไม่นำออกแสดงผล"
+
+#: .\apps\barcamp_registration\models.py:25
 msgid "twitter"
 msgstr ""
 
-#: .\apps\barcamp_registration\models.py:25
+#: .\apps\barcamp_registration\models.py:26
 msgid "twitter username without @"
 msgstr "twitter username ไม่มี @"
 
-#: .\apps\barcamp_registration\models.py:26 .\apps\profiles\models.py:11
+#: .\apps\barcamp_registration\models.py:27 .\apps\profiles\models.py:11
 msgid "website"
 msgstr ""
 
-#: .\apps\barcamp_registration\models.py:27
+#: .\apps\barcamp_registration\models.py:28
 msgid "t-shirt size"
 msgstr "ขนาดเสื้อ"
 
-#: .\apps\barcamp_registration\models.py:28
+#: .\apps\barcamp_registration\models.py:29
 msgid "US sizes"
 msgstr "size แบบ US"
 
-#: .\apps\barcamp_registration\models.py:29
+#: .\apps\barcamp_registration\models.py:30
 msgid "topics"
 msgstr "หัวข้อที่สนใจ"
 
@@ -78,12 +82,12 @@ msgstr ""
 
 #: .\templates\base.html.py:39 .\templates\barcamp_basic\base.html.py:37
 #: .\templates\barcamp_basic\announcements\announcement_list.html.py:15
-#: .\templates\goyz_theme\base.html.py:37
+#: .\templates\goyz_theme\base.html.py:38
 msgid "Hide announcement"
 msgstr ""
 
 #: .\templates\base.html.py:59 .\templates\barcamp_basic\base.html.py:58
-#: .\templates\goyz_theme\base.html.py:58
+#: .\templates\goyz_theme\base.html.py:59
 msgid "clear"
 msgstr ""
 
@@ -846,7 +850,7 @@ msgstr ""
 
 #: .\templates\barcamp_basic\idios\profile.html.py:23
 #: .\templates\barcamp_basic\profiles\profile.html.py:42
-#: .\templates\barcamp_registration\whos_coming.html.py:9
+#: .\templates\barcamp_registration\whos_coming.html.py:8
 msgid "Website"
 msgstr ""
 
@@ -1846,7 +1850,7 @@ msgid "Topics for <a href=\"%(group_url)s\">%(group_name)s</a>"
 msgstr ""
 
 #: .\templates\barcamp_basic\topics\topics.html.py:20
-#: .\templates\barcamp_registration\whos_coming.html.py:10
+#: .\templates\barcamp_registration\whos_coming.html.py:9
 msgid "Topics"
 msgstr "หัวข้อที่สนใจ"
 
@@ -2099,15 +2103,11 @@ msgstr ""
 msgid "History for %(slug)s"
 msgstr ""
 
-#: .\templates\barcamp_registration\registration.html.py:19
+#: .\templates\barcamp_registration\registration.html.py:18
 msgid "Register"
 msgstr "ลงทะเบียน"
 
 #: .\templates\barcamp_registration\whos_coming.html.py:7
-msgid "E-mail"
-msgstr ""
-
-#: .\templates\barcamp_registration\whos_coming.html.py:8
 msgid "Twitter"
 msgstr ""
 
