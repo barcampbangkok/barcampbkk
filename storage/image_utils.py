@@ -4,7 +4,7 @@ from httplib2 import Http, RelativeURIError
 from PIL import Image
 from StringIO import StringIO
 import logging
-from feed.models import Photo, Tweet
+from nj_feed_reader.models import Photo, Tweet
 
 TWITTER_IMAGE_PATH = 'collected_twitter_images/'
 THUMBNAIL_PATH = TWITTER_IMAGE_PATH + 'thumbnails/' 
@@ -50,7 +50,10 @@ def save_image(image_name, content):
     image = Image.open(ContentFile(StringIO(content).buf))
     image_path = default_storage.path(TWITTER_IMAGE_PATH + image_name)
 
-    image.save(image_path,'JPEG')
+    print
+    print
+    print 'save image'
+    print image.save(image_path,'JPEG')
     #image.save(image_path)
     create_thumbnail(image_name)
 

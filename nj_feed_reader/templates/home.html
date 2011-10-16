@@ -1,0 +1,60 @@
+{% extends "goyz_theme/cms/cms_base.html" %}
+
+{% block extra_head %}
+    {{ block.super }}
+
+    <link type="text/css" rel="stylesheet" href="{{STATIC_URL}}nj_feed_reader/css/all.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="{{STATIC_URL}}nj_feed_reader/css/home.css" media="screen" />
+{% endblock %}
+
+{% block script_defer %}
+    <script type="text/javascript" src="{{STATIC_URL}}nj_feed_reader/js/jquery.updater.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}nj_feed_reader/js/common.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}nj_feed_reader/js/feed.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}nj_feed_reader/js/loop_refresh.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}galleria/galleria-1.2.5.min.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}galleria/themes/classic/galleria.classic.min.js"></script>
+    
+    <script>
+    $('#gallery').galleria({
+        width:640,
+        height:640,
+        autoplay:7000,
+        transition:"fade",
+        show_info:true,
+        _toggle_info: false
+    });
+    </script>
+    
+    <script>
+    delayed_refresh();
+    </script>
+{#    <script type="text/javascript" src="{{STATIC_URL}}nj_feed_reader/js/hack_galleria.js"></script>#}
+{% endblock %}
+
+
+
+{% block content %}
+    <div id="gallery">
+
+        {% for tweet in tweets %}
+
+        <a href="{{IMAGE_URL}}{{tweet.image}}">
+            <img src="{{THUMBNAIL_URL}}{{tweet.image}}" alt="Tweet photos tagged with #njwedding"
+                 title="{{ tweet.text }} {{ tweet.location_link }}"/>
+        </a>
+
+
+        {% endfor %}
+    </div>
+
+    <div id="output" class="tweets">
+        &nbsp;
+    </div><!--id="output" class="tweets"-->
+
+    <div id="tweeter"></div>
+    <div id="tweeter_tag"></div>
+    <div style="clear:both;"></div>
+
+{% endblock content%}
+

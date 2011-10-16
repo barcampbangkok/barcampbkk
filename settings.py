@@ -209,7 +209,7 @@ INSTALLED_APPS = [
     "about",
 #    "profiles",
 
-    "feed",
+    "nj_feed_reader",
 ]
 
 FIXTURE_DIRS = [
@@ -268,6 +268,8 @@ CMS_LANGUAGES =(
     ('th', 'Thai',),
 )
 LANGUAGES= CMS_LANGUAGES
+
+TWITTER_QUERY = '%23njwedding%20OR%20nattyait%20OR%20juacompe'
 
 #logger
 import os
