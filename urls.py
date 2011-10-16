@@ -25,6 +25,10 @@ urlpatterns = patterns("",
 
 )
 
+urlpatterns += patterns("",
+    url(r'^api/new_tweets/$', 'feed.views.new_tweets', name='new_tweets'),
+)
+
 if settings.DEBUG:
     urlpatterns = patterns('',
         (r'^' + settings.MEDIA_URL.lstrip('/'), include('appmedia.urls')),

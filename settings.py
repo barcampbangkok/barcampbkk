@@ -208,6 +208,8 @@ INSTALLED_APPS = [
     # project
     "about",
 #    "profiles",
+
+    "feed",
 ]
 
 FIXTURE_DIRS = [

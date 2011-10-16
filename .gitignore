@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 /.idea/.name
 /.idea/barcampbkk.iml
 /.idea/dataSources.ids
@@ -11,10 +9,4 @@
 /.idea/workspace.xml
 *.pyc
 *.db
-=======
-*.pyc
-*.db
-
 logs/*
-
->>>>>>> master

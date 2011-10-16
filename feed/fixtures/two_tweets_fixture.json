@@ -1,0 +1,33 @@
+[
+ {
+  "pk": 1, 
+  "model": "feed.tweet", 
+  "fields": {
+   "id_str":"117972896940437504",
+   "created_at": "2011-09-25 14:45:05",
+   "from_user": "juacompe",
+   "profile_image_url": "http://a0.twimg.com/profile_images/1097051928/mypic2_normal.jpeg",
+   "text": "@roofimon lets see if wp really anti-TDD"
+  }
+ },
+ {
+  "pk": 2, 
+  "model": "feed.tweet", 
+  "fields": {
+   "id_str":"117540086551289857",
+   "created_at": "2011-09-24 10:05:15",
+   "from_user": "juacompe",
+   "profile_image_url": "http://a0.twimg.com/profile_images/1097051928/mypic2_normal.jpeg",
+   "text": "cleaned... http://t.co/48hQmTeM"
+  }
+ },
+ {
+  "pk": 1, 
+  "model": "feed.photo", 
+  "fields": {
+   "tweet": 8, 
+   "name": "httpdesmond.yfrog.comHimg686scaled.php"
+  }
+ }
+]
+

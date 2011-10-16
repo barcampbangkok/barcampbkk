@@ -1,0 +1,16 @@
+{% extends "tests/base.html" %}
+
+{% block test %}
+<script type="text/javascript" src="{{STATIC_URL}}js/common.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/feed.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/integration_test_feed.js"></script>
+<script>
+with(jqUnit) {
+    module("Integration Tests")
+    test("test_integration_twitter_feed", test_integration_twitter_feed)
+
+}
+</script>
+
+<div id="output"></div>
+{% endblock %}

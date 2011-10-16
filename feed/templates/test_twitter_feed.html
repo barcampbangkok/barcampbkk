@@ -1,0 +1,29 @@
+{% extends "tests/base.html" %}
+
+{% block test %}
+<script type="text/javascript" src="{{STATIC_URL}}js/common.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/test_common.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/feed.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/test_feed.js"></script>
+<script>
+with(jqUnit) {
+    module("Module Common")
+    test("test_string_to_date", test_string_to_date)
+    test("test_compare_by_created_at", test_compare_by_created_at)
+    test("test_empty_array", test_empty_array)
+
+    module("Module Twitter Feed")
+    test("test_twitter_search", test_twitter_search)
+    // Mocked test
+    test("test_twitter_to_feed_item_calls_string_to_date", test_twitter_to_feed_item_calls_string_to_date)
+    test("test_twitter_search_call_back_adds_results_to_feed", test_twitter_search_call_back_adds_results_to_feed)
+    test("test_twitter_search_call_back_sorts_by_created_at", test_twitter_search_call_back_sorts_by_created_at)
+    test("test_twitter_search_call_back_calls_update_output", test_twitter_search_call_back_calls_update_output)
+    test("test_add_to_feed_add_item_to_feed", test_add_to_feed_add_item_to_feed)
+    test("test_add_to_feed_calls_parser_for_every_item", test_add_to_feed_calls_parser_for_every_item)
+    test("test_update_output_should_clear_feed_after_update_html", test_update_output_should_clear_feed_after_update_html)
+
+}
+</script>
+  
+{% endblock %}
