@@ -76,3 +76,7 @@ a:link, a:visited{
     color: #9acd32;
 }
 
+
+#body ,#tabhead {
+    width: 94%;
+}

@@ -67,6 +67,8 @@ def parse_tweets(result_dict):
             image_urls = extract_urls_from_tweet(urls)
             photos = download_all(image_urls)
             for photo_name in photos:
+                if  (photo_name.find(".jpg") or photo_name.find(".png") or photo_name.find(".gif") or photo_name.find(".tiff") )== -1:
+                    photo_name += ".jpg"
                 photo = Photo(name = photo_name, tweet = tweet)
                 photo.save()
         except (IntegrityError, DatabaseError):

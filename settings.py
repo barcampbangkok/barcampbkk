@@ -269,7 +269,8 @@ CMS_LANGUAGES =(
 )
 LANGUAGES= CMS_LANGUAGES
 
-TWITTER_QUERY = '%23njwedding%20OR%20nattyait%20OR%20juacompe'
+TWITTER_QUERY = '%23barcampbangkok%20OR%20%23barcampbkk'
+TWITTER_TAGS = "#barcampbangkok, #barcampbkk, #bcbkk"
 
 #logger
 import os

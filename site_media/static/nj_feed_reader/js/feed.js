@@ -4,7 +4,7 @@ var feed = [];
 twitter_search();
 
 function twitter_search() {
-    var url = "/site_media/media/search.json"
+    var url = MEDIA_URL + "search.json"
     $.Updater(url, {}, twitter_search_call_back);
 }
 
@@ -47,6 +47,8 @@ function feed_to_html(feed_items) {
         profile.appendTo(element);
         msg.appendTo(element);
         created_at.appendTo(element);
+
+        $("<div style='clear:both;'></div>").appendTo(element);
         element.appendTo(list);
     });
     return list;
