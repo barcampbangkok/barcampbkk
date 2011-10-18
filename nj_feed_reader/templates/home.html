@@ -3,11 +3,14 @@
 {% block extra_head %}
     {{ block.super }}
 
-    <link type="text/css" rel="stylesheet" href="{{STATIC_URL}}nj_feed_reader/css/all.css" media="screen" />
+{#    <link type="text/css" rel="stylesheet" href="{{STATIC_URL}}nj_feed_reader/css/all.css" media="screen" />#}
     <link type="text/css" rel="stylesheet" href="{{STATIC_URL}}nj_feed_reader/css/home.css" media="screen" />
 {% endblock %}
 
 {% block script_defer %}
+    <script type="text/javascript">
+        var MEDIA_URL = "{{ MEDIA_URL }}";
+    </script>
     <script type="text/javascript" src="{{STATIC_URL}}nj_feed_reader/js/jquery.updater.js"></script>
     <script type="text/javascript" src="{{STATIC_URL}}nj_feed_reader/js/common.js"></script>
     <script type="text/javascript" src="{{STATIC_URL}}nj_feed_reader/js/feed.js"></script>
@@ -40,7 +43,7 @@
         {% for tweet in tweets %}
 
         <a href="{{IMAGE_URL}}{{tweet.image}}">
-            <img src="{{THUMBNAIL_URL}}{{tweet.image}}" alt="Tweet photos tagged with #njwedding"
+            <img src="{{THUMBNAIL_URL}}{{tweet.image}}" alt="Tweet photos tagged with {{ TWITTER_TAGS }}"
                  title="{{ tweet.text }} {{ tweet.location_link }}"/>
         </a>
 

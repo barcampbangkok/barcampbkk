@@ -1,0 +1,57 @@
+.tweets {
+    position:absolute;
+    top: 220px;
+    left: 710px;
+    margin-right: 40px;
+    /*margin-top: 23px;*/
+    margin-left: 15px;
+    text-align: left;
+    height: 640px;
+    overflow-y: scroll;
+    
+}
+margin
+.profile {
+    float: left;
+}
+.tweets img{
+    float:left;
+    -moz-border-radius:4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.msg {
+    margin-top: 20px;
+    margin-left:60px;
+    padding-left: 3px;
+    color: black;
+}
+.created_at {
+    float: left;
+    width: 100%;
+    font-size: 80%;
+    margin-top: 2px;
+}
+
+.galleria-container {
+    background: black;
+    -moz-border-radius:8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.galleria-info-text {
+display:block;
+text-align:center;
+background:rgba(0,0,0,.5);
+
+}
+
+.galleria-info{
+    left: 25%;
+    top: 70%;
+}
+
+.galleria-info-link {
+display:none;
+} 

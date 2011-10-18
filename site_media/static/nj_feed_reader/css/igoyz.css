@@ -1,0 +1,142 @@
+body{
+    background-color: #03bdaf;
+}
+
+#website_title{
+    margin-top: 24px;
+    margin-bottom: 7px;
+    margin-left: 8px;
+    color: #ffffff;
+    font-size: 40px;
+}
+#shortcut_menu_container{
+    float: right;
+}
+
+#page_header{
+    border: 5px #ffffff solid;
+}
+
+#page_content,#page_footer{
+    border: 5px #ffffff solid;
+    border-top:  0 none;
+}
+#page_content{
+    padding-left: 12px;
+}
+#page_footer{
+    padding:  10px;
+    height: 84px;
+}
+.igoyz_logo{
+    height: 84px;
+    width:84px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+#shortcut_menu_container{
+    color: white;
+    margin-right: 30px;
+    margin-top: 45px;
+}
+
+#shortcut_menu_container .each_menu, #shortcut_menu_container .each_menu a{
+    float: right;
+    margin-left: 18px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 17px;
+}
+#shortcut_menu_container .each_menu a:hover{
+    text-decoration: none;
+    color: white;
+}
+.view_map_icon,
+.add_to_calendar_icon{
+    width: 11px;
+    height: 17px;
+    background-image: url(../images/view_map.png);
+    float: left;
+    margin-right: 4px;
+}
+.add_to_calendar_icon{
+    background-image: url(../images/add_to_calendar.png);
+    width: 17px;
+}
+
+#main_menu{
+    text-align: center;
+    width: 750px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#main_menu ul{
+    margin-top: 0;
+    padding-top: 14px;
+    padding-left:0;
+
+}
+#main_menu li{
+    float: left;
+    list-style-image: url(../images/heart.png);
+    margin-right:30px;
+    margin-left:30px;
+}
+
+#main_menu li a {
+    font-family: Lucida Grande;
+    text-transform: uppercase;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#main_menu li a:hover{
+    text-decoration: none;
+}
+
+p.msg,
+p.created_at{
+    font-family: tahoma, lucida;
+}
+p.created_at{
+    font-size: 10px;
+    
+}
+p.msg{
+    font-size: 17px;
+}
+
+#tweeter{
+    background-image: url(../images/bird.png);
+    width:77px;
+    height:65px;
+    position: absolute;
+    right: 20px;
+    top: 695px;
+    /*float:right;*/
+}
+#tweeter_tag{
+    background-image: url(../images/ngwedding_tag.png);
+    width:149px;
+    height:27px;
+    position: absolute;
+    right: 60px;
+    top: 735px;
+}
+
+#fb_like{
+    text-align: center;
+    margin-top: 50px
+}
+
+#fb_comment{
+    text-align: center;
+    margin-bottom: 30px
+}

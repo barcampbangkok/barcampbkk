@@ -1,0 +1,75 @@
+/******* Body Styling *******/
+
+body{
+	margin:0;
+	color:#686868;
+	min-width:986px;
+	font:12px/18px Verdana, Arial, Helvetica, sans-serif;
+	background:#000 url(../images/bg-body.jpg) repeat-x 50% 0;
+}
+a{
+	color:#23aecd;
+	text-decoration:none;
+}
+.container a{color:#23aecd;}
+.button-holder a{
+	text-align:center;
+	padding-top:4px;
+	display:block;
+	font-weight:normal;
+	color:#fff;
+	width: 150px;
+	height: 30px;
+	background-repeat:no-repeat;
+	background-image:url(../images/btn-blue.gif);
+}
+.btn-gray{background-image:url(../images/btn-gray.gif) !important;}
+.tab {
+	height:60px;
+	width:25px;
+	background:url(../images/tab.png) no-repeat;
+	position:absolute;
+	left:-22px;
+	padding:5px;
+}
+.tab .month {
+	font-size:10px;
+	text-transform:uppercase;
+	text-align:center;
+	color:#fff;
+}
+.tab .day {
+	font-size:20px;
+	text-align:center;
+	color:#fff;
+}
+
+/******* Sidebar Styling *******/
+
+.title-list .active{
+	color:#fff;
+	position:relative;
+	background:url(../images/bg-title-list-active.gif) no-repeat;
+	height:21px;
+	overflow:hidden;
+	margin-top:-2px;
+}
+.signup-form-submit{
+	border:none !important;
+	padding:0;
+	margin:1px 0 0;
+	float:left;
+	font-size:0;
+	line-height:0;
+	cursor:pointer;
+	text-indent:-9999px;
+	overflow:hidden;
+	background:url(../images/bg-signup-form-submit.gif) no-repeat;
+	width: 69px;
+	height: 26px;
+}
+
+/******* Footer Styling *******/
+
+.links a:hover{color:#8FDEEE;}
+.news li a{color:#8FDEEE;}
