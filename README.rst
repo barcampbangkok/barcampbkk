@@ -227,3 +227,13 @@ short answer is::
 This will attempt to install anything added to the pip requirements during the
 deploy, and will run any added South migrations as well.
 
+Infrastructure Management
+=========================
+
+Server configuration is automated by Chef. Documentation on how to work with it
+is available on `the project's Chef repo wiki`_. You should not make changes on
+the server without supporting, tested Chef automation!
+
+.. _the project's Chef repo wiki:
+   https://github.com/barcampbangkok/chef-repo/wiki
+
