@@ -218,14 +218,18 @@ the future.
 Deployment
 ==========
 
-Quick and dirty for now -- there will be more deployment features in the Fabric
-tasks in the future, and everything will be better-documented, for now the
-short answer is::
+The short answer is::
 
     fab production deploy
 
 This will attempt to install anything added to the pip requirements during the
 deploy, and will run any added South migrations as well.
+
+There are `some additonal details`_ about how deployment is handled that are
+important for you to know about -- please see the wiki page.
+
+.. _some additional details:
+   https://github.com/barcampbangkok/barcampbkk/wiki/Deployment
 
 Infrastructure Management
 =========================
