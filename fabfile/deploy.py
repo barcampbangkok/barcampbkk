@@ -57,6 +57,16 @@ def dbshell():
     require('environment', provided_by=('production'))
     open_shell(app_env_shell() + "django-admin.py dbshell")
 
+# Migrations should be run automatically when deploying, but it isn't
+# working properly currently. Until that's fixed, this task can be run
+# manually after a deployment that includes migrations.
+@task
+@roles('db')
+def migrate():
+    """Run django-admin.py migrate for South migrations."""
+    require('environment', provided_by=('production'))
+    open_shell(app_env_shell() + "django-admin.py migrate")
+
 
 # -----------------------------------------------------------------------------
 # Utility Helpers
