@@ -5,7 +5,7 @@ class TestFindImageUrlInPage(TestCase):
     def test_find_image_url_in_twitpic_page__found(self):
         page_url = 'http://twitpic.com/6m2t75'
         image_url = find_image_url_in_page(page_url)
-        expected_url = '//d3-05.twitpicproxy.com/photos/large/399879761.jpg'
+        expected_url = 'http://d3-05.twitpicproxy.com/photos/large/399879761.jpg'
         self.assertEqual(expected_url, image_url)
 
     def test_find_image_url_in_lockerz_page__found(self):
