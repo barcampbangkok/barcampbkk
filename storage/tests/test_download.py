@@ -4,7 +4,7 @@ from storage.image_utils import download, TWITTER_IMAGE_PATH, THUMBNAIL_PATH
 
 class TestDownload(TestCase):
     def setUp(self):
-        image_name = 'https1.proxy03.twitpic.comphotoslarge399879761.jpg'
+        image_name = 'httpd1-01.twitpicproxy.comphotoslarge400964241.jpg'
         self.image_path = TWITTER_IMAGE_PATH + image_name
         self.thumb_image_path = THUMBNAIL_PATH + image_name
 
@@ -20,7 +20,7 @@ class TestDownload(TestCase):
         - image saved in collected images and 
         - its thumbnail is generated
         """
-        url = 'http://s1.proxy03.twitpic.com/photos/large/399879761.jpg'
+        url = 'http://d1-01.twitpicproxy.com/photos/large/400964241.jpg'
         download(url)
         self.assertTrue(default_storage.exists(self.image_path))
         self.assertTrue(default_storage.exists(self.thumb_image_path))
@@ -32,7 +32,7 @@ class TestDownload(TestCase):
         - created time of the image is not changed (image is *not* saved twice)
         - created time of the thumbnail is not changed (its thumbnail is *not* generated again)
         """
-        url = 'http://s1.proxy03.twitpic.com/photos/large/399879761.jpg'
+        url = 'http://d1-01.twitpicproxy.com/photos/large/400964241.jpg'
         download(url)
         image_created_time1 = default_storage.created_time(self.image_path)
         thumb_created_time1 = default_storage.created_time(self.thumb_image_path)
