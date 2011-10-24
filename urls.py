@@ -27,7 +27,7 @@ urlpatterns = patterns("",
 
 urlpatterns += patterns("",
     url(r'^api/new_tweets/$', 'nj_feed_reader.views.new_tweets', name='new_tweets'),
-    url(r'^home/$', 'nj_feed_reader.feed_viewer.home', name='home'),
+    url(r'^twitter_feeds/$', 'nj_feed_reader.feed_viewer.feed_reader', name='home'),
 )
 
 if settings.DEBUG:

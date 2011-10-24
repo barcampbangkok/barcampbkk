@@ -7,6 +7,9 @@
 /.idea/modules.xml
 /.idea/vcs.xml
 /.idea/workspace.xml
+/.idea/dictionaries/*
 *.pyc
 *.db
 logs/*
+*~
+site_media/media/*

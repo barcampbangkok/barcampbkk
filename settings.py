@@ -149,6 +149,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     #cms
     'cms.context_processors.media',
     'sekizai.context_processors.sekizai',
+    'nj_feed_reader.context.twitter_tags',
 ]
 
 INSTALLED_APPS = [
@@ -270,7 +271,7 @@ CMS_LANGUAGES =(
 LANGUAGES= CMS_LANGUAGES
 
 TWITTER_QUERY = '%23barcampbangkok%20OR%20%23barcampbkk'
-TWITTER_TAGS = "#barcampbangkok, #barcampbkk, #bcbkk"
+TWITTER_TAGS = "#barcampbangkok, #barcampbkk, #bcbkk, #barcampbkk5"
 
 #logger
 import os

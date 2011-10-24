@@ -16,18 +16,18 @@ class TestHome(TestCase):
         image_utils.collected_images = self.orig
 
     def test_home_ok(self):
-        response = self.client.get('/home/')
+        response = self.client.get('/twitter_feeds/')
         self.assertEqual(200, response.status_code)
 
     def test_home_has_images_in_context(self):
-        response = self.client.get('/home/')
+        response = self.client.get('/twitter_feeds/')
         images = image_utils.collected_images()
         self.assertEqual(images, response.context['images'])
         
     def test_home_has_image_url_in_context(self):
-        response = self.client.get('/home/')
+        response = self.client.get('/twitter_feeds/')
         self.assertTrue(response.context['IMAGE_URL'])
 
     def test_home_has_thumbnial_url_in_context(self):
-        response = self.client.get('/home/')
+        response = self.client.get('/twitter_feeds/')
         self.assertTrue(response.context['THUMBNAIL_URL'])
